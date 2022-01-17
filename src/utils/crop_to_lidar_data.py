@@ -35,7 +35,7 @@ def find_lower_pix(image):
                 pass    #now we just return the new image
     return prev_y
 
-folder_loc = '../../../../nn_dataset/dataset_nn24a'
+folder_loc = '../../../dataset_nn_24a_original'
 total_files = glob.glob(os.path.join(folder_loc,'pcl_cm/*'))
 #print(total_files)
 
@@ -47,7 +47,7 @@ total_files = glob.glob(os.path.join(folder_loc,'pcl_cm/*'))
 i = 0
 for image_file in sorted(total_files):        
     
-    #print(image_file)
+    #print(image_file,len(total_files))
     file_name = image_file.lstrip(folder_loc).rstrip('.png').split('/')[-1]
     orig_rgb = Image.open(image_file)
     #orig_depth = Image.open(os.path.join(folder_loc,'pcl_cm_cropped/',file_name+'_pcl_cm_cropped.png')))
@@ -65,28 +65,41 @@ for image_file in sorted(total_files):
     orig_pcl = Image.open(os.path.join(folder_loc,'pcl_cm/',file_name+'_pcl_cm.png'))
     width, height = orig_rgb.size
 
+
     if i==0:
+        print("passed")
         crop_top = find_higher_pix(orig_pcl)
         crop_botton = find_lower_pix(orig_pcl)
-        #print(crop_top,crop_botton)
+        print(crop_top,crop_botton)
         left = 0
         top = crop_top
         right = width
         bottom = crop_botton
-        #print('top-botton', top-bottom)
-        #bottom +=1
-        #top = 408
-        if (bottom-top) %2 == 0:
-            continue
-            #print('perfect')
-        else:
-            bottom += 3
-            top -= 2
-            #print('%2',top-bottom)
+        while True:
+            
+            print('top-botton', bottom-top)
+            #TOO LAZY TO FIX THIS
+            if (bottom-top) - 360 > 1:
+                print("a")
+                bottom -= 1
+                top += 1
+            elif (bottom-top) - 360 == 1:
+                top += 1
+            elif (bottom-top) - 360 == -1:
+                bottom += 1
+            elif (bottom-top) - 360 < -1:
+                bottom += 1
+                top -= 1
+            else:
+                break
 
+    #else:
+    #    print("not_passed")
+        
     
     # Cropped image of above dimension
     # (It will not change original image)
+    #print(top,bottom,bottom-top)
     cropped_rgb = orig_rgb.crop((left, top, right, bottom))
     cropped_depth = orig_depth.crop((left, top, right, bottom))
     cropped_pcl = orig_pcl.crop((left, top, right, bottom))
