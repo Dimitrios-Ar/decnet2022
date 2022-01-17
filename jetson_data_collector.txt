@@ -1,0 +1,25 @@
+ifconfig
+56
+
+Terminal 1
+ssh xavieragx@192.168.56.253
+screen 
+roslaunch velodyne_pointcloud puck_l515.launch
+ctrl+a d
+
+Terminal 2
+ssh xavieragx@192.168.56.253
+screen
+rosrun sync_code sync_code.py
+ctrl+a d
+
+Terminal 3
+ssh xavieragx@192.168.56.253
+
+rostopic echo /synchronized_l515_depth_image
+rostopic echo /synchronized_l515_image
+rostopic echo /synchronized_velodyne
+
+screen
+./bagfile_recorder
+ctr+a d
