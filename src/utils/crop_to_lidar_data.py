@@ -35,9 +35,9 @@ def find_lower_pix(image):
                 pass    #now we just return the new image
     return prev_y
 
-folder_loc = '../../../dataset_nn_24a_original'
+folder_loc = '../../../Desktop/data_sanity/nn_dataset_24k_original'
 total_files = glob.glob(os.path.join(folder_loc,'pcl_cm/*'))
-#print(total_files)
+print(total_files)
 
 
 #os.mkdir('../../../../nn_dataset/dataset_nn24a/mini_dataset/rgb_cropped')
@@ -114,9 +114,9 @@ for image_file in sorted(total_files):
     '''
     new_width,new_height = cropped_rgb.size
     #print(new_width,new_height)
-    cropped_rgb = cropped_rgb.save(os.path.join(folder_loc,'mini_dataset/rgb_cropped/',file_name+'_rgb_cropped.png'))
-    cropped_depth = cropped_depth.save(os.path.join(folder_loc,'mini_dataset/depth_cm_cropped/',file_name+'_depth_cm_cropped.png'))
-    cropped_pcl = cropped_pcl.save(os.path.join(folder_loc,'mini_dataset/pcl_cm_cropped/',file_name+'_pcl_cm_cropped.png'))
+    cropped_rgb = cropped_rgb.save(os.path.join(folder_loc,'nn_dataset_24k_cropped/rgb_cropped/',file_name+'_rgb_cropped.png'))
+    cropped_depth = cropped_depth.save(os.path.join(folder_loc,'nn_dataset_24k_cropped/depth_cm_cropped/',file_name+'_depth_cm_cropped.png'))
+    cropped_pcl = cropped_pcl.save(os.path.join(folder_loc,'nn_dataset_24k_cropped/pcl_cm_cropped/',file_name+'_pcl_cm_cropped.png'))
 
     i+=1
     if i%10==0: 

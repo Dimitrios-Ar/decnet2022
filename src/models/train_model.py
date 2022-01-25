@@ -22,7 +22,7 @@ def testing(img,mean,std):
     transform_norm = transforms.Normalize((mean,),(std,))
     #print(img.dtype)
     i=0
-    normalized_batch = torch.zeros(8,1,368,640)
+    normalized_batch = torch.zeros(8,1,360,640)
     for element in img:
 
         
@@ -31,6 +31,14 @@ def testing(img,mean,std):
         normalized_batch[i] = img_normalized
         i+=1
     return normalized_batch
+
+
+random_seed = 2022 # or any of your favorite number 
+torch.manual_seed(random_seed)
+torch.cuda.manual_seed(random_seed)
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
+np.random.seed(random_seed)
 
 parser = argparse.ArgumentParser(description='Sparse-to-Dense')
 parser.add_argument('-n',
@@ -161,11 +169,11 @@ args.result = os.path.join('..', 'results')
 args.use_rgb = ('rgb' in args.input)
 args.use_d = 'd' in args.input
 args.use_g = 'g' in args.input
-args.val_h = 368#352
+args.val_h = 360#352
 args.val_w = 640#1216
 
 
-base_path = Path('../../data/dataset_nn/nn_24k_cropped_640_368')
+base_path = Path('../../../Desktop/data_sanity/testbatch')
 
 data = DecnetDataset(base_path/'rgb_cropped',
                      base_path/'depth_cm_cropped',
@@ -260,7 +268,7 @@ for epoch in range(1,epochs+1):#how many epochs to run
         new_K = new_K.to(dtype=torch.float32)
         #print(new_K.shape)
         #print(image.shape,depth.shape)
-        batch_data = {'rgb': image.to(device), 'd': depth.to(device), 'g': data[1].to(device), 'position': torch.zeros(1, 3, 368, 640).to(device), 'K': new_K.to(device)}  
+        batch_data = {'rgb': image.to(device), 'd': depth.to(device), 'g': data[1].to(device), 'position': torch.zeros(1, 3, 360, 640).to(device), 'K': new_K.to(device)}  
         st1_pred, st2_pred, pred = model(batch_data) 
         #pred = model(image.to(device),depth.to(device))
         output_loss = pred
@@ -295,7 +303,7 @@ for epoch in range(1,epochs+1):#how many epochs to run
         torch.save(model, 'model_test_best_nn.pth')
         print('saving model at ',average_loss.item,epoch_iter,epoch)
         print('saving model and weights at ',average_loss.item,epoch_iter,epoch)
-        save_batch = {'rgb': torch.ones(1,3,368,640).to(device), 'd': torch.ones(1,1,368,640).to(device), 'g': torch.ones(1,1,368,640).to(device), 'position': torch.zeros(1, 3, 368, 640).to(device), 'K': new_K.to(device)}
+        save_batch = {'rgb': torch.ones(1,3,360,640).to(device), 'd': torch.ones(1,1,360,640).to(device), 'g': torch.ones(1,1,360,640).to(device), 'position': torch.zeros(1, 3, 360, 640).to(device), 'K': new_K.to(device)}
         with torch.no_grad():
             trace_model = torch.jit.trace(model,save_batch)
         torch.jit.save(trace_model,'decnet_model_and_weights.pth')

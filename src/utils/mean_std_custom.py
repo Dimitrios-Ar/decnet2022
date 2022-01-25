@@ -5,17 +5,17 @@ from dataloader import DecnetDataset
 from tqdm import tqdm
 
 
-split_ratio = 0.2
-batch_size = 4
-base_path = Path('../../../../nn_dataset/')
+split_ratio = 0.8
+batch_size = 1
+base_path = Path('../../../Desktop/data_sanity/testbatch')
 
-data = DecnetDataset(base_path/'rgb',
-                     base_path/'depth_cm',
-                     base_path/'pcl_cm')
+data = DecnetDataset(base_path/'rgb_cropped',
+                     base_path/'depth_cm_cropped',
+                     base_path/'pcl_cm_cropped')
 train_ds, test_ds = torch.utils.data.random_split(data, ((len(data)-int(len(data)*split_ratio), int(len(data)*split_ratio))))
-
+#print(len(train_ds), len(test_ds))
 train_dl = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
-test_dl = DataLoader(test_ds, batch_size=1, shuffle=False)
+test_dl = DataLoader(test_ds, batch_size=4, shuffle=False)
 
 def get_mean_std(loader):
     # var[X] = E[X**2] - E[X]**2
@@ -44,5 +44,5 @@ def get_mean_std(loader):
     return mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt 
 
 
-mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt = get_mean_std(train_dl)
-print(mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt)
+mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt = get_mean_std(test_dl)
+#print(mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt)

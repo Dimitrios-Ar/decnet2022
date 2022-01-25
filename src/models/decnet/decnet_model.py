@@ -380,9 +380,10 @@ class DecNetRGBDsmall(nn.Module):
             #print('rgb_feature_2',rgb_feature_2.shape)
             #print('rgb_dec_feature_2',rgb_dec_feature_2.shape)
 
-            print('rgb_dec_feature_1',rgb_dec_feature_1.shape)#[8, 64, 58, 76])
-            print('rgb_dec_feature_0',rgb_dec_feature_0.shape)#[8, 32, 116, 152])
-            print('rgb_output', rgb_output.shape)#[8, 1, 116, 152])
+            print('rgb_dec_feature_2',rgbd_dec_feature_2.shape)#[8, 64, 58, 76])
+            print('rgb_dec_feature_1',rgbd_dec_feature_1.shape)#[8, 32, 116, 152])
+            print('rgb_dec_feature_0',rgbd_dec_feature_0.shape)#[8, 32, 116, 152])
+            print('rgb_output', rgbd_output.shape)#[8, 1, 116, 152])
             #print('c7',c7.shape)
             #print('c8', c8.shape)
 

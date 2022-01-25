@@ -65,7 +65,7 @@ class DecnetDataset(Dataset):
         files = {'rgb': rgb_file, 
                  'd': depth_cm_dir/rgb_file.name.replace('rgb', 'depth_cm'),
                  'gt': pcl_cm_dir/rgb_file.name.replace('rgb', 'pcl_cm')}
-
+        print(files)
         return files
 
     def __len__(self):
