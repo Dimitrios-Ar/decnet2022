@@ -15,7 +15,7 @@ class ENet(nn.Module):
         elif self.args.convolutional_layer_encoding == "z":
             self.geoplanes = 1
 
-        simplification_factor = 4
+        simplification_factor = 1
         print("SIMPLIFICATION FACTOR = ",simplification_factor)
         # rgb encoder
         self.rgb_conv_init = convbnrelu(in_channels=4, out_channels=int(32/simplification_factor), kernel_size=5, stride=1, padding=2)
@@ -122,7 +122,7 @@ class ENet(nn.Module):
         
         
         '''PITSI'''
-        width = 480
+        width = 360
         height = 640
         
         if self.args.convolutional_layer_encoding == "xyz":

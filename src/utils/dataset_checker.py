@@ -10,6 +10,7 @@ from imutils import paths
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import torch
+from torchvision import transforms
 
 #from mean_std_custom import get_mean_std as mean_std
 '''
@@ -21,6 +22,12 @@ def SanityDatasetCheckss(folder_loc):
     pclPath = list(paths.list_images(os.path.join(folder_loc,'pcl_cm_cropped')))
     print(len(rgbPath),len(depthPath),len(pclPath))
 '''
+transform = transforms.Compose([
+    transforms.ToPILImage(),
+    transforms.CenterCrop((352,608)),
+    transforms.PILToTensor()
+    ])
+
 
 def get_mean_std(loader):
     # var[X] = E[X**2] - E[X]**2
@@ -128,11 +135,15 @@ class SanityDatasetCheck(Dataset):
         depth = np.array(Image.open(depth_file))
         pcl = np.array(Image.open(pcl_file))
         image_id = rgb_file
+
         #print(raw_rgb)
         #depth = np.expand_dims(np.array(Image.open(self.files[idx]['d'])), 2)
 
         #X = torch.load('data/' + ID + '.pt')
         #y = self.labels[ID]
+        raw_rgb = transform(raw_rgb)
+        depth = transform(depth)
+        pcl = transform(pcl)
 
         return raw_rgb, depth, pcl, image_id
 

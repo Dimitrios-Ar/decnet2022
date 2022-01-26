@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "enet_sanity.py", line 284, in <module>
+    for i, data in enumerate(train_dl,start=epoch_iter):
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "../utils/dataset_checker.py", line 140, in __getitem__
+    raw_rgb = transform(raw_rgb)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 339, in forward
+    return F.center_crop(img, self.size)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 501, in center_crop
+    image_width, image_height = _get_image_size(img)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 67, in _get_image_size
+    return F_pil._get_image_size(img)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torchvision/transforms/functional_pil.py", line 26, in _get_image_size
+    raise TypeError("Unexpected type {}".format(type(img)))
+TypeError: Unexpected type <class 'numpy.ndarray'>

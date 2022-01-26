@@ -42,11 +42,11 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 np.random.seed(random_seed)
 
-batch_size = 2
-#train_folder_loc = Path('../../../Desktop/data_sanity/nn_dataset_24k_original/nn_dataset_24k_cropped')
-train_folder_loc = Path('../../../Desktop/data_sanity/testbatch')
+batch_size = 8
+train_folder_loc = Path('../../../Desktop/data_sanity/24k_cropped_reduced')
+#train_folder_loc = Path('../../../Desktop/data_sanity/testbatch')
 
-test_folder_loc = Path('../../../Desktop/data_sanity/nn_dataset_24a_cropped')
+test_folder_loc = Path('../../../Desktop/data_sanity/24a_cropped_reduced')
 
 
 
@@ -54,12 +54,12 @@ rgbPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'rgb_cro
 depthPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'depth_cm_cropped'))))
 pclPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'pcl_cm_cropped'))))
 
-train_mask = np.random.choice(len(rgbPath), 2, replace=False)
+train_mask = np.random.choice(len(rgbPath), 2000, replace=False)
 
 train_mask = train_mask.astype(int)
 #print(type(train_mask))
 mini_train_set = SanityDatasetCheck(rgbPath[train_mask],depthPath[train_mask],pclPath[train_mask])
-'''
+
 rgbPath = np.array(list(paths.list_images(os.path.join(test_folder_loc,'rgb_cropped'))))
 depthPath = np.array(list(paths.list_images(os.path.join(test_folder_loc,'depth_cm_cropped'))))
 pclPath = np.array(list(paths.list_images(os.path.join(test_folder_loc,'pcl_cm_cropped'))))
@@ -71,12 +71,13 @@ print(len(mini_train_set))
 train_dl = DataLoader(mini_train_set, batch_size=batch_size)
 test_dl = DataLoader(mini_test_set,batch_size=1)
 print(test_dl)
-
+'''
 rgbPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'rgb_cropped'))))
 depthPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'depth_cm_cropped'))))
 pclPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'pcl_cm_cropped'))))
 mini_train_set = SanityDatasetCheck(rgbPath,depthPath,pclPath)
 train_dl = DataLoader(mini_train_set, batch_size=batch_size)
+'''
 '''
 test_folder_loc = Path('../../../Desktop/data_sanity/nn_dataset_24a_cropped')
 rgbPath_test = np.array(list(paths.list_images(os.path.join(test_folder_loc,'rgb_cropped'))))
@@ -86,23 +87,25 @@ pclPath_test = np.array(list(paths.list_images(os.path.join(test_folder_loc,'pcl
 test_mask = np.random.choice(len(rgbPath_test), 500, replace=False)
 mini_test_set = SanityDatasetCheck(rgbPath_test[test_mask],depthPath_test[test_mask],pclPath_test[test_mask])
 #mini_test_set = SanityDatasetCheck(rgbPath,depthPath,pclPath)
-
-train_dl = DataLoader(mini_train_set, batch_size=batch_size)
-test_dl = DataLoader(mini_test_set,batch_size=1)
+'''
+#train_dl = DataLoader(mini_train_set, batch_size=batch_size)
+#test_dl = DataLoader(mini_test_set,batch_size=1)
 
 if precalculated_mean_std == False:
     print("Calculating training dataset mean,std")
     mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt = get_mean_std(train_dl)
     print(mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt)
 
-epochs = 1000
-lr = 3e-1
+epochs = 100
+lr = 3e-4
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print('Using {} device'.format(device))
 
 submodel = 'DecNetRGBDsmall'
 model = decnet_model.DecNetRGBDsmall().to(device)
+
+
 
 #model.train()
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
@@ -145,9 +148,9 @@ for epoch in range(1,epochs+1):#how many epochs to run
         #print("MIN_depth_bf",torch.min(depth.float()),"MEAN_image_bf", torch.mean(depth.float()),"MEDIAN_image_bf", torch.median(depth.float()),"MAX_image_bf",torch.max(depth.float()))
         #print("MIN_pcl_bf",torch.min(pcl.float()),"MEAN_image_bf", torch.mean(pcl.float()),"MEDIAN_image_bf", torch.median(pcl.float()),"MAX_image_bf",torch.max(pcl.float()))
 
-        ##rgb = testing((torch.from_numpy(np.array(rgb))),mean_rgb,std_rgb,batch_size,color_type=3)       
-        #depth = testing((torch.from_numpy(np.array(depth))),mean_d,std_d,batch_size,color_type=1)
-        #pcl = testing((torch.from_numpy(np.array(pcl))),mean_gt,std_gt,batch_size,color_type=1)
+        #rgb = testing((torch.from_numpy(np.array(rgb))),mean_rgb,std_rgb,batch_size,color_type=3)       
+        depth = testing((torch.from_numpy(np.array(depth))),mean_d,std_d,batch_size,color_type=1)
+        pcl = testing((torch.from_numpy(np.array(pcl))),mean_gt,std_gt,batch_size,color_type=1)
         #print("MIN_depth_normalize_bf",torch.min(depth.float()),"MEAN_image_bf", torch.mean(depth.float()),"MEDIAN_image_bf", torch.median(depth.float()),"MAX_image_bf",torch.max(depth.float()))
         #print("MIN_pcl_normalize_bf",torch.min(pcl.float()),"MEAN_image_bf", torch.mean(pcl.float()),"MEDIAN_image_bf", torch.median(pcl.float()),"MAX_image_bf",torch.max(pcl.float()))
         
@@ -197,6 +200,9 @@ for epoch in range(1,epochs+1):#how many epochs to run
         with torch.no_grad():
             trace_model = torch.jit.trace(model,save_batch)
         torch.jit.save(trace_model,'decnet_model_and_weights.pth')
+    training_duration = training_start_time - time.time()
+    print('Epoch training duration: ', training_duration)
+print('Total training duration: ', training_duration)
 
 if evaluation == True:
     model = torch.jit.load('decnet_model_and_weights.pth')
@@ -217,7 +223,7 @@ if evaluation == True:
             pcl = torch.transpose(pcl, 3,1)
             pcl = torch.transpose(pcl, 3,2)
 
-            #rgb = testing((torch.from_numpy(np.array(rgb))),mean_rgb,std_rgb,batch_size,color_type=3)       
+            rgb = testing((torch.from_numpy(np.array(rgb))),mean_rgb,std_rgb,batch_size,color_type=3)       
             depth = testing((torch.from_numpy(np.array(depth))),mean_d,std_d,1,color_type=1)
             pcl = testing((torch.from_numpy(np.array(pcl))),mean_gt,std_gt,1,color_type=1)
 

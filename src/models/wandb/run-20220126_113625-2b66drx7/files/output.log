@@ -1,0 +1,49 @@
+
+ Average loss:  6.251154899597168  --- Iterations:  8  --- Epochs:  1
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torchvision/transforms/functional.py:165: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:180.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+ Average loss:  5.102630615234375  --- Iterations:  16  --- Epochs:  1
+ Average loss:  5.615741729736328  --- Iterations:  24  --- Epochs:  1
+ Average loss:  5.384856700897217  --- Iterations:  32  --- Epochs:  1
+ Average loss:  5.2912821769714355  --- Iterations:  40  --- Epochs:  1
+ Average loss:  5.458247661590576  --- Iterations:  48  --- Epochs:  1
+ Average loss:  5.09639310836792  --- Iterations:  56  --- Epochs:  1
+ Average loss:  5.241567611694336  --- Iterations:  64  --- Epochs:  1
+ Average loss:  5.004458904266357  --- Iterations:  72  --- Epochs:  1
+ Average loss:  4.991645336151123  --- Iterations:  80  --- Epochs:  1
+ Average loss:  5.398271083831787  --- Iterations:  88  --- Epochs:  1
+ Average loss:  5.605599880218506  --- Iterations:  96  --- Epochs:  1
+ Average loss:  5.380789756774902  --- Iterations:  104  --- Epochs:  1
+ Average loss:  5.2703399658203125  --- Iterations:  112  --- Epochs:  1
+ Average loss:  5.095475196838379  --- Iterations:  120  --- Epochs:  1
+ Average loss:  5.249646186828613  --- Iterations:  128  --- Epochs:  1
+ Average loss:  5.163580894470215  --- Iterations:  136  --- Epochs:  1
+ Average loss:  5.21630334854126  --- Iterations:  144  --- Epochs:  1
+ Average loss:  5.257638454437256  --- Iterations:  152  --- Epochs:  1
+ Average loss:  5.29630184173584  --- Iterations:  160  --- Epochs:  1
+ Average loss:  5.385095596313477  --- Iterations:  168  --- Epochs:  1
+ Average loss:  5.2326154708862305  --- Iterations:  176  --- Epochs:  1
+ Average loss:  5.335129737854004  --- Iterations:  184  --- Epochs:  1
+ Average loss:  5.283054828643799  --- Iterations:  192  --- Epochs:  1
+ Average loss:  5.230116367340088  --- Iterations:  200  --- Epochs:  1
+ Average loss:  5.213832855224609  --- Iterations:  208  --- Epochs:  1
+ Average loss:  5.235326290130615  --- Iterations:  216  --- Epochs:  1
+ Average loss:  5.285254001617432  --- Iterations:  224  --- Epochs:  1
+Traceback (most recent call last):
+  File "enet_sanity.py", line 286, in <module>
+    for i, data in enumerate(train_dl,start=epoch_iter):
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "../utils/dataset_checker.py", line 133, in __getitem__
+    raw_rgb = np.array(Image.open(rgb_file))
+KeyboardInterrupt
+ Average loss:  5.3134331703186035  --- Iterations:  232  --- Epochs:  1
+ Average loss:  5.321144104003906  --- Iterations:  240  --- Epochs:  1

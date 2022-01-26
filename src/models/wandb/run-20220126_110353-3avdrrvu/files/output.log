@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "enet_sanity.py", line 284, in <module>
+    for i, data in enumerate(train_dl,start=epoch_iter):
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/_utils/collate.py", line 84, in default_collate
+    return [default_collate(samples) for samples in transposed]
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/_utils/collate.py", line 84, in <listcomp>
+    return [default_collate(samples) for samples in transposed]
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/utils/data/_utils/collate.py", line 86, in default_collate
+    raise TypeError(default_collate_err_msg_format.format(elem_type))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <class 'PIL.Image.Image'>

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "enet_sanity.py", line 306, in <module>
+    depth = testing((torch.from_numpy(np.array(depth))),mean_d,std_d,batch_size,color_type=1)
+  File "enet_sanity.py", line 166, in testing
+    normalized_batch[i] = img_normalized
+RuntimeError: The expanded size of the tensor (640) must match the existing size (608) at non-singleton dimension 2.  Target sizes: [1, 360, 640].  Tensor sizes: [352, 608]

@@ -1,0 +1,8 @@
+
+torch.Size([8, 360, 640, 3]) torch.Size([8, 360, 640]) torch.Size([8, 360, 640])
+Traceback (most recent call last):
+  File "enet_sanity.py", line 309, in <module>
+    depth = testing((torch.from_numpy(np.array(depth))),mean_d,std_d,batch_size,color_type=1)
+  File "enet_sanity.py", line 166, in testing
+    normalized_batch[i] = img_normalized
+RuntimeError: The expanded size of the tensor (352) must match the existing size (640) at non-singleton dimension 1.  Target sizes: [1, 352, 608].  Tensor sizes: [360, 640, 1]
