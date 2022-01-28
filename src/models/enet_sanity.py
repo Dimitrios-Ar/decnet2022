@@ -248,10 +248,12 @@ print('Using {} device'.format(device))
 
 submodel = 'ENETsanity'
 model = ENet(args).to(device)
+model = torch.jit.load('best_ENETsanity_model_and_weights.pth')
+
 
 model_save_name = submodel+'_model_and_weights.pth'
 print(model_save_name)
-wandblogger = True
+wandblogger = False
 if wandblogger == True:
         wandb.init(project="decnet-project", entity="wandbdimar")
         wandb.config = {
@@ -373,11 +375,13 @@ for epoch in range(1,epochs+1):#how many epochs to run
         
         torch.jit.save(trace_model, model_save_name)
     training_duration = training_start_time - time.time()
-    print('Epoch training duration: ', training_duration)
+    #print('Epoch training duration: ', training_duration)
 print('Total training duration: ', training_duration)
 
 if evaluation == True:
-    model = torch.jit.load('decnet_model_and_weights.pth')
+    model = torch.jit.load('best_ENETsanity_model_and_weights.pth')
+    #model = torch.jit.load('decnet_model_and_weights.pth')
+
     model.eval()
     eval_loss = 0
     with torch.no_grad():
@@ -395,21 +399,30 @@ if evaluation == True:
             pcl = torch.transpose(pcl, 3,1)
             pcl = torch.transpose(pcl, 3,2)
 
-            rgb = testing((torch.from_numpy(np.array(rgb))),mean_rgb,std_rgb,batch_size,color_type=3)       
+            #rgb = testing((torch.from_numpy(np.array(rgb))),mean_rgb,std_rgb,batch_size,color_type=3)       
             depth = testing((torch.from_numpy(np.array(depth))),mean_d,std_d,1,color_type=1)
             pcl = testing((torch.from_numpy(np.array(pcl))),mean_gt,std_gt,1,color_type=1)
 
+            rgb = torch.transpose(rgb, 2,1)
+            rgb = torch.transpose(rgb, 3,2)
             
             rgb = rgb.to(dtype=torch.float32)
 
             epoch_iter += 1
             #print("MIN_image_bf",torch.min(image.float()),"MEAN_image_bf", torch.mean(image.float()),"MEDIAN_image_bf", torch.median(image.float()),"MAX_image_bf",torch.max(image.float()))
             #print("MIN_depth_bf",torch.min(depth.float()).item(),"MEAN_depth_bf", torch.mean(depth.float()).item(),"MEDIAN_depth_bf", torch.median(depth.float()).item(),"MAX_depth_bf",torch.max(depth.float()).item())
-
-            #print(rgb.shape)
-            #print(depth.shape)
-            pred = model(rgb.to(device),depth.to(device))
-            output_loss = pred
+            tran = transforms.ToTensor()  # Convert the numpy array or PIL.Image read image to (C, H, W) Tensor format and /255 normalize to [0, 1.0]
+            #output = model(image.to(device),depth.to(device))
+            new_K = np.array([[599.9778442382812, 0.0000, 318.6040344238281],
+                    [0.0000, 600.5001220703125, 247.7696533203125],
+                    [0.0000, 0.0000, 1.0000]])
+            new_K = tran(new_K)
+            new_K = new_K.to(dtype=torch.float32)
+            batch_data = {'rgb': rgb.to(device), 'd': depth.to(device), 'g': pcl.to(device), 'position': torch.zeros(1, 3, training_height, training_width).to(device), 'K': new_K.to(device)}  
+            #pred = model(rgb.to(device),depth.to(device))
+            #pred = model(batch_data)
+            st1_pred, st2_pred, pred = model(batch_data) 
+            #output_loss = pred
             depth_criterion = criteria.MaskedMSELoss()
             depth_loss = depth_criterion(pred, pcl.to(device))
 

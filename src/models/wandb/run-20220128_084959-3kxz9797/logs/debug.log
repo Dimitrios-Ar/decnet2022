@@ -1,0 +1,33 @@
+2022-01-28 08:49:59,483 INFO    MainThread:3557 [wandb_setup.py:_flush():71] setting env: {}
+2022-01-28 08:49:59,484 INFO    MainThread:3557 [wandb_setup.py:_flush():71] setting login settings: {}
+2022-01-28 08:49:59,484 INFO    MainThread:3557 [wandb_init.py:_log_setup():371] Logging user logs to /home/robotlabx/Desktop/DTAI/decnet2022/src/models/wandb/run-20220128_084959-3kxz9797/logs/debug.log
+2022-01-28 08:49:59,484 INFO    MainThread:3557 [wandb_init.py:_log_setup():372] Logging internal logs to /home/robotlabx/Desktop/DTAI/decnet2022/src/models/wandb/run-20220128_084959-3kxz9797/logs/debug-internal.log
+2022-01-28 08:49:59,484 INFO    MainThread:3557 [wandb_init.py:init():404] calling init triggers
+2022-01-28 08:49:59,484 INFO    MainThread:3557 [wandb_init.py:init():411] wandb.init called with sweep_config: {}
+config: {}
+2022-01-28 08:49:59,484 INFO    MainThread:3557 [wandb_init.py:init():460] starting backend
+2022-01-28 08:49:59,485 INFO    MainThread:3557 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-01-28 08:49:59,510 INFO    MainThread:3557 [backend.py:ensure_launched():216] starting backend process...
+2022-01-28 08:49:59,526 INFO    MainThread:3557 [backend.py:ensure_launched():222] started backend process with pid: 3628
+2022-01-28 08:49:59,527 INFO    MainThread:3557 [wandb_init.py:init():469] backend started and connected
+2022-01-28 08:49:59,529 INFO    MainThread:3557 [wandb_init.py:init():533] updated telemetry
+2022-01-28 08:49:59,568 INFO    MainThread:3557 [wandb_init.py:init():563] communicating current version
+2022-01-28 08:50:01,314 WARNING MainThread:3557 [wandb_init.py:init():952] interrupted
+Traceback (most recent call last):
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 931, in init
+    run = wi.init()
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 565, in init
+    current_version=wandb.__version__
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 92, in communicate_check_version
+    ret = self._communicate_check_version(check_version)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/interface/interface_shared.py", line 413, in _communicate_check_version
+    result = self._communicate(rec)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/interface/interface_shared.py", line 213, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
