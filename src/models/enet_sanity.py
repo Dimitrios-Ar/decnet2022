@@ -21,6 +21,12 @@ import wandb
 
 
 
+def torch_min_max(data):
+    minmax = (torch.min(data.float()).item(),torch.max(data.float()).item(),torch.mean(data.float()).item(),torch.median(data.float()).item())
+    #print(minmax)
+    return minmax
+
+
 parser = argparse.ArgumentParser(description='Sparse-to-Dense')
 parser.add_argument('-n',
                     '--network-model',
@@ -181,7 +187,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 np.random.seed(random_seed)
 
-batch_size = 8
+batch_size = 2
 train_folder_loc = Path('../../../Desktop/data_sanity/24k_cropped_reduced')
 #train_folder_loc = Path('../../../Desktop/data_sanity/testbatch')
 
@@ -199,7 +205,7 @@ train_mask = train_mask.astype(int)
 #print(type(train_mask))
 mini_train_set = SanityDatasetCheck(rgbPath[train_mask],depthPath[train_mask],pclPath[train_mask])
 
-#transformed_mini_train_set = crop_transform(mini_train_set)
+#ransformed_mini_train_set = crop_transform(mini_train_set)
 
 rgbPath = np.array(list(paths.list_images(os.path.join(test_folder_loc,'rgb_cropped'))))
 depthPath = np.array(list(paths.list_images(os.path.join(test_folder_loc,'depth_cm_cropped'))))
@@ -248,7 +254,7 @@ print('Using {} device'.format(device))
 
 submodel = 'ENETsanity'
 model = ENet(args).to(device)
-model = torch.jit.load('best_ENETsanity_model_and_weights.pth')
+#model = torch.jit.load('best_ENETsanity_model_and_weights.pth')
 
 
 model_save_name = submodel+'_model_and_weights.pth'
@@ -347,12 +353,19 @@ for epoch in range(1,epochs+1):#how many epochs to run
         batch_data = {'rgb': rgb.to(device), 'd': depth.to(device), 'g': pcl.to(device), 'position': torch.zeros(1, 3, training_height, training_width).to(device), 'K': new_K.to(device)}  
         #pred = model(rgb.to(device),depth.to(device))
         #pred = model(batch_data)
+        min_max_rgb = torch_min_max(rgb)
+        min_max_depth = torch_min_max(depth)
+        min_max_pcl = torch_min_max(pcl)
+        print(rgb.shape,depth.shape,pcl.shape)
+
+        print('RGB: ' + str(min_max_rgb) + '\nDepth: ' + str(min_max_depth) + '\nPcl: ' + str(min_max_pcl))
+
         st1_pred, st2_pred, pred = model(batch_data) 
         #output_loss = pred
         depth_criterion = criteria.MaskedMSELoss()
         depth_loss = depth_criterion(pred, pcl.to(device))
 
-
+        print('pred_data', torch_min_max(pred))
         loss = depth_loss
         loss.backward()
         optimizer.step()
