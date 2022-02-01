@@ -1,0 +1,43 @@
+
+ Average loss:  0.0019017860759049654  --- Iterations:  8  --- Epochs:  1
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py:1051: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return forward_call(*input, **kwargs)
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py:730: UserWarning: The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is.
+  "The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is."
+ Average loss:  0.001999275991693139  --- Iterations:  16  --- Epochs:  1
+ Average loss:  0.001985003240406513  --- Iterations:  24  --- Epochs:  1
+ Average loss:  0.0020078537054359913  --- Iterations:  32  --- Epochs:  1
+ Average loss:  0.0019642936531454325  --- Iterations:  40  --- Epochs:  1
+ Average loss:  0.001962210750207305  --- Iterations:  48  --- Epochs:  1
+ Average loss:  0.0018398588290438056  --- Iterations:  56  --- Epochs:  1
+ Average loss:  0.0018606281373649836  --- Iterations:  64  --- Epochs:  1
+ Average loss:  0.0017929276218637824  --- Iterations:  72  --- Epochs:  1
+ Average loss:  0.0017890047747641802  --- Iterations:  80  --- Epochs:  1
+ Average loss:  0.0019315665122121572  --- Iterations:  88  --- Epochs:  1
+ Average loss:  0.002035596640780568  --- Iterations:  96  --- Epochs:  1
+ Average loss:  0.0019888237584382296  --- Iterations:  104  --- Epochs:  1
+ Average loss:  0.001991410506889224  --- Iterations:  112  --- Epochs:  1
+ Average loss:  0.0019486157689243555  --- Iterations:  120  --- Epochs:  1
+ Average loss:  0.002015527803450823  --- Iterations:  128  --- Epochs:  1
+ Average loss:  0.0019872146658599377  --- Iterations:  136  --- Epochs:  1
+ Average loss:  0.0019997472409158945  --- Iterations:  144  --- Epochs:  1
+ Average loss:  0.002013722900301218  --- Iterations:  152  --- Epochs:  1
+ Average loss:  0.0020373144652694464  --- Iterations:  160  --- Epochs:  1
+ Average loss:  0.0020833718590438366  --- Iterations:  168  --- Epochs:  1
+ Average loss:  0.0020432707387953997  --- Iterations:  176  --- Epochs:  1
+ Average loss:  0.0020972052589058876  --- Iterations:  184  --- Epochs:  1
+ Average loss:  0.0020909341983497143  --- Iterations:  192  --- Epochs:  1
+ Average loss:  0.0020606801845133305  --- Iterations:  200  --- Epochs:  1
+ Average loss:  0.002057171193882823  --- Iterations:  208  --- Epochs:  1
+ Average loss:  0.0020608825143426657  --- Iterations:  216  --- Epochs:  1
+ Average loss:  0.002081416081637144  --- Iterations:  224  --- Epochs:  1
+ Average loss:  0.0020886820275336504  --- Iterations:  232  --- Epochs:  1
+ Average loss:  0.0020883965771645308  --- Iterations:  240  --- Epochs:  1
+ Average loss:  0.002090820576995611  --- Iterations:  248  --- Epochs:  1
+ Average loss:  0.002094256691634655  --- Iterations:  256  --- Epochs:  1
+ Average loss:  0.002089214511215687  --- Iterations:  264  --- Epochs:  1
+ Average loss:  0.0020898834336549044  --- Iterations:  272  --- Epochs:  1
+ Average loss:  0.0020843620877712965  --- Iterations:  280  --- Epochs:  1
+ Average loss:  0.002083986299112439  --- Iterations:  288  --- Epochs:  1
+ Average loss:  0.002096222247928381  --- Iterations:  296  --- Epochs:  1
+ Average loss:  0.002100982004776597  --- Iterations:  304  --- Epochs:  1

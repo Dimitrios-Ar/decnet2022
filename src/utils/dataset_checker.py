@@ -22,12 +22,12 @@ def SanityDatasetCheckss(folder_loc):
     pclPath = list(paths.list_images(os.path.join(folder_loc,'pcl_cm_cropped')))
     print(len(rgbPath),len(depthPath),len(pclPath))
 '''
+
 transform = transforms.Compose([
     transforms.ToPILImage(),
     transforms.CenterCrop((352,608)),
-    transforms.PILToTensor()
+    transforms.ToTensor()
     ])
-
 
 def get_mean_std(loader):
     # var[X] = E[X**2] - E[X]**2

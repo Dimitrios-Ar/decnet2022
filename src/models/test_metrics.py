@@ -243,11 +243,11 @@ for m in meters:
 
 raw_rgb = transform(raw_rgb)
 depth = transform(depth)
-print('1',torch_min_max(depth))
+#print('1',torch_min_max(depth))
 depth = custom_norm(depth,1,depth_min,depth_max)
-print('2',torch_min_max(depth))
-depth = custom_denorm(depth,1,depth_min,depth_max)
-print('3',torch_min_max(depth))
+#print('2',torch_min_max(depth))
+#depth = custom_denorm(depth,1,depth_min,depth_max)
+#print('3',torch_min_max(depth))
 
 #depth = (depth - depth_min) / (depth_max - depth_min)
 pcl = transform(pcl)

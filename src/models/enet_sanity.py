@@ -20,6 +20,8 @@ from imutils import paths
 import wandb
 
 
+from custom_metrics import AverageMeter,Result
+
 
 def torch_min_max(data):
     minmax = (torch.min(data.float()).item(),torch.max(data.float()).item(),torch.mean(data.float()).item(),torch.median(data.float()).item())
@@ -161,6 +163,7 @@ training_width = 608
 training_height = 352
 args.val_h = training_height#352
 args.val_w = training_width#1216
+train_continue = True
 
 def testing(img,mean,std,batch_size,color_type):
     img = img.type(torch.FloatTensor)
@@ -175,10 +178,51 @@ def testing(img,mean,std,batch_size,color_type):
         i+=1
     return normalized_batch
 
+def torch_min_max(data):
+    minmax = (torch.min(data.float()).item(),torch.max(data.float()).item(),torch.mean(data.float()).item(),torch.median(data.float()).item())
+    #print(minmax)
+    return minmax
+
+def custom_norm(data,batch_size, d_min, d_max):
+    data = data.type(torch.FloatTensor)
+    #transform_norm = transforms.Normalize((mean,),(std,))
+    i=0
+    normalized_batch = torch.zeros(batch_size,1,352,608)
+    
+    for element in data:
+        img_normalized = (element - d_min) / (d_max - d_min)
+        normalized_batch[i] = img_normalized
+        i+=1
+    return normalized_batch
+
+def custom_denorm(data,batch_size, d_min, d_max):
+    data = data.type(torch.FloatTensor)
+    #transform_norm = transforms.Normalize((mean,),(std,))
+    i=0
+    normalized_batch = torch.zeros(batch_size,1,352,608)
+    
+    for element in data:
+        img_normalized = element*(d_max-d_min) + d_min
+        normalized_batch[i] = img_normalized
+        i+=1
+    return normalized_batch
 
 evaluation = False
 precalculated_mean_std = True
 random_seed = 2910
+pcl_min = 0 
+pcl_max = 10000 #in cm
+depth_min = 0
+depth_max = 1000 #in cm
+best_prev_rmse = np.inf
+lowest_loss = np.inf
+block_average_meter = AverageMeter()
+#block_average_meter.reset(False)
+average_meter = AverageMeter()
+meters = [block_average_meter, average_meter]
+result = Result()
+for m in meters:
+    pass
 
 
 torch.manual_seed(random_seed)
@@ -187,7 +231,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 np.random.seed(random_seed)
 
-batch_size = 2
+batch_size = 8
 train_folder_loc = Path('../../../Desktop/data_sanity/24k_cropped_reduced')
 #train_folder_loc = Path('../../../Desktop/data_sanity/testbatch')
 
@@ -216,7 +260,7 @@ mini_test_set = SanityDatasetCheck(rgbPath[test_mask],depthPath[test_mask],pclPa
 
 #transformed_mini_test_set = crop_transform(mini_test_set)
 
-print(len(mini_train_set))
+print(len(mini_train_set),len(mini_test_set))
 train_dl = DataLoader(mini_train_set, batch_size=batch_size)
 test_dl = DataLoader(mini_test_set,batch_size=1)
 print(test_dl)
@@ -254,12 +298,16 @@ print('Using {} device'.format(device))
 
 submodel = 'ENETsanity'
 model = ENet(args).to(device)
-#model = torch.jit.load('best_ENETsanity_model_and_weights.pth')
+if train_continue == True:
+
+    model = torch.jit.load('ENETsanity_model_and_weights.pth')
 
 
-model_save_name = submodel+'_model_and_weights.pth'
-print(model_save_name)
-wandblogger = False
+model_save_name_eval = submodel+'_model_and_weights_EVAL.pth'
+model_save_name_train = submodel+'_model_and_weights_TRAIN.pth'
+
+print(model_save_name_eval)
+wandblogger = True
 if wandblogger == True:
         wandb.init(project="decnet-project", entity="wandbdimar")
         wandb.config = {
@@ -271,6 +319,12 @@ if wandblogger == True:
 
 #model.train()
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+
+transform = transforms.Compose([
+    transforms.ToPILImage(),
+    transforms.CenterCrop((352,608)),
+    transforms.ToTensor()
+    ])
 
 
 best_loss_and_epoch = float("inf")
@@ -291,81 +345,37 @@ for epoch in range(1,epochs+1):#how many epochs to run
     epoch_iter = 0
     sum_loss = 0
     average_loss = float("inf")
+    
     for i, data in enumerate(train_dl,start=epoch_iter):
         if evaluation == True:
             break
         optimizer.zero_grad()
-
-        #print(data[3])
         rgb, depth, pcl = data[0], data[1], data[2]
+        depth = custom_norm(depth,batch_size,depth_min,depth_max)
 
-        #print(rgb.shape,depth.shape,pcl.shape)
+        pcl = custom_norm(pcl,batch_size,pcl_min,pcl_max)
 
-        rgb = torch.transpose(rgb, 3,1)
-        rgb = torch.transpose(rgb, 3,2)
-        #print(rgb_float.shape)
-        depth = depth[:,:,:,None]
-        depth = torch.transpose(depth, 3,1)
-        depth = torch.transpose(depth, 3,2)
-
-        pcl = pcl[:,:,:,None]
-        pcl = torch.transpose(pcl, 3,1)
-        pcl = torch.transpose(pcl, 3,2)
-
-        #print("MIN_depth_bf",torch.min(depth.float()),"MEAN_image_bf", torch.mean(depth.float()),"MEDIAN_image_bf", torch.median(depth.float()),"MAX_image_bf",torch.max(depth.float()))
-        #print("MIN_pcl_bf",torch.min(pcl.float()),"MEAN_image_bf", torch.mean(pcl.float()),"MEDIAN_image_bf", torch.median(pcl.float()),"MAX_image_bf",torch.max(pcl.float()))
-
-        #rgb = testing((torch.from_numpy(np.array(rgb))),mean_rgb,std_rgb,batch_size,color_type=3)       
-        depth = testing((torch.from_numpy(np.array(depth))),mean_d,std_d,batch_size,color_type=1)
-        pcl = testing((torch.from_numpy(np.array(pcl))),mean_gt,std_gt,batch_size,color_type=1)
-        #print("MIN_depth_normalize_bf",torch.min(depth.float()),"MEAN_image_bf", torch.mean(depth.float()),"MEDIAN_image_bf", torch.median(depth.float()),"MAX_image_bf",torch.max(depth.float()))
-        #print("MIN_pcl_normalize_bf",torch.min(pcl.float()),"MEAN_image_bf", torch.mean(pcl.float()),"MEDIAN_image_bf", torch.median(pcl.float()),"MAX_image_bf",torch.max(pcl.float()))
-        
-        depth = (torch.from_numpy(np.array(depth)).type(torch.FloatTensor))
-        pcl = (torch.from_numpy(np.array(pcl)).type(torch.FloatTensor))
-        
-        rgb = torch.transpose(rgb, 2,1)
-        rgb = torch.transpose(rgb, 3,2)
-        #depth = torch.transpose(depth, 1,3)
-        #pcl = torch.transpose(pcl,1,3)
-
-        #print(rgb.shape)
-        #print(depth.shape)
-        #print(pcl.shape)
-                
+        min_max_rgb = torch_min_max(rgb)
+        min_max_depth = torch_min_max(depth)
+        min_max_pcl = torch_min_max(pcl)
 
 
         rgb = rgb.to(dtype=torch.float32)
 
         epoch_iter += batch_size
-        #print("MIN_image_bf",torch.min(rgb.float()),"MEAN_image_bf", torch.mean(rgb.float()),"MEDIAN_image_bf", torch.median(rgb.float()),"MAX_image_bf",torch.max(rgb.float()))
-        #print("MIN_depth_bf",torch.min(depth.float()).item(),"MEAN_depth_bf", torch.mean(depth.float()).item(),"MEDIAN_depth_bf", torch.median(depth.float()).item(),"MAX_depth_bf",torch.max(depth.float()).item())
         tran = transforms.ToTensor()  # Convert the numpy array or PIL.Image read image to (C, H, W) Tensor format and /255 normalize to [0, 1.0]
-        #output = model(image.to(device),depth.to(device))
         new_K = np.array([[599.9778442382812, 0.0000, 318.6040344238281],
                 [0.0000, 600.5001220703125, 247.7696533203125],
                 [0.0000, 0.0000, 1.0000]])
         new_K = tran(new_K)
         new_K = new_K.to(dtype=torch.float32)
 
-        #print(rgb.shape)
-        #print(depth.shape)
         batch_data = {'rgb': rgb.to(device), 'd': depth.to(device), 'g': pcl.to(device), 'position': torch.zeros(1, 3, training_height, training_width).to(device), 'K': new_K.to(device)}  
-        #pred = model(rgb.to(device),depth.to(device))
-        #pred = model(batch_data)
-        min_max_rgb = torch_min_max(rgb)
-        min_max_depth = torch_min_max(depth)
-        min_max_pcl = torch_min_max(pcl)
-        print(rgb.shape,depth.shape,pcl.shape)
-
-        print('RGB: ' + str(min_max_rgb) + '\nDepth: ' + str(min_max_depth) + '\nPcl: ' + str(min_max_pcl))
-
         st1_pred, st2_pred, pred = model(batch_data) 
-        #output_loss = pred
         depth_criterion = criteria.MaskedMSELoss()
         depth_loss = depth_criterion(pred, pcl.to(device))
 
-        print('pred_data', torch_min_max(pred))
+        #print('pred_data', torch_min_max(pred))
         loss = depth_loss
         loss.backward()
         optimizer.step()
@@ -373,7 +383,76 @@ for epoch in range(1,epochs+1):#how many epochs to run
         sum_loss += loss
         average_loss = sum_loss / (epoch_iter / batch_size)
         print('\n', 'Average loss: ', average_loss.item(), ' --- Iterations: ' ,epoch_iter, ' --- Epochs: ', epoch, '\n')
+        if average_loss < lowest_loss: 
+            save_batch = {'rgb': torch.ones(1,3,training_height,training_width).to(device), 'd': torch.ones(1,1,training_height,training_width).to(device), 'g': torch.ones(1,1,training_height,training_width).to(device), 'position': torch.zeros(1, 3, training_height, training_width).to(device), 'K': new_K.to(device)}
+            trace_model = torch.jit.trace(model,save_batch)        
+            torch.jit.save(trace_model, model_save_name_train)
+            lowest_loss = average_loss
     
+    with torch.no_grad():
+        print('\nStarting evaluation')
+        dstart = time.time()
+        #avg = None
+        m.reset()
+        for i_eval, data_eval in enumerate(test_dl):
+            start = time.time()
+            rgb, depth, pcl = data_eval[0], data_eval[1], data_eval[2]
+            #print(rgb.shape,depth.shape,pcl.shape)
+            depth = custom_norm(depth,1,depth_min,depth_max)
+
+            pcl = custom_norm(pcl,1,pcl_min,pcl_max)
+
+            min_max_rgb = torch_min_max(rgb)
+            min_max_depth = torch_min_max(depth)
+            min_max_pcl = torch_min_max(pcl)
+
+
+            rgb = rgb.to(dtype=torch.float32)
+
+            epoch_iter += batch_size
+            tran = transforms.ToTensor()  # Convert the numpy array or PIL.Image read image to (C, H, W) Tensor format and /255 normalize to [0, 1.0]
+            new_K = np.array([[599.9778442382812, 0.0000, 318.6040344238281],
+                    [0.0000, 600.5001220703125, 247.7696533203125],
+                    [0.0000, 0.0000, 1.0000]])
+            new_K = tran(new_K)
+            new_K = new_K.to(dtype=torch.float32)
+
+            batch_data = {'rgb': rgb.to(device), 'd': depth.to(device), 'g': pcl.to(device), 'position': torch.zeros(1, 3, training_height, training_width).to(device), 'K': new_K.to(device)}  
+            st1_pred, st2_pred, pred = model(batch_data) 
+            depth_criterion = criteria.MaskedMSELoss()
+            depth_loss = depth_criterion(pred, pcl.to(device))
+
+            loss = depth_loss
+            pred = custom_denorm(pred,1,depth_min,depth_max)
+            pcl = custom_denorm(pcl,1,depth_min,depth_max)
+
+            
+            min_max_normalized_pcl = torch_min_max(pcl)
+            min_max_normalized_pred = torch_min_max(pred)
+
+
+            result.evaluate(pred.data, pcl.data, photometric=0)
+
+            gpu_time = time.time() - start
+            data_time = time.time() - dstart
+            m.update(result, gpu_time, data_time, n=1)
+            avg = average_meter.average()
+
+            progress = 100*(i_eval/len(mini_test_set))
+        print('Average eval rmse: ' + str(avg.rmse) + ' in ' + str(data_time) + ' seconds')
+        if avg.rmse < best_prev_rmse:
+            best_prev_rmse = avg.rmse
+            print('best_prev_rmse', best_prev_rmse)
+            print(type(best_prev_rmse))
+            save_batch = {'rgb': torch.ones(1,3,training_height,training_width).to(device), 'd': torch.ones(1,1,training_height,training_width).to(device), 'g': torch.ones(1,1,training_height,training_width).to(device), 'position': torch.zeros(1, 3, training_height, training_width).to(device), 'K': new_K.to(device)}
+            trace_model = torch.jit.trace(model,save_batch)        
+            torch.jit.save(trace_model, model_save_name_eval)
+            
+        if wandblogger == True:
+            wandb.log({"average batch loss": average_loss,
+            "best previous evaluaion rmse": avg.rmse})
+
+'''
     if average_loss < best_loss_and_epoch:
 
         best_loss_and_epoch = average_loss
@@ -446,5 +525,5 @@ if evaluation == True:
             average_loss = sum_loss / (epoch_iter / batch_size)
             progress = 100*epoch_iter/len(mini_test_set)
             print('\n', 'Average loss: ', average_loss.item(), ' --- Progress: ' , progress , '%\n')
-
+'''
         
