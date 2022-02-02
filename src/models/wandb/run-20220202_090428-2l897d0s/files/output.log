@@ -1,0 +1,3 @@
+
+Starting evaluation
+/home/dim/miniconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py:1051: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /opt/conda/conda-bld/pytorch_1623448224956/work/c10/core/TensorImpl.h:1156.)

@@ -15,9 +15,12 @@ import criteria
 
 from dataset_checker import get_mean_std
 from dataset_checker import SanityDatasetCheck
+from dataset_checker  import visualize_batch
 from imutils import paths
 
 import wandb
+import vis_utils
+
 
 
 from custom_metrics import AverageMeter,Result
@@ -159,11 +162,6 @@ args.use_rgb = ('rgb' in args.input)
 args.use_d = 'd' in args.input
 args.use_g = 'g' in args.input
 
-training_width = 608
-training_height = 352
-args.val_h = training_height#352
-args.val_w = training_width#1216
-train_continue = True
 
 def testing(img,mean,std,batch_size,color_type):
     img = img.type(torch.FloatTensor)
@@ -207,7 +205,13 @@ def custom_denorm(data,batch_size, d_min, d_max):
         i+=1
     return normalized_batch
 
-evaluation = False
+training_width = 608
+training_height = 352
+args.val_h = training_height#352
+args.val_w = training_width#1216
+train_continue = True
+
+evaluation = True
 precalculated_mean_std = True
 random_seed = 2910
 pcl_min = 0 
@@ -231,7 +235,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 np.random.seed(random_seed)
 
-batch_size = 8
+batch_size = 1
 train_folder_loc = Path('../../../Desktop/data_sanity/24k_cropped_reduced')
 #train_folder_loc = Path('../../../Desktop/data_sanity/testbatch')
 
@@ -239,11 +243,11 @@ test_folder_loc = Path('../../../Desktop/data_sanity/24a_cropped_reduced')
 
 crop_transform = transforms.CenterCrop(352)
 
-rgbPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'rgb_cropped'))))
-depthPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'depth_cm_cropped'))))
-pclPath = np.array(list(paths.list_images(os.path.join(train_folder_loc,'pcl_cm_cropped'))))
+rgbPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'rgb_cropped')))))
+depthPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'depth_cm_cropped')))))
+pclPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'pcl_cm_cropped')))))
 
-train_mask = np.random.choice(len(rgbPath), 2000, replace=False)
+train_mask = np.random.choice(len(rgbPath), 10, replace=False)
 
 train_mask = train_mask.astype(int)
 #print(type(train_mask))
@@ -251,9 +255,9 @@ mini_train_set = SanityDatasetCheck(rgbPath[train_mask],depthPath[train_mask],pc
 
 #ransformed_mini_train_set = crop_transform(mini_train_set)
 
-rgbPath = np.array(list(paths.list_images(os.path.join(test_folder_loc,'rgb_cropped'))))
-depthPath = np.array(list(paths.list_images(os.path.join(test_folder_loc,'depth_cm_cropped'))))
-pclPath = np.array(list(paths.list_images(os.path.join(test_folder_loc,'pcl_cm_cropped'))))
+rgbPath = np.array(sorted(list(paths.list_images(os.path.join(test_folder_loc,'rgb_cropped')))))
+depthPath = np.array(sorted(list(paths.list_images(os.path.join(test_folder_loc,'depth_cm_cropped')))))
+pclPath = np.array(sorted(list(paths.list_images(os.path.join(test_folder_loc,'pcl_cm_cropped')))))
 
 test_mask = np.random.choice(len(rgbPath), 500, replace=False)
 mini_test_set = SanityDatasetCheck(rgbPath[test_mask],depthPath[test_mask],pclPath[test_mask])
@@ -300,14 +304,14 @@ submodel = 'ENETsanity'
 model = ENet(args).to(device)
 if train_continue == True:
 
-    model = torch.jit.load('ENETsanity_model_and_weights.pth')
+    model = torch.jit.load('ENETsanity_model_and_weights_TRAIN.pth')
 
 
-model_save_name_eval = submodel+'_model_and_weights_EVAL.pth'
-model_save_name_train = submodel+'_model_and_weights_TRAIN.pth'
+model_save_name_eval = submodel+'_model_and_weights_EVAL_2070.pth'
+model_save_name_train = submodel+'_model_and_weights_TRAIN_2070.pth'
 
 print(model_save_name_eval)
-wandblogger = True
+wandblogger = False
 if wandblogger == True:
         wandb.init(project="decnet-project", entity="wandbdimar")
         wandb.config = {
@@ -394,19 +398,22 @@ for epoch in range(1,epochs+1):#how many epochs to run
         dstart = time.time()
         #avg = None
         m.reset()
-        for i_eval, data_eval in enumerate(test_dl):
+        for i_eval, data_eval in enumerate(train_dl):
+            #visualize_batch(data_eval)
+            str_i = str(epoch+1)
+            path_i = 'epoch_' + str_i.zfill(4) + '.png'
+            path_rgb = os.path.join('test_data/rgb', path_i)
+            path_pcl = os.path.join('test_data/pcl', path_i)
+            path_depth = os.path.join('test_data/depth', path_i)
+            path_pred = os.path.join('test_data/pred', path_i)
+            #print(path_pred)
             start = time.time()
             rgb, depth, pcl = data_eval[0], data_eval[1], data_eval[2]
-            #print(rgb.shape,depth.shape,pcl.shape)
-            depth = custom_norm(depth,1,depth_min,depth_max)
-
-            pcl = custom_norm(pcl,1,pcl_min,pcl_max)
-
+            #vis_utils.save_depth_as_uint16png_upload(pcl, path_pcl)
+            #vis_utils.save_depth_as_uint16png_upload(depth, path_depth)
+            #vis_utils.save_image_torch(rgb,path_rgb)
             min_max_rgb = torch_min_max(rgb)
             min_max_depth = torch_min_max(depth)
-            min_max_pcl = torch_min_max(pcl)
-
-
             rgb = rgb.to(dtype=torch.float32)
 
             epoch_iter += batch_size
@@ -423,15 +430,18 @@ for epoch in range(1,epochs+1):#how many epochs to run
             depth_loss = depth_criterion(pred, pcl.to(device))
 
             loss = depth_loss
-            pred = custom_denorm(pred,1,depth_min,depth_max)
-            pcl = custom_denorm(pcl,1,depth_min,depth_max)
+            pred = custom_denorm(pred,1,pcl_min,pcl_max)
+            pcl = custom_denorm(pcl,1,pcl_min,pcl_max)
+            depth = custom_denorm(depth,1,depth_min,depth_max)
 
             
             min_max_normalized_pcl = torch_min_max(pcl)
             min_max_normalized_pred = torch_min_max(pred)
 
-
+            #print('pcl_pred_after',min_max_normalized_pcl,min_max_normalized_pred)
             result.evaluate(pred.data, pcl.data, photometric=0)
+            #vis_utils.save_depth_as_uint16png_upload(pred, path_pred)
+
 
             gpu_time = time.time() - start
             data_time = time.time() - dstart
@@ -439,7 +449,13 @@ for epoch in range(1,epochs+1):#how many epochs to run
             avg = average_meter.average()
 
             progress = 100*(i_eval/len(mini_test_set))
+
         print('Average eval rmse: ' + str(avg.rmse) + ' in ' + str(data_time) + ' seconds')
+        vis_utils.save_depth_as_uint16png_upload(pcl, path_pcl)
+        vis_utils.save_depth_as_uint16png_upload(depth, path_depth)
+        vis_utils.save_depth_as_uint16png_upload(pred, path_pred)
+        vis_utils.save_image_torch(rgb,path_rgb)
+        
         if avg.rmse < best_prev_rmse:
             best_prev_rmse = avg.rmse
             print('best_prev_rmse', best_prev_rmse)

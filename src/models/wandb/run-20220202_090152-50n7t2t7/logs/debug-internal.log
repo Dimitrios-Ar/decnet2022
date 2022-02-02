@@ -1,0 +1,105 @@
+2022-02-02 09:01:53,290 INFO    MainThread:16740 [internal.py:wandb_internal():91] W&B internal server running at pid: 16740, started at: 2022-02-02 09:01:53.290581
+2022-02-02 09:01:53,291 DEBUG   HandlerThread:16740 [handler.py:handle_request():124] handle_request: check_version
+2022-02-02 09:01:53,292 INFO    WriterThread:16740 [datastore.py:open_for_write():80] open: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/run-50n7t2t7.wandb
+2022-02-02 09:01:53,293 DEBUG   SenderThread:16740 [sender.py:send():179] send: header
+2022-02-02 09:01:53,293 DEBUG   SenderThread:16740 [sender.py:send_request():193] send_request: check_version
+2022-02-02 09:01:53,505 DEBUG   SenderThread:16740 [sender.py:send():179] send: run
+2022-02-02 09:01:53,758 INFO    SenderThread:16740 [dir_watcher.py:__init__():168] watching files in: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files
+2022-02-02 09:01:53,758 INFO    SenderThread:16740 [sender.py:_start_run_threads():719] run started: 50n7t2t7 with start time 1643788912
+2022-02-02 09:01:53,758 DEBUG   SenderThread:16740 [sender.py:send():179] send: summary
+2022-02-02 09:01:53,758 INFO    SenderThread:16740 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2022-02-02 09:01:53,759 DEBUG   HandlerThread:16740 [handler.py:handle_request():124] handle_request: run_start
+2022-02-02 09:01:53,762 DEBUG   HandlerThread:16740 [meta.py:__init__():39] meta init
+2022-02-02 09:01:53,762 DEBUG   HandlerThread:16740 [meta.py:__init__():53] meta init done
+2022-02-02 09:01:53,762 DEBUG   HandlerThread:16740 [meta.py:probe():210] probe
+2022-02-02 09:01:53,769 DEBUG   HandlerThread:16740 [meta.py:_setup_git():200] setup git
+2022-02-02 09:01:53,776 DEBUG   HandlerThread:16740 [meta.py:_setup_git():207] setup git done
+2022-02-02 09:01:53,776 DEBUG   HandlerThread:16740 [meta.py:_save_pip():57] save pip
+2022-02-02 09:01:53,777 DEBUG   HandlerThread:16740 [meta.py:_save_pip():71] save pip done
+2022-02-02 09:01:53,777 DEBUG   HandlerThread:16740 [meta.py:_save_conda():78] save conda
+2022-02-02 09:01:54,759 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_created():216] file/dir created: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/wandb-summary.json
+2022-02-02 09:01:54,759 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_created():216] file/dir created: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/conda-environment.yaml
+2022-02-02 09:01:54,759 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_created():216] file/dir created: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/requirements.txt
+2022-02-02 09:01:56,241 DEBUG   HandlerThread:16740 [meta.py:_save_conda():86] save conda done
+2022-02-02 09:01:56,241 DEBUG   HandlerThread:16740 [meta.py:probe():252] probe done
+2022-02-02 09:01:56,270 DEBUG   SenderThread:16740 [sender.py:send():179] send: files
+2022-02-02 09:01:56,270 INFO    SenderThread:16740 [sender.py:_save_file():841] saving file wandb-metadata.json with policy now
+2022-02-02 09:01:56,273 DEBUG   HandlerThread:16740 [handler.py:handle_request():124] handle_request: stop_status
+2022-02-02 09:01:56,273 DEBUG   SenderThread:16740 [sender.py:send_request():193] send_request: stop_status
+2022-02-02 09:01:56,758 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/conda-environment.yaml
+2022-02-02 09:01:56,758 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_created():216] file/dir created: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:01:56,759 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_created():216] file/dir created: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/wandb-metadata.json
+2022-02-02 09:01:57,017 INFO    Thread-11 :16740 [upload_job.py:push():137] Uploaded file /tmp/tmpoc932i5gwandb/2q9ourpy-wandb-metadata.json
+2022-02-02 09:01:58,759 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:00,759 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:02,760 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:04,760 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:06,761 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:08,761 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:10,762 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:11,482 DEBUG   HandlerThread:16740 [handler.py:handle_request():124] handle_request: stop_status
+2022-02-02 09:02:11,482 DEBUG   SenderThread:16740 [sender.py:send_request():193] send_request: stop_status
+2022-02-02 09:02:12,762 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:14,763 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:16,763 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:18,764 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:20,764 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:21,987 DEBUG   SenderThread:16740 [sender.py:send():179] send: stats
+2022-02-02 09:02:22,765 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:24,765 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:26,766 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:26,814 DEBUG   HandlerThread:16740 [handler.py:handle_request():124] handle_request: stop_status
+2022-02-02 09:02:26,814 DEBUG   SenderThread:16740 [sender.py:send_request():193] send_request: stop_status
+2022-02-02 09:02:28,766 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:30,767 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:32,767 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:34,768 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:36,768 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:38,769 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:40,769 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:42,017 DEBUG   HandlerThread:16740 [handler.py:handle_request():124] handle_request: stop_status
+2022-02-02 09:02:42,017 DEBUG   SenderThread:16740 [sender.py:send_request():193] send_request: stop_status
+2022-02-02 09:02:42,770 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:44,770 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:46,771 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:48,772 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:50,772 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:52,211 DEBUG   SenderThread:16740 [sender.py:send():179] send: stats
+2022-02-02 09:02:52,773 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:54,773 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:56,774 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:02:57,291 DEBUG   HandlerThread:16740 [handler.py:handle_request():124] handle_request: stop_status
+2022-02-02 09:02:57,291 DEBUG   SenderThread:16740 [sender.py:send_request():193] send_request: stop_status
+2022-02-02 09:02:58,774 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:00,775 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:02,775 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:04,776 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:06,776 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:08,777 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:10,777 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:12,496 DEBUG   HandlerThread:16740 [handler.py:handle_request():124] handle_request: stop_status
+2022-02-02 09:03:12,496 DEBUG   SenderThread:16740 [sender.py:send_request():193] send_request: stop_status
+2022-02-02 09:03:12,778 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:14,778 INFO    Thread-8  :16740 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:14,968 WARNING MainThread:16740 [internal.py:wandb_internal():147] Internal process interrupt: 1
+2022-02-02 09:03:15,184 WARNING MainThread:16740 [internal.py:wandb_internal():147] Internal process interrupt: 2
+2022-02-02 09:03:15,184 ERROR   MainThread:16740 [internal.py:wandb_internal():150] Internal process interrupted.
+2022-02-02 09:03:15,373 INFO    WriterThread:16740 [datastore.py:close():288] close: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/run-50n7t2t7.wandb
+2022-02-02 09:03:15,373 INFO    SenderThread:16740 [sender.py:finish():947] shutting down sender
+2022-02-02 09:03:15,373 INFO    SenderThread:16740 [dir_watcher.py:finish():282] shutting down directory watcher
+2022-02-02 09:03:15,374 INFO    HandlerThread:16740 [handler.py:finish():658] shutting down handler
+2022-02-02 09:03:15,780 INFO    SenderThread:16740 [dir_watcher.py:finish():312] scan: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files
+2022-02-02 09:03:15,781 INFO    SenderThread:16740 [dir_watcher.py:finish():318] scan save: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log output.log
+2022-02-02 09:03:15,781 INFO    SenderThread:16740 [dir_watcher.py:finish():318] scan save: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/wandb-metadata.json wandb-metadata.json
+2022-02-02 09:03:15,782 INFO    SenderThread:16740 [dir_watcher.py:finish():318] scan save: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/wandb-summary.json wandb-summary.json
+2022-02-02 09:03:15,783 INFO    SenderThread:16740 [dir_watcher.py:finish():318] scan save: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/config.yaml config.yaml
+2022-02-02 09:03:15,797 INFO    SenderThread:16740 [dir_watcher.py:finish():318] scan save: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/conda-environment.yaml conda-environment.yaml
+2022-02-02 09:03:15,809 INFO    SenderThread:16740 [dir_watcher.py:finish():318] scan save: /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/requirements.txt requirements.txt
+2022-02-02 09:03:15,810 INFO    SenderThread:16740 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-02 09:03:15,810 INFO    SenderThread:16740 [file_pusher.py:join():182] waiting for file pusher
+2022-02-02 09:03:16,435 INFO    Thread-16 :16740 [upload_job.py:push():137] Uploaded file /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/requirements.txt
+2022-02-02 09:03:16,448 INFO    Thread-12 :16740 [upload_job.py:push():137] Uploaded file /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/output.log
+2022-02-02 09:03:16,455 INFO    Thread-15 :16740 [upload_job.py:push():137] Uploaded file /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/conda-environment.yaml
+2022-02-02 09:03:16,477 INFO    Thread-14 :16740 [upload_job.py:push():137] Uploaded file /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/config.yaml
+2022-02-02 09:03:16,512 INFO    Thread-13 :16740 [upload_job.py:push():137] Uploaded file /home/dim/decnet2022/src/models/wandb/run-20220202_090152-50n7t2t7/files/wandb-summary.json
+2022-02-02 09:03:17,199 INFO    MainThread:16740 [internal.py:handle_exit():78] Internal process exited
