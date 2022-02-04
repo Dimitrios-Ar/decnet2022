@@ -1,0 +1,23 @@
+
+ Average loss:  0.3452799916267395  --- Iterations:  1  --- Epochs:  1
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+ Average loss:  0.2943665087223053  --- Iterations:  2  --- Epochs:  1
+ Average loss:  0.22585630416870117  --- Iterations:  3  --- Epochs:  1
+ Average loss:  0.18329869210720062  --- Iterations:  4  --- Epochs:  1
+ Average loss:  0.15670210123062134  --- Iterations:  5  --- Epochs:  1
+ Average loss:  0.1382172405719757  --- Iterations:  6  --- Epochs:  1
+ Average loss:  0.12218791991472244  --- Iterations:  7  --- Epochs:  1
+ Average loss:  0.10944277793169022  --- Iterations:  8  --- Epochs:  1
+ Average loss:  0.10036767274141312  --- Iterations:  9  --- Epochs:  1
+ Average loss:  0.09185456484556198  --- Iterations:  10  --- Epochs:  1
+Starting evaluation
+Average eval rmse: 1509795.3903975114 in 36.71927881240845 seconds
+Traceback (most recent call last):
+  File "enet_sanity.py", line 463, in <module>
+    vis_utils.save_depth_as_uint16png_upload(pcl, path_pcl)
+  File "/home/robotlabx/Desktop/DTAI/decnet2022/src/models/vis_utils.py", line 122, in save_depth_as_uint16png_upload
+    imgsave.save(filename)
+  File "/home/robotlabx/.local/lib/python3.7/site-packages/PIL/Image.py", line 2155, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'test_data/pcl/epoch_0002.png'

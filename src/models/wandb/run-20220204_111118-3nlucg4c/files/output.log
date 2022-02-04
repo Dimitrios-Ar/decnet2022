@@ -1,0 +1,32 @@
+
+ Average loss:  0.3303748071193695  --- Iterations:  8  --- Epochs:  1
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Traceback (most recent call last):
+  File "enet_sanity.py", line 400, in <module>
+    trace_model = torch.jit.trace(model,save_batch)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py", line 744, in trace
+    _module_class,
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py", line 959, in trace_module
+    argument_names,
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1039, in _slow_forward
+    result = self.forward(*input, **kwargs)
+  File "/home/robotlabx/Desktop/DTAI/decnet2022/src/models/penet2021/penet2021_model.py", line 163, in forward
+    rgb_feature4 = self.rgb_encoder_layer4(rgb_feature3, geo_s3, geo_s3) # b 64 88 304
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1039, in _slow_forward
+    result = self.forward(*input, **kwargs)
+  File "/home/robotlabx/Desktop/DTAI/decnet2022/src/models/penet2021/penet2021_basic.py", line 318, in forward
+    out = self.conv1(x)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1039, in _slow_forward
+    result = self.forward(*input, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 443, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 440, in _conv_forward
+    self.padding, self.dilation, self.groups)
+KeyboardInterrupt

@@ -1,1 +1,1 @@
-{"average batch loss": 0.0004096767515875399, "best previous evaluaion rmse": 45688.351681143016, "_runtime": 8233, "_timestamp": 1643728879, "_step": 31}
+{"average batch loss": 5.902294287807308e-05, "best previous evaluaion rmse": 53751.259163078656, "_runtime": 24992, "_timestamp": 1643745638, "_step": 99, "_wandb": {"runtime": 24990}}

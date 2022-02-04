@@ -1,0 +1,87 @@
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+ Average loss:  33037484.0  --- Iterations:  8  --- Epochs:  1
+ Average loss:  24801188.0  --- Iterations:  16  --- Epochs:  1
+Starting evaluation
+Average eval rmse: 3013050.4070037105 in 2.408271312713623 seconds
+best_prev_rmse 3013050.4070037105
+<class 'float'>
+ Average loss:  7163920.5  --- Iterations:  8  --- Epochs:  2
+ Average loss:  5877366.5  --- Iterations:  16  --- Epochs:  2
+Starting evaluation
+Average eval rmse: 2014527.6386918065 in 2.4282867908477783 seconds
+best_prev_rmse 2014527.6386918065
+<class 'float'>
+ Average loss:  2810049.5  --- Iterations:  8  --- Epochs:  3
+ Average loss:  2535337.0  --- Iterations:  16  --- Epochs:  3
+Starting evaluation
+Average eval rmse: 1631037.2513045447 in 2.334709405899048 seconds
+best_prev_rmse 1631037.2513045447
+<class 'float'>
+ Average loss:  1846184.25  --- Iterations:  8  --- Epochs:  4
+ Average loss:  1688896.75  --- Iterations:  16  --- Epochs:  4
+Starting evaluation
+Average eval rmse: 1422020.9511285685 in 2.38558030128479 seconds
+best_prev_rmse 1422020.9511285685
+<class 'float'>
+ Average loss:  1400969.0  --- Iterations:  8  --- Epochs:  5
+ Average loss:  1272234.25  --- Iterations:  16  --- Epochs:  5
+Starting evaluation
+Average eval rmse: 1286859.45418864 in 2.4939444065093994 seconds
+best_prev_rmse 1286859.45418864
+<class 'float'>
+ Average loss:  1115999.5  --- Iterations:  8  --- Epochs:  6
+ Average loss:  1009493.6875  --- Iterations:  16  --- Epochs:  6
+Starting evaluation
+Average eval rmse: 1198123.5081834611 in 2.435823917388916 seconds
+best_prev_rmse 1198123.5081834611
+<class 'float'>
+ Average loss:  930913.75  --- Iterations:  8  --- Epochs:  7
+ Average loss:  845917.0  --- Iterations:  16  --- Epochs:  7
+Starting evaluation
+Average eval rmse: 1136797.4104249736 in 2.419926166534424 seconds
+best_prev_rmse 1136797.4104249736
+<class 'float'>
+ Average loss:  811171.125  --- Iterations:  8  --- Epochs:  8
+ Average loss:  742579.6875  --- Iterations:  16  --- Epochs:  8
+Starting evaluation
+Average eval rmse: 1086033.9553402315 in 2.5093166828155518 seconds
+best_prev_rmse 1086033.9553402315
+<class 'float'>
+ Average loss:  726295.75  --- Iterations:  8  --- Epochs:  9
+ Average loss:  664038.125  --- Iterations:  16  --- Epochs:  9
+Starting evaluation
+Average eval rmse: 1039442.4918975229 in 2.410278558731079 seconds
+best_prev_rmse 1039442.4918975229
+<class 'float'>
+ Average loss:  659225.0625  --- Iterations:  8  --- Epochs:  10
+ Average loss:  596283.4375  --- Iterations:  16  --- Epochs:  10
+Starting evaluation
+Average eval rmse: 999995.4018074881 in 2.4269440174102783 seconds
+best_prev_rmse 999995.4018074881
+<class 'float'>
+ Average loss:  607961.8125  --- Iterations:  8  --- Epochs:  11
+ Average loss:  541873.1875  --- Iterations:  16  --- Epochs:  11
+Starting evaluation
+Average eval rmse: 969094.3926480347 in 2.37046217918396 seconds
+best_prev_rmse 969094.3926480347
+<class 'float'>
+ Average loss:  570537.9375  --- Iterations:  8  --- Epochs:  12
+ Average loss:  501450.8125  --- Iterations:  16  --- Epochs:  12
+Starting evaluation
+Average eval rmse: 944365.2045183049 in 2.3875555992126465 seconds
+best_prev_rmse 944365.2045183049
+<class 'float'>
+ Average loss:  541288.125  --- Iterations:  8  --- Epochs:  13
+ Average loss:  470457.8125  --- Iterations:  16  --- Epochs:  13
+Starting evaluation
+Average eval rmse: 923520.5739934203 in 2.5868263244628906 seconds
+best_prev_rmse 923520.5739934203
+<class 'float'>
+ Average loss:  516226.25  --- Iterations:  8  --- Epochs:  14
+ Average loss:  444969.9375  --- Iterations:  16  --- Epochs:  14
+Starting evaluation
+Average eval rmse: 905197.4814502426 in 2.534611940383911 seconds
+best_prev_rmse 905197.4814502426
+<class 'float'>
+ Average loss:  493437.375  --- Iterations:  8  --- Epochs:  15

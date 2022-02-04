@@ -1,0 +1,24 @@
+
+Starting evaluation
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Traceback (most recent call last):
+  File "enet_sanity.py", line 428, in <module>
+    st1_pred, st2_pred, pred = model(batch_data)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/robotlabx/Desktop/DTAI/decnet2022/src/models/penet2021/penet2021_model.py", line 110, in forward
+    d_s2, vm_s2 = self.sparsepooling(d, valid_mask)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/robotlabx/Desktop/DTAI/decnet2022/src/models/penet2021/penet2021_basic.py", line 149, in forward
+    d = - self.pooling(encode_d)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/pooling.py", line 164, in forward
+    self.return_indices)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/_jit_internal.py", line 405, in fn
+    return if_false(*args, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/functional.py", line 718, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+RuntimeError: "max_pool2d_with_indices_out_cuda_frame" not implemented for 'Int'

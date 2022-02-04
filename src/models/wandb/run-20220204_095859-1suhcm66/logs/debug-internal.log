@@ -1,0 +1,10 @@
+2022-02-04 09:58:59,924 INFO    MainThread:10092 [internal.py:wandb_internal():90] W&B internal server running at pid: 10092, started at: 2022-02-04 09:58:59.924470
+2022-02-04 09:58:59,925 DEBUG   HandlerThread:10092 [handler.py:handle_request():130] handle_request: check_version
+2022-02-04 09:58:59,925 INFO    WriterThread:10092 [datastore.py:open_for_write():77] open: /home/robotlabx/Desktop/DTAI/decnet2022/src/models/wandb/run-20220204_095859-1suhcm66/run-1suhcm66.wandb
+2022-02-04 09:58:59,926 DEBUG   SenderThread:10092 [sender.py:send():234] send: header
+2022-02-04 09:58:59,926 DEBUG   SenderThread:10092 [sender.py:send_request():248] send_request: check_version
+2022-02-04 09:59:04,927 DEBUG   SenderThread:10092 [sender.py:send():234] send: run
+2022-02-04 09:59:34,572 DEBUG   HandlerThread:10092 [handler.py:handle_request():130] handle_request: shutdown
+2022-02-04 09:59:34,572 INFO    HandlerThread:10092 [handler.py:finish():731] shutting down handler
+2022-02-04 09:59:34,579 INFO    WriterThread:10092 [datastore.py:close():281] close: /home/robotlabx/Desktop/DTAI/decnet2022/src/models/wandb/run-20220204_095859-1suhcm66/run-1suhcm66.wandb
+2022-02-04 09:59:35,241 INFO    MainThread:10092 [internal.py:handle_exit():77] Internal process exited

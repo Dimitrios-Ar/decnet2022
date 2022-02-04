@@ -1,0 +1,8 @@
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Traceback (most recent call last):
+  File "enet_sanity.py", line 384, in <module>
+    pred = custom_denorm(pred,1,pcl_min,pcl_max)
+  File "enet_sanity.py", line 204, in custom_denorm
+    normalized_batch[i] = img_normalized
+IndexError: index 1 is out of bounds for dimension 0 with size 1

@@ -209,9 +209,9 @@ training_width = 608
 training_height = 352
 args.val_h = training_height#352
 args.val_w = training_width#1216
-train_continue = True
+train_continue = False
 
-evaluation = True
+evaluation = False
 precalculated_mean_std = True
 random_seed = 2910
 pcl_min = 0 
@@ -235,7 +235,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 np.random.seed(random_seed)
 
-batch_size = 1
+batch_size = 8
 train_folder_loc = Path('../../../Desktop/data_sanity/24k_cropped_reduced')
 #train_folder_loc = Path('../../../Desktop/data_sanity/testbatch')
 
@@ -247,7 +247,7 @@ rgbPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'
 depthPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'depth_cm_cropped')))))
 pclPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'pcl_cm_cropped')))))
 
-train_mask = np.random.choice(len(rgbPath), 10, replace=False)
+train_mask = np.random.choice(len(rgbPath), 2000, replace=False)
 
 train_mask = train_mask.astype(int)
 #print(type(train_mask))
@@ -294,7 +294,7 @@ if precalculated_mean_std == False:
     mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt = get_mean_std(train_dl)
     print(mean_rgb, std_rgb, mean_d, std_d, mean_gt, std_gt)
 
-epochs = 100
+epochs = 200
 lr = 3e-4
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -302,16 +302,18 @@ print('Using {} device'.format(device))
 
 submodel = 'ENETsanity'
 model = ENet(args).to(device)
+#model = torch.jit.load('ENETsanity_model_and_weights_EVAL.pth')
+
 if train_continue == True:
 
     model = torch.jit.load('ENETsanity_model_and_weights_TRAIN.pth')
 
 
-model_save_name_eval = submodel+'_model_and_weights_EVAL_2070.pth'
-model_save_name_train = submodel+'_model_and_weights_TRAIN_2070.pth'
+model_save_name_eval = submodel+'_model_and_weights_EVAL_3090.pth'
+model_save_name_train = submodel+'_model_and_weights_TRAIN_3090.pth'
 
 print(model_save_name_eval)
-wandblogger = False
+wandblogger = True
 if wandblogger == True:
         wandb.init(project="decnet-project", entity="wandbdimar")
         wandb.config = {
@@ -374,10 +376,16 @@ for epoch in range(1,epochs+1):#how many epochs to run
         new_K = tran(new_K)
         new_K = new_K.to(dtype=torch.float32)
 
-        batch_data = {'rgb': rgb.to(device), 'd': depth.to(device), 'g': pcl.to(device), 'position': torch.zeros(1, 3, training_height, training_width).to(device), 'K': new_K.to(device)}  
+        batch_data = {'rgb': rgb.to(device), 'd': depth.to(device), 'g': pcl.to(device), 'position': torch.zeros(batch_size, 3, training_height, training_width).to(device), 'K': new_K.to(device)}  
         st1_pred, st2_pred, pred = model(batch_data) 
         depth_criterion = criteria.MaskedMSELoss()
-        depth_loss = depth_criterion(pred, pcl.to(device))
+        
+        
+        pred = custom_denorm(pred,batch_size,pcl_min,pcl_max)
+        pcl = custom_denorm(pcl,batch_size,pcl_min,pcl_max)
+        depth = custom_denorm(depth,batch_size,depth_min,depth_max)
+        
+        depth_loss = depth_criterion(pred.to(device), pcl.to(device))
 
         #print('pred_data', torch_min_max(pred))
         loss = depth_loss
@@ -398,9 +406,9 @@ for epoch in range(1,epochs+1):#how many epochs to run
         dstart = time.time()
         #avg = None
         m.reset()
-        for i_eval, data_eval in enumerate(train_dl):
+        for i_eval, data_eval in enumerate(test_dl):
             #visualize_batch(data_eval)
-            str_i = str(epoch+1)
+            str_i = str(epoch)
             path_i = 'epoch_' + str_i.zfill(4) + '.png'
             path_rgb = os.path.join('test_data/rgb', path_i)
             path_pcl = os.path.join('test_data/pcl', path_i)
@@ -414,6 +422,13 @@ for epoch in range(1,epochs+1):#how many epochs to run
             #vis_utils.save_image_torch(rgb,path_rgb)
             min_max_rgb = torch_min_max(rgb)
             min_max_depth = torch_min_max(depth)
+            #print(min_max_depth)
+            #print(min_max_rgb)
+            
+            depth = custom_norm(depth,1,depth_min,depth_max)
+
+            pcl = custom_norm(pcl,1,pcl_min,pcl_max)
+
             rgb = rgb.to(dtype=torch.float32)
 
             epoch_iter += batch_size
@@ -427,13 +442,13 @@ for epoch in range(1,epochs+1):#how many epochs to run
             batch_data = {'rgb': rgb.to(device), 'd': depth.to(device), 'g': pcl.to(device), 'position': torch.zeros(1, 3, training_height, training_width).to(device), 'K': new_K.to(device)}  
             st1_pred, st2_pred, pred = model(batch_data) 
             depth_criterion = criteria.MaskedMSELoss()
-            depth_loss = depth_criterion(pred, pcl.to(device))
-
-            loss = depth_loss
+            
             pred = custom_denorm(pred,1,pcl_min,pcl_max)
             pcl = custom_denorm(pcl,1,pcl_min,pcl_max)
             depth = custom_denorm(depth,1,depth_min,depth_max)
+            depth_loss = depth_criterion(pred.to(device), pcl.to(device))
 
+            loss = depth_loss
             
             min_max_normalized_pcl = torch_min_max(pcl)
             min_max_normalized_pred = torch_min_max(pred)

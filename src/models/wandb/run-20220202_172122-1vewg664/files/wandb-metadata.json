@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-96-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.3",
+    "heartbeatAt": "2022-02-02T16:21:23.248856",
+    "startedAt": "2022-02-02T16:21:22.359257",
+    "docker": null,
+    "gpu": "GeForce RTX 3090",
+    "gpu_count": 1,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "enet_sanity.py",
+    "codePath": "src/models/enet_sanity.py",
+    "git": {
+        "remote": "https://github.com/Dimitrios-Ar/decnet2022.git",
+        "commit": "1a41f87c00b702a6b49ae5e278dba6e44b42d636"
+    },
+    "email": "dimarapis@hotmail.com",
+    "root": "/home/robotlabx/Desktop/DTAI/decnet2022",
+    "host": "robotlabX",
+    "username": "robotlabx",
+    "executable": "/home/robotlabx/anaconda3/envs/pytorchenv/bin/python"
+}
