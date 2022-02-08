@@ -2,3 +2,4 @@ data
 src/weights
 *.pyc 
 *.pth
+src/models/test_data/*
