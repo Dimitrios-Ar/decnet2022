@@ -1,0 +1,1385 @@
+
+ Average loss:  13385.94921875  --- Iterations:  8  --- Epochs:  1
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py:1051: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return forward_call(*input, **kwargs)
+ Average loss:  124918.9921875  --- Iterations:  16  --- Epochs:  1
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py:730: UserWarning: The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is.
+  "The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is."
+ Average loss:  113785.453125  --- Iterations:  24  --- Epochs:  1
+Starting evaluation
+Average eval rmse: 286369.47908535943 in 2.5368456840515137 seconds
+test_data/pcl/epoch_0001.png
+best_prev_rmse 286369.47908535943
+<class 'float'>
+ Average loss:  81225.265625  --- Iterations:  8  --- Epochs:  2
+ Average loss:  72722.140625  --- Iterations:  16  --- Epochs:  2
+ Average loss:  69302.0390625  --- Iterations:  24  --- Epochs:  2
+Starting evaluation
+Average eval rmse: 250140.26990873273 in 1.8029561042785645 seconds
+test_data/pcl/epoch_0002.png
+best_prev_rmse 250140.26990873273
+<class 'float'>
+ Average loss:  62157.875  --- Iterations:  8  --- Epochs:  3
+ Average loss:  56688.96875  --- Iterations:  16  --- Epochs:  3
+ Average loss:  52407.0390625  --- Iterations:  24  --- Epochs:  3
+Starting evaluation
+Average eval rmse: 210359.97324331544 in 1.7848832607269287 seconds
+test_data/pcl/epoch_0003.png
+best_prev_rmse 210359.97324331544
+<class 'float'>
+ Average loss:  44150.83984375  --- Iterations:  8  --- Epochs:  4
+ Average loss:  43686.40625  --- Iterations:  16  --- Epochs:  4
+ Average loss:  42153.3359375  --- Iterations:  24  --- Epochs:  4
+Starting evaluation
+Average eval rmse: 189549.9774997433 in 1.764467477798462 seconds
+test_data/pcl/epoch_0004.png
+best_prev_rmse 189549.9774997433
+<class 'float'>
+ Average loss:  35887.46484375  --- Iterations:  8  --- Epochs:  5
+ Average loss:  34796.53515625  --- Iterations:  16  --- Epochs:  5
+ Average loss:  33894.50390625  --- Iterations:  24  --- Epochs:  5
+Starting evaluation
+Average eval rmse: 175467.98421827485 in 1.7804837226867676 seconds
+test_data/pcl/epoch_0005.png
+best_prev_rmse 175467.98421827485
+<class 'float'>
+ Average loss:  30701.5859375  --- Iterations:  8  --- Epochs:  6
+ Average loss:  29752.484375  --- Iterations:  16  --- Epochs:  6
+ Average loss:  28583.802734375  --- Iterations:  24  --- Epochs:  6
+Starting evaluation
+Average eval rmse: 154770.9918180577 in 1.7830572128295898 seconds
+test_data/pcl/epoch_0006.png
+best_prev_rmse 154770.9918180577
+<class 'float'>
+ Average loss:  23936.173828125  --- Iterations:  8  --- Epochs:  7
+ Average loss:  23530.46484375  --- Iterations:  16  --- Epochs:  7
+ Average loss:  23054.3984375  --- Iterations:  24  --- Epochs:  7
+Starting evaluation
+Average eval rmse: 142311.95429247982 in 1.9300251007080078 seconds
+test_data/pcl/epoch_0007.png
+best_prev_rmse 142311.95429247982
+<class 'float'>
+ Average loss:  20282.697265625  --- Iterations:  8  --- Epochs:  8
+ Average loss:  19683.79296875  --- Iterations:  16  --- Epochs:  8
+ Average loss:  19209.060546875  --- Iterations:  24  --- Epochs:  8
+Starting evaluation
+Average eval rmse: 131180.64644059486 in 1.8561577796936035 seconds
+test_data/pcl/epoch_0008.png
+best_prev_rmse 131180.64644059486
+<class 'float'>
+ Average loss:  17226.2109375  --- Iterations:  8  --- Epochs:  9
+ Average loss:  16695.873046875  --- Iterations:  16  --- Epochs:  9
+ Average loss:  16282.662109375  --- Iterations:  24  --- Epochs:  9
+Starting evaluation
+Average eval rmse: 120685.90740971507 in 1.905393123626709 seconds
+test_data/pcl/epoch_0009.png
+best_prev_rmse 120685.90740971507
+<class 'float'>
+ Average loss:  14666.0439453125  --- Iterations:  8  --- Epochs:  10
+ Average loss:  13955.1142578125  --- Iterations:  16  --- Epochs:  10
+ Average loss:  13644.771484375  --- Iterations:  24  --- Epochs:  10
+Starting evaluation
+Average eval rmse: 111406.75458681108 in 1.7245357036590576 seconds
+test_data/pcl/epoch_0010.png
+best_prev_rmse 111406.75458681108
+<class 'float'>
+ Average loss:  12486.6376953125  --- Iterations:  8  --- Epochs:  11
+ Average loss:  12274.0849609375  --- Iterations:  16  --- Epochs:  11
+ Average loss:  11971.669921875  --- Iterations:  24  --- Epochs:  11
+Starting evaluation
+Average eval rmse: 104973.29180356399 in 1.8737127780914307 seconds
+test_data/pcl/epoch_0011.png
+best_prev_rmse 104973.29180356399
+<class 'float'>
+ Average loss:  11188.8076171875  --- Iterations:  8  --- Epochs:  12
+ Average loss:  10865.2177734375  --- Iterations:  16  --- Epochs:  12
+ Average loss:  10693.0146484375  --- Iterations:  24  --- Epochs:  12
+Starting evaluation
+Average eval rmse: 100562.17796883477 in 1.8758115768432617 seconds
+test_data/pcl/epoch_0012.png
+best_prev_rmse 100562.17796883477
+<class 'float'>
+ Average loss:  10312.9169921875  --- Iterations:  8  --- Epochs:  13
+ Average loss:  9844.775390625  --- Iterations:  16  --- Epochs:  13
+ Average loss:  9681.974609375  --- Iterations:  24  --- Epochs:  13
+Starting evaluation
+Average eval rmse: 95054.13176104659 in 1.7656502723693848 seconds
+test_data/pcl/epoch_0013.png
+best_prev_rmse 95054.13176104659
+<class 'float'>
+ Average loss:  9274.9111328125  --- Iterations:  8  --- Epochs:  14
+ Average loss:  8990.138671875  --- Iterations:  16  --- Epochs:  14
+ Average loss:  8857.732421875  --- Iterations:  24  --- Epochs:  14
+Starting evaluation
+Average eval rmse: 91002.34751225614 in 1.7296974658966064 seconds
+test_data/pcl/epoch_0014.png
+best_prev_rmse 91002.34751225614
+<class 'float'>
+ Average loss:  8470.6875  --- Iterations:  8  --- Epochs:  15
+ Average loss:  8172.6689453125  --- Iterations:  16  --- Epochs:  15
+ Average loss:  8060.189453125  --- Iterations:  24  --- Epochs:  15
+Starting evaluation
+Average eval rmse: 88228.8997666199 in 1.9564757347106934 seconds
+test_data/pcl/epoch_0015.png
+best_prev_rmse 88228.8997666199
+<class 'float'>
+ Average loss:  8055.3515625  --- Iterations:  8  --- Epochs:  16
+ Average loss:  7751.0517578125  --- Iterations:  16  --- Epochs:  16
+ Average loss:  7670.99609375  --- Iterations:  24  --- Epochs:  16
+Starting evaluation
+Average eval rmse: 85654.67524444459 in 1.9095828533172607 seconds
+test_data/pcl/epoch_0016.png
+best_prev_rmse 85654.67524444459
+<class 'float'>
+ Average loss:  7574.28466796875  --- Iterations:  8  --- Epochs:  17
+ Average loss:  7304.26708984375  --- Iterations:  16  --- Epochs:  17
+ Average loss:  7205.6708984375  --- Iterations:  24  --- Epochs:  17
+Starting evaluation
+Average eval rmse: 83379.39995922096 in 1.7919409275054932 seconds
+test_data/pcl/epoch_0017.png
+best_prev_rmse 83379.39995922096
+<class 'float'>
+ Average loss:  7231.60888671875  --- Iterations:  8  --- Epochs:  18
+ Average loss:  6928.40234375  --- Iterations:  16  --- Epochs:  18
+ Average loss:  6880.611328125  --- Iterations:  24  --- Epochs:  18
+Starting evaluation
+Average eval rmse: 81388.71565550841 in 1.7472686767578125 seconds
+test_data/pcl/epoch_0018.png
+best_prev_rmse 81388.71565550841
+<class 'float'>
+ Average loss:  6896.7646484375  --- Iterations:  8  --- Epochs:  19
+ Average loss:  6621.9951171875  --- Iterations:  16  --- Epochs:  19
+ Average loss:  6547.13427734375  --- Iterations:  24  --- Epochs:  19
+Starting evaluation
+Average eval rmse: 79534.0647215102 in 1.7651934623718262 seconds
+test_data/pcl/epoch_0019.png
+best_prev_rmse 79534.0647215102
+<class 'float'>
+ Average loss:  6619.7001953125  --- Iterations:  8  --- Epochs:  20
+ Average loss:  6316.8681640625  --- Iterations:  16  --- Epochs:  20
+ Average loss:  6260.87841796875  --- Iterations:  24  --- Epochs:  20
+Starting evaluation
+Average eval rmse: 77841.8621527041 in 1.7712268829345703 seconds
+test_data/pcl/epoch_0020.png
+best_prev_rmse 77841.8621527041
+<class 'float'>
+ Average loss:  6319.3818359375  --- Iterations:  8  --- Epochs:  21
+ Average loss:  6051.556640625  --- Iterations:  16  --- Epochs:  21
+ Average loss:  6007.55859375  --- Iterations:  24  --- Epochs:  21
+Starting evaluation
+Average eval rmse: 76431.19839378328 in 1.7353169918060303 seconds
+test_data/pcl/epoch_0021.png
+best_prev_rmse 76431.19839378328
+<class 'float'>
+ Average loss:  6102.9794921875  --- Iterations:  8  --- Epochs:  22
+ Average loss:  5836.2724609375  --- Iterations:  16  --- Epochs:  22
+ Average loss:  5791.88818359375  --- Iterations:  24  --- Epochs:  22
+Starting evaluation
+Average eval rmse: 74979.9715002007 in 1.759192705154419 seconds
+test_data/pcl/epoch_0022.png
+best_prev_rmse 74979.9715002007
+<class 'float'>
+ Average loss:  5893.5595703125  --- Iterations:  8  --- Epochs:  23
+ Average loss:  5626.7578125  --- Iterations:  16  --- Epochs:  23
+ Average loss:  5582.7265625  --- Iterations:  24  --- Epochs:  23
+Starting evaluation
+Average eval rmse: 73675.52376875462 in 1.7340853214263916 seconds
+test_data/pcl/epoch_0023.png
+best_prev_rmse 73675.52376875462
+<class 'float'>
+ Average loss:  5706.00146484375  --- Iterations:  8  --- Epochs:  24
+ Average loss:  5448.06884765625  --- Iterations:  16  --- Epochs:  24
+ Average loss:  5405.21875  --- Iterations:  24  --- Epochs:  24
+Starting evaluation
+Average eval rmse: 72567.96005220611 in 1.737489938735962 seconds
+test_data/pcl/epoch_0024.png
+best_prev_rmse 72567.96005220611
+<class 'float'>
+ Average loss:  5539.48486328125  --- Iterations:  8  --- Epochs:  25
+ Average loss:  5282.958984375  --- Iterations:  16  --- Epochs:  25
+ Average loss:  5247.8662109375  --- Iterations:  24  --- Epochs:  25
+Starting evaluation
+Average eval rmse: 71332.19443127303 in 1.7212638854980469 seconds
+test_data/pcl/epoch_0025.png
+best_prev_rmse 71332.19443127303
+<class 'float'>
+ Average loss:  5356.81298828125  --- Iterations:  8  --- Epochs:  26
+ Average loss:  5107.68359375  --- Iterations:  16  --- Epochs:  26
+ Average loss:  5062.25244140625  --- Iterations:  24  --- Epochs:  26
+Starting evaluation
+Average eval rmse: 70152.74355651498 in 1.7226040363311768 seconds
+test_data/pcl/epoch_0026.png
+best_prev_rmse 70152.74355651498
+<class 'float'>
+ Average loss:  5180.05322265625  --- Iterations:  8  --- Epochs:  27
+ Average loss:  4934.8583984375  --- Iterations:  16  --- Epochs:  27
+ Average loss:  4891.47998046875  --- Iterations:  24  --- Epochs:  27
+Starting evaluation
+Average eval rmse: 69262.73209044123 in 1.7447912693023682 seconds
+test_data/pcl/epoch_0027.png
+best_prev_rmse 69262.73209044123
+<class 'float'>
+ Average loss:  5063.63232421875  --- Iterations:  8  --- Epochs:  28
+ Average loss:  4808.6865234375  --- Iterations:  16  --- Epochs:  28
+ Average loss:  4758.318359375  --- Iterations:  24  --- Epochs:  28
+Starting evaluation
+Average eval rmse: 68265.94116147123 in 1.7675995826721191 seconds
+test_data/pcl/epoch_0028.png
+best_prev_rmse 68265.94116147123
+<class 'float'>
+ Average loss:  4917.08837890625  --- Iterations:  8  --- Epochs:  29
+ Average loss:  4680.9375  --- Iterations:  16  --- Epochs:  29
+ Average loss:  4629.93212890625  --- Iterations:  24  --- Epochs:  29
+Starting evaluation
+Average eval rmse: 67330.41367782294 in 1.8237090110778809 seconds
+test_data/pcl/epoch_0029.png
+best_prev_rmse 67330.41367782294
+<class 'float'>
+ Average loss:  4790.80712890625  --- Iterations:  8  --- Epochs:  30
+ Average loss:  4535.318359375  --- Iterations:  16  --- Epochs:  30
+ Average loss:  4500.7470703125  --- Iterations:  24  --- Epochs:  30
+Starting evaluation
+Average eval rmse: 66157.91644067543 in 1.732100009918213 seconds
+test_data/pcl/epoch_0030.png
+best_prev_rmse 66157.91644067543
+<class 'float'>
+ Average loss:  4596.7001953125  --- Iterations:  8  --- Epochs:  31
+ Average loss:  4356.5322265625  --- Iterations:  16  --- Epochs:  31
+ Average loss:  4321.02685546875  --- Iterations:  24  --- Epochs:  31
+Starting evaluation
+Average eval rmse: 65359.86393902975 in 1.7568213939666748 seconds
+test_data/pcl/epoch_0031.png
+best_prev_rmse 65359.86393902975
+<class 'float'>
+ Average loss:  4465.9130859375  --- Iterations:  8  --- Epochs:  32
+ Average loss:  4221.654296875  --- Iterations:  16  --- Epochs:  32
+ Average loss:  4185.4248046875  --- Iterations:  24  --- Epochs:  32
+Starting evaluation
+Average eval rmse: 64600.285440239844 in 1.734933614730835 seconds
+test_data/pcl/epoch_0032.png
+best_prev_rmse 64600.285440239844
+<class 'float'>
+ Average loss:  4351.2861328125  --- Iterations:  8  --- Epochs:  33
+ Average loss:  4129.234375  --- Iterations:  16  --- Epochs:  33
+ Average loss:  4088.6015625  --- Iterations:  24  --- Epochs:  33
+Starting evaluation
+Average eval rmse: 64101.05489260151 in 1.7390964031219482 seconds
+test_data/pcl/epoch_0033.png
+best_prev_rmse 64101.05489260151
+<class 'float'>
+ Average loss:  4278.142578125  --- Iterations:  8  --- Epochs:  34
+ Average loss:  4049.787109375  --- Iterations:  16  --- Epochs:  34
+ Average loss:  4041.2021484375  --- Iterations:  24  --- Epochs:  34
+Starting evaluation
+Average eval rmse: 63916.58437270904 in 1.7689733505249023 seconds
+test_data/pcl/epoch_0034.png
+best_prev_rmse 63916.58437270904
+<class 'float'>
+ Average loss:  4247.5048828125  --- Iterations:  8  --- Epochs:  35
+ Average loss:  3984.099365234375  --- Iterations:  16  --- Epochs:  35
+ Average loss:  3993.15771484375  --- Iterations:  24  --- Epochs:  35
+Starting evaluation
+Average eval rmse: 62356.64468483645 in 1.773827075958252 seconds
+test_data/pcl/epoch_0035.png
+best_prev_rmse 62356.64468483645
+<class 'float'>
+ Average loss:  4018.28564453125  --- Iterations:  8  --- Epochs:  36
+ Average loss:  3883.880615234375  --- Iterations:  16  --- Epochs:  36
+ Average loss:  3894.7265625  --- Iterations:  24  --- Epochs:  36
+Starting evaluation
+Average eval rmse: 61699.1726051787 in 1.7326445579528809 seconds
+test_data/pcl/epoch_0036.png
+best_prev_rmse 61699.1726051787
+<class 'float'>
+ Average loss:  3898.142578125  --- Iterations:  8  --- Epochs:  37
+ Average loss:  3838.18505859375  --- Iterations:  16  --- Epochs:  37
+ Average loss:  3792.18505859375  --- Iterations:  24  --- Epochs:  37
+Starting evaluation
+Average eval rmse: 62402.58486565574 in 1.7561469078063965 seconds
+test_data/pcl/epoch_0037.png
+ Average loss:  3984.52734375  --- Iterations:  8  --- Epochs:  38
+ Average loss:  3752.0654296875  --- Iterations:  16  --- Epochs:  38
+ Average loss:  3675.21875  --- Iterations:  24  --- Epochs:  38
+Starting evaluation
+Average eval rmse: 61801.569443396795 in 1.7589426040649414 seconds
+test_data/pcl/epoch_0038.png
+ Average loss:  3931.2041015625  --- Iterations:  8  --- Epochs:  39
+ Average loss:  3619.01806640625  --- Iterations:  16  --- Epochs:  39
+ Average loss:  3616.93505859375  --- Iterations:  24  --- Epochs:  39
+Starting evaluation
+Average eval rmse: 59239.374164239875 in 1.7321710586547852 seconds
+test_data/pcl/epoch_0039.png
+best_prev_rmse 59239.374164239875
+<class 'float'>
+ Average loss:  3509.922119140625  --- Iterations:  8  --- Epochs:  40
+ Average loss:  3384.68310546875  --- Iterations:  16  --- Epochs:  40
+ Average loss:  3360.309326171875  --- Iterations:  24  --- Epochs:  40
+Starting evaluation
+Average eval rmse: 59034.252351306095 in 1.7393920421600342 seconds
+test_data/pcl/epoch_0040.png
+best_prev_rmse 59034.252351306095
+<class 'float'>
+ Average loss:  3501.502197265625  --- Iterations:  8  --- Epochs:  41
+ Average loss:  3338.61279296875  --- Iterations:  16  --- Epochs:  41
+ Average loss:  3314.773193359375  --- Iterations:  24  --- Epochs:  41
+Starting evaluation
+Average eval rmse: 59545.760387376235 in 1.7312037944793701 seconds
+test_data/pcl/epoch_0041.png
+ Average loss:  3573.858154296875  --- Iterations:  8  --- Epochs:  42
+ Average loss:  3330.8076171875  --- Iterations:  16  --- Epochs:  42
+ Average loss:  3349.888671875  --- Iterations:  24  --- Epochs:  42
+Starting evaluation
+Average eval rmse: 57719.51824780484 in 1.7327518463134766 seconds
+test_data/pcl/epoch_0042.png
+best_prev_rmse 57719.51824780484
+<class 'float'>
+ Average loss:  3282.98095703125  --- Iterations:  8  --- Epochs:  43
+ Average loss:  3199.79296875  --- Iterations:  16  --- Epochs:  43
+ Average loss:  3161.08935546875  --- Iterations:  24  --- Epochs:  43
+Starting evaluation
+Average eval rmse: 57507.616329194825 in 1.7352488040924072 seconds
+test_data/pcl/epoch_0043.png
+best_prev_rmse 57507.616329194825
+<class 'float'>
+ Average loss:  3207.284423828125  --- Iterations:  8  --- Epochs:  44
+ Average loss:  3121.60986328125  --- Iterations:  16  --- Epochs:  44
+ Average loss:  3071.959716796875  --- Iterations:  24  --- Epochs:  44
+Starting evaluation
+Average eval rmse: 58304.84911571111 in 1.7319915294647217 seconds
+test_data/pcl/epoch_0044.png
+ Average loss:  3319.931884765625  --- Iterations:  8  --- Epochs:  45
+ Average loss:  3118.0576171875  --- Iterations:  16  --- Epochs:  45
+ Average loss:  3112.24951171875  --- Iterations:  24  --- Epochs:  45
+Starting evaluation
+Average eval rmse: 57751.79299001462 in 1.7470722198486328 seconds
+test_data/pcl/epoch_0045.png
+ Average loss:  3175.960205078125  --- Iterations:  8  --- Epochs:  46
+ Average loss:  2985.887451171875  --- Iterations:  16  --- Epochs:  46
+ Average loss:  2996.0078125  --- Iterations:  24  --- Epochs:  46
+Starting evaluation
+Average eval rmse: 55168.1029842665 in 1.7367780208587646 seconds
+test_data/pcl/epoch_0046.png
+best_prev_rmse 55168.1029842665
+<class 'float'>
+ Average loss:  2925.263916015625  --- Iterations:  8  --- Epochs:  47
+ Average loss:  2932.95849609375  --- Iterations:  16  --- Epochs:  47
+ Average loss:  2937.016357421875  --- Iterations:  24  --- Epochs:  47
+Starting evaluation
+Average eval rmse: 56433.46496766101 in 1.729649543762207 seconds
+test_data/pcl/epoch_0047.png
+ Average loss:  3114.173828125  --- Iterations:  8  --- Epochs:  48
+ Average loss:  2934.88037109375  --- Iterations:  16  --- Epochs:  48
+ Average loss:  2988.41162109375  --- Iterations:  24  --- Epochs:  48
+Starting evaluation
+Average eval rmse: 55587.19363420131 in 1.7241122722625732 seconds
+test_data/pcl/epoch_0048.png
+ Average loss:  2899.346435546875  --- Iterations:  8  --- Epochs:  49
+ Average loss:  3004.37939453125  --- Iterations:  16  --- Epochs:  49
+ Average loss:  2999.004638671875  --- Iterations:  24  --- Epochs:  49
+Starting evaluation
+Average eval rmse: 57353.71744239324 in 1.7554962635040283 seconds
+test_data/pcl/epoch_0049.png
+ Average loss:  3205.456787109375  --- Iterations:  8  --- Epochs:  50
+ Average loss:  3084.52099609375  --- Iterations:  16  --- Epochs:  50
+ Average loss:  3021.029052734375  --- Iterations:  24  --- Epochs:  50
+Starting evaluation
+Average eval rmse: 55298.92513759652 in 1.7412517070770264 seconds
+test_data/pcl/epoch_0050.png
+ Average loss:  2907.763916015625  --- Iterations:  8  --- Epochs:  51
+ Average loss:  2764.08447265625  --- Iterations:  16  --- Epochs:  51
+ Average loss:  2738.57421875  --- Iterations:  24  --- Epochs:  51
+Starting evaluation
+Average eval rmse: 53943.8100014484 in 1.7783839702606201 seconds
+test_data/pcl/epoch_0051.png
+best_prev_rmse 53943.8100014484
+<class 'float'>
+ Average loss:  2706.141845703125  --- Iterations:  8  --- Epochs:  52
+ Average loss:  2603.531494140625  --- Iterations:  16  --- Epochs:  52
+ Average loss:  2585.01220703125  --- Iterations:  24  --- Epochs:  52
+Starting evaluation
+Average eval rmse: 52730.38885255213 in 1.779585838317871 seconds
+test_data/pcl/epoch_0052.png
+best_prev_rmse 52730.38885255213
+<class 'float'>
+ Average loss:  2599.647216796875  --- Iterations:  8  --- Epochs:  53
+ Average loss:  2476.548828125  --- Iterations:  16  --- Epochs:  53
+ Average loss:  2477.756591796875  --- Iterations:  24  --- Epochs:  53
+Starting evaluation
+Average eval rmse: 52070.47191673313 in 1.800642490386963 seconds
+test_data/pcl/epoch_0053.png
+best_prev_rmse 52070.47191673313
+<class 'float'>
+ Average loss:  2515.28271484375  --- Iterations:  8  --- Epochs:  54
+ Average loss:  2426.236572265625  --- Iterations:  16  --- Epochs:  54
+ Average loss:  2419.994140625  --- Iterations:  24  --- Epochs:  54
+Starting evaluation
+Average eval rmse: 51721.32205040674 in 1.7321367263793945 seconds
+test_data/pcl/epoch_0054.png
+best_prev_rmse 51721.32205040674
+<class 'float'>
+ Average loss:  2415.9462890625  --- Iterations:  8  --- Epochs:  55
+ Average loss:  2348.403564453125  --- Iterations:  16  --- Epochs:  55
+ Average loss:  2343.048828125  --- Iterations:  24  --- Epochs:  55
+Starting evaluation
+Average eval rmse: 50554.62728705325 in 1.7460262775421143 seconds
+test_data/pcl/epoch_0055.png
+best_prev_rmse 50554.62728705325
+<class 'float'>
+ Average loss:  2341.610107421875  --- Iterations:  8  --- Epochs:  56
+ Average loss:  2296.13134765625  --- Iterations:  16  --- Epochs:  56
+ Average loss:  2268.98046875  --- Iterations:  24  --- Epochs:  56
+Starting evaluation
+Average eval rmse: 49619.38176626465 in 1.8086268901824951 seconds
+test_data/pcl/epoch_0056.png
+best_prev_rmse 49619.38176626465
+<class 'float'>
+ Average loss:  2288.4501953125  --- Iterations:  8  --- Epochs:  57
+ Average loss:  2234.458740234375  --- Iterations:  16  --- Epochs:  57
+ Average loss:  2194.193603515625  --- Iterations:  24  --- Epochs:  57
+Starting evaluation
+Average eval rmse: 49891.39254328265 in 1.75187087059021 seconds
+test_data/pcl/epoch_0057.png
+ Average loss:  2216.701416015625  --- Iterations:  8  --- Epochs:  58
+ Average loss:  2125.89453125  --- Iterations:  16  --- Epochs:  58
+ Average loss:  2121.095458984375  --- Iterations:  24  --- Epochs:  58
+Starting evaluation
+Average eval rmse: 49956.476300784 in 1.7358767986297607 seconds
+test_data/pcl/epoch_0058.png
+ Average loss:  2183.02197265625  --- Iterations:  8  --- Epochs:  59
+ Average loss:  2159.18505859375  --- Iterations:  16  --- Epochs:  59
+ Average loss:  2122.603515625  --- Iterations:  24  --- Epochs:  59
+Starting evaluation
+Average eval rmse: 53785.8449824714 in 1.7239606380462646 seconds
+test_data/pcl/epoch_0059.png
+ Average loss:  2515.331787109375  --- Iterations:  8  --- Epochs:  60
+ Average loss:  2277.0458984375  --- Iterations:  16  --- Epochs:  60
+ Average loss:  2350.89013671875  --- Iterations:  24  --- Epochs:  60
+Starting evaluation
+Average eval rmse: 49794.20469470368 in 1.755112886428833 seconds
+test_data/pcl/epoch_0060.png
+ Average loss:  2163.413818359375  --- Iterations:  8  --- Epochs:  61
+ Average loss:  2282.7265625  --- Iterations:  16  --- Epochs:  61
+ Average loss:  2249.099365234375  --- Iterations:  24  --- Epochs:  61
+Starting evaluation
+Average eval rmse: 51032.85997920873 in 1.8225996494293213 seconds
+test_data/pcl/epoch_0061.png
+ Average loss:  2192.499267578125  --- Iterations:  8  --- Epochs:  62
+ Average loss:  2114.5439453125  --- Iterations:  16  --- Epochs:  62
+ Average loss:  2136.580810546875  --- Iterations:  24  --- Epochs:  62
+Starting evaluation
+Average eval rmse: 48756.92348620772 in 1.814507246017456 seconds
+test_data/pcl/epoch_0062.png
+best_prev_rmse 48756.92348620772
+<class 'float'>
+ Average loss:  2110.9716796875  --- Iterations:  8  --- Epochs:  63
+ Average loss:  2056.8505859375  --- Iterations:  16  --- Epochs:  63
+ Average loss:  2055.580322265625  --- Iterations:  24  --- Epochs:  63
+Starting evaluation
+Average eval rmse: 50240.40132217746 in 1.768817663192749 seconds
+test_data/pcl/epoch_0063.png
+ Average loss:  2165.18896484375  --- Iterations:  8  --- Epochs:  64
+ Average loss:  2058.57275390625  --- Iterations:  16  --- Epochs:  64
+ Average loss:  2056.8369140625  --- Iterations:  24  --- Epochs:  64
+Starting evaluation
+Average eval rmse: 51858.37791145628 in 1.776407241821289 seconds
+test_data/pcl/epoch_0064.png
+ Average loss:  2089.0546875  --- Iterations:  8  --- Epochs:  65
+ Average loss:  1980.50927734375  --- Iterations:  16  --- Epochs:  65
+ Average loss:  1989.4979248046875  --- Iterations:  24  --- Epochs:  65
+Starting evaluation
+Average eval rmse: 48918.53487823893 in 1.7514879703521729 seconds
+test_data/pcl/epoch_0065.png
+ Average loss:  1964.796630859375  --- Iterations:  8  --- Epochs:  66
+ Average loss:  1929.697265625  --- Iterations:  16  --- Epochs:  66
+ Average loss:  1936.9915771484375  --- Iterations:  24  --- Epochs:  66
+Starting evaluation
+Average eval rmse: 48055.241669801 in 1.7492754459381104 seconds
+test_data/pcl/epoch_0066.png
+best_prev_rmse 48055.241669801
+<class 'float'>
+ Average loss:  1979.72900390625  --- Iterations:  8  --- Epochs:  67
+ Average loss:  1982.191650390625  --- Iterations:  16  --- Epochs:  67
+ Average loss:  2008.9208984375  --- Iterations:  24  --- Epochs:  67
+Starting evaluation
+Average eval rmse: 51008.21816665002 in 1.7225100994110107 seconds
+test_data/pcl/epoch_0067.png
+ Average loss:  2207.251708984375  --- Iterations:  8  --- Epochs:  68
+ Average loss:  1992.535400390625  --- Iterations:  16  --- Epochs:  68
+ Average loss:  2008.16357421875  --- Iterations:  24  --- Epochs:  68
+Starting evaluation
+Average eval rmse: 55254.3731320685 in 1.7222297191619873 seconds
+test_data/pcl/epoch_0068.png
+ Average loss:  2568.072998046875  --- Iterations:  8  --- Epochs:  69
+ Average loss:  2602.944580078125  --- Iterations:  16  --- Epochs:  69
+ Average loss:  2618.08203125  --- Iterations:  24  --- Epochs:  69
+Starting evaluation
+Average eval rmse: 52643.871799203975 in 1.7507789134979248 seconds
+test_data/pcl/epoch_0069.png
+ Average loss:  2213.7939453125  --- Iterations:  8  --- Epochs:  70
+ Average loss:  2287.4599609375  --- Iterations:  16  --- Epochs:  70
+ Average loss:  2308.37744140625  --- Iterations:  24  --- Epochs:  70
+Starting evaluation
+Average eval rmse: 55651.13709116032 in 1.730165719985962 seconds
+test_data/pcl/epoch_0070.png
+ Average loss:  2552.917236328125  --- Iterations:  8  --- Epochs:  71
+ Average loss:  2542.788330078125  --- Iterations:  16  --- Epochs:  71
+ Average loss:  2431.23974609375  --- Iterations:  24  --- Epochs:  71
+Starting evaluation
+Average eval rmse: 52755.88931829953 in 1.7539911270141602 seconds
+test_data/pcl/epoch_0071.png
+ Average loss:  2413.183349609375  --- Iterations:  8  --- Epochs:  72
+ Average loss:  2235.498779296875  --- Iterations:  16  --- Epochs:  72
+ Average loss:  2191.201171875  --- Iterations:  24  --- Epochs:  72
+Starting evaluation
+Average eval rmse: 50147.02629360673 in 1.7393217086791992 seconds
+test_data/pcl/epoch_0072.png
+ Average loss:  2135.03955078125  --- Iterations:  8  --- Epochs:  73
+ Average loss:  2164.861328125  --- Iterations:  16  --- Epochs:  73
+ Average loss:  2097.47998046875  --- Iterations:  24  --- Epochs:  73
+Starting evaluation
+Average eval rmse: 51274.283028439044 in 1.7311527729034424 seconds
+test_data/pcl/epoch_0073.png
+ Average loss:  2194.686279296875  --- Iterations:  8  --- Epochs:  74
+ Average loss:  2039.721435546875  --- Iterations:  16  --- Epochs:  74
+ Average loss:  1999.85205078125  --- Iterations:  24  --- Epochs:  74
+Starting evaluation
+Average eval rmse: 48689.117583192994 in 1.7844359874725342 seconds
+test_data/pcl/epoch_0074.png
+ Average loss:  1833.37060546875  --- Iterations:  8  --- Epochs:  75
+ Average loss:  1755.4764404296875  --- Iterations:  16  --- Epochs:  75
+ Average loss:  1758.8284912109375  --- Iterations:  24  --- Epochs:  75
+Starting evaluation
+Average eval rmse: 47641.487487229926 in 1.8033294677734375 seconds
+test_data/pcl/epoch_0075.png
+best_prev_rmse 47641.487487229926
+<class 'float'>
+ Average loss:  1746.3037109375  --- Iterations:  8  --- Epochs:  76
+ Average loss:  1646.75244140625  --- Iterations:  16  --- Epochs:  76
+ Average loss:  1626.95166015625  --- Iterations:  24  --- Epochs:  76
+Starting evaluation
+Average eval rmse: 44412.59262473802 in 1.7939960956573486 seconds
+test_data/pcl/epoch_0076.png
+best_prev_rmse 44412.59262473802
+<class 'float'>
+ Average loss:  1629.43896484375  --- Iterations:  8  --- Epochs:  77
+ Average loss:  1583.898681640625  --- Iterations:  16  --- Epochs:  77
+ Average loss:  1564.9290771484375  --- Iterations:  24  --- Epochs:  77
+Starting evaluation
+Average eval rmse: 46349.189740636146 in 1.7877733707427979 seconds
+test_data/pcl/epoch_0077.png
+ Average loss:  1564.3338623046875  --- Iterations:  8  --- Epochs:  78
+ Average loss:  1503.1248779296875  --- Iterations:  16  --- Epochs:  78
+ Average loss:  1477.768310546875  --- Iterations:  24  --- Epochs:  78
+Starting evaluation
+Average eval rmse: 42977.19134794006 in 1.7827062606811523 seconds
+test_data/pcl/epoch_0078.png
+best_prev_rmse 42977.19134794006
+<class 'float'>
+ Average loss:  1422.302490234375  --- Iterations:  8  --- Epochs:  79
+ Average loss:  1402.6636962890625  --- Iterations:  16  --- Epochs:  79
+ Average loss:  1386.0657958984375  --- Iterations:  24  --- Epochs:  79
+Starting evaluation
+Average eval rmse: 43373.82897417453 in 1.7368152141571045 seconds
+test_data/pcl/epoch_0079.png
+ Average loss:  1372.5062255859375  --- Iterations:  8  --- Epochs:  80
+ Average loss:  1342.524169921875  --- Iterations:  16  --- Epochs:  80
+ Average loss:  1327.3538818359375  --- Iterations:  24  --- Epochs:  80
+Starting evaluation
+Average eval rmse: 42595.67247710429 in 1.7192277908325195 seconds
+test_data/pcl/epoch_0080.png
+best_prev_rmse 42595.67247710429
+<class 'float'>
+ Average loss:  1309.6373291015625  --- Iterations:  8  --- Epochs:  81
+ Average loss:  1281.96044921875  --- Iterations:  16  --- Epochs:  81
+ Average loss:  1259.24951171875  --- Iterations:  24  --- Epochs:  81
+Starting evaluation
+Average eval rmse: 41487.89620800545 in 1.761528730392456 seconds
+test_data/pcl/epoch_0081.png
+best_prev_rmse 41487.89620800545
+<class 'float'>
+ Average loss:  1264.8048095703125  --- Iterations:  8  --- Epochs:  82
+ Average loss:  1225.9296875  --- Iterations:  16  --- Epochs:  82
+ Average loss:  1210.0594482421875  --- Iterations:  24  --- Epochs:  82
+Starting evaluation
+Average eval rmse: 41504.463022374184 in 1.78080415725708 seconds
+test_data/pcl/epoch_0082.png
+ Average loss:  1199.166748046875  --- Iterations:  8  --- Epochs:  83
+ Average loss:  1178.9658203125  --- Iterations:  16  --- Epochs:  83
+ Average loss:  1157.8148193359375  --- Iterations:  24  --- Epochs:  83
+Starting evaluation
+Average eval rmse: 41172.28927388917 in 1.7716217041015625 seconds
+test_data/pcl/epoch_0083.png
+best_prev_rmse 41172.28927388917
+<class 'float'>
+ Average loss:  1180.014892578125  --- Iterations:  8  --- Epochs:  84
+ Average loss:  1143.1649169921875  --- Iterations:  16  --- Epochs:  84
+ Average loss:  1137.674072265625  --- Iterations:  24  --- Epochs:  84
+Starting evaluation
+Average eval rmse: 40591.96447212456 in 1.7450976371765137 seconds
+test_data/pcl/epoch_0084.png
+best_prev_rmse 40591.96447212456
+<class 'float'>
+ Average loss:  1118.970703125  --- Iterations:  8  --- Epochs:  85
+ Average loss:  1125.9300537109375  --- Iterations:  16  --- Epochs:  85
+ Average loss:  1116.95947265625  --- Iterations:  24  --- Epochs:  85
+Starting evaluation
+Average eval rmse: 39716.79982822059 in 1.7291028499603271 seconds
+test_data/pcl/epoch_0085.png
+best_prev_rmse 39716.79982822059
+<class 'float'>
+ Average loss:  1115.72119140625  --- Iterations:  8  --- Epochs:  86
+ Average loss:  1118.61279296875  --- Iterations:  16  --- Epochs:  86
+ Average loss:  1094.4564208984375  --- Iterations:  24  --- Epochs:  86
+Starting evaluation
+Average eval rmse: 40070.64383404093 in 1.780240774154663 seconds
+test_data/pcl/epoch_0086.png
+ Average loss:  1109.7462158203125  --- Iterations:  8  --- Epochs:  87
+ Average loss:  1077.706298828125  --- Iterations:  16  --- Epochs:  87
+ Average loss:  1078.822265625  --- Iterations:  24  --- Epochs:  87
+Starting evaluation
+Average eval rmse: 39531.07785350048 in 1.7642157077789307 seconds
+test_data/pcl/epoch_0087.png
+best_prev_rmse 39531.07785350048
+<class 'float'>
+ Average loss:  1040.377197265625  --- Iterations:  8  --- Epochs:  88
+ Average loss:  1069.452880859375  --- Iterations:  16  --- Epochs:  88
+ Average loss:  1057.2806396484375  --- Iterations:  24  --- Epochs:  88
+Starting evaluation
+Average eval rmse: 40350.273948964976 in 1.7758009433746338 seconds
+test_data/pcl/epoch_0088.png
+ Average loss:  1076.2325439453125  --- Iterations:  8  --- Epochs:  89
+ Average loss:  1094.8896484375  --- Iterations:  16  --- Epochs:  89
+ Average loss:  1066.796630859375  --- Iterations:  24  --- Epochs:  89
+Starting evaluation
+Average eval rmse: 41487.7480000643 in 1.721994400024414 seconds
+test_data/pcl/epoch_0089.png
+ Average loss:  1176.5611572265625  --- Iterations:  8  --- Epochs:  90
+ Average loss:  1075.199951171875  --- Iterations:  16  --- Epochs:  90
+ Average loss:  1087.9443359375  --- Iterations:  24  --- Epochs:  90
+Starting evaluation
+Average eval rmse: 38119.39178292105 in 1.7406342029571533 seconds
+test_data/pcl/epoch_0090.png
+best_prev_rmse 38119.39178292105
+<class 'float'>
+ Average loss:  993.3429565429688  --- Iterations:  8  --- Epochs:  91
+ Average loss:  1061.24169921875  --- Iterations:  16  --- Epochs:  91
+ Average loss:  1019.2069702148438  --- Iterations:  24  --- Epochs:  91
+Starting evaluation
+Average eval rmse: 39962.12648351488 in 1.728111743927002 seconds
+test_data/pcl/epoch_0091.png
+ Average loss:  1096.1937255859375  --- Iterations:  8  --- Epochs:  92
+ Average loss:  1023.3598022460938  --- Iterations:  16  --- Epochs:  92
+ Average loss:  1034.489013671875  --- Iterations:  24  --- Epochs:  92
+Starting evaluation
+Average eval rmse: 38601.56518241786 in 1.7210280895233154 seconds
+test_data/pcl/epoch_0092.png
+ Average loss:  986.395751953125  --- Iterations:  8  --- Epochs:  93
+ Average loss:  1012.4140014648438  --- Iterations:  16  --- Epochs:  93
+ Average loss:  981.2999877929688  --- Iterations:  24  --- Epochs:  93
+Starting evaluation
+Average eval rmse: 39577.97918887597 in 1.7337896823883057 seconds
+test_data/pcl/epoch_0093.png
+ Average loss:  1044.2796630859375  --- Iterations:  8  --- Epochs:  94
+ Average loss:  979.0054321289062  --- Iterations:  16  --- Epochs:  94
+ Average loss:  973.46826171875  --- Iterations:  24  --- Epochs:  94
+Starting evaluation
+Average eval rmse: 39128.151005814834 in 1.7127466201782227 seconds
+test_data/pcl/epoch_0094.png
+ Average loss:  977.2548217773438  --- Iterations:  8  --- Epochs:  95
+ Average loss:  945.9581298828125  --- Iterations:  16  --- Epochs:  95
+ Average loss:  943.2055053710938  --- Iterations:  24  --- Epochs:  95
+Starting evaluation
+Average eval rmse: 37681.780568049646 in 1.7660853862762451 seconds
+test_data/pcl/epoch_0095.png
+best_prev_rmse 37681.780568049646
+<class 'float'>
+ Average loss:  912.2530517578125  --- Iterations:  8  --- Epochs:  96
+ Average loss:  916.484619140625  --- Iterations:  16  --- Epochs:  96
+ Average loss:  902.3427734375  --- Iterations:  24  --- Epochs:  96
+Starting evaluation
+Average eval rmse: 37343.518076263616 in 1.7159934043884277 seconds
+test_data/pcl/epoch_0096.png
+best_prev_rmse 37343.518076263616
+<class 'float'>
+ Average loss:  909.1746215820312  --- Iterations:  8  --- Epochs:  97
+ Average loss:  883.814697265625  --- Iterations:  16  --- Epochs:  97
+ Average loss:  887.9771728515625  --- Iterations:  24  --- Epochs:  97
+Starting evaluation
+Average eval rmse: 36957.07532891895 in 1.8548660278320312 seconds
+test_data/pcl/epoch_0097.png
+best_prev_rmse 36957.07532891895
+<class 'float'>
+ Average loss:  831.5038452148438  --- Iterations:  8  --- Epochs:  98
+ Average loss:  855.835693359375  --- Iterations:  16  --- Epochs:  98
+ Average loss:  848.9188842773438  --- Iterations:  24  --- Epochs:  98
+Starting evaluation
+Average eval rmse: 36523.949534888474 in 1.80029296875 seconds
+test_data/pcl/epoch_0098.png
+best_prev_rmse 36523.949534888474
+<class 'float'>
+ Average loss:  851.7362670898438  --- Iterations:  8  --- Epochs:  99
+ Average loss:  874.8214111328125  --- Iterations:  16  --- Epochs:  99
+ Average loss:  843.9718017578125  --- Iterations:  24  --- Epochs:  99
+Starting evaluation
+Average eval rmse: 37787.7076717159 in 1.7668988704681396 seconds
+test_data/pcl/epoch_0099.png
+new lr
+ Average loss:  902.9993896484375  --- Iterations:  8  --- Epochs:  100
+ Average loss:  846.898193359375  --- Iterations:  16  --- Epochs:  100
+ Average loss:  840.340087890625  --- Iterations:  24  --- Epochs:  100
+Starting evaluation
+Average eval rmse: 37802.61552307077 in 1.718501091003418 seconds
+test_data/pcl/epoch_0100.png
+ Average loss:  867.3411865234375  --- Iterations:  8  --- Epochs:  101
+ Average loss:  828.259521484375  --- Iterations:  16  --- Epochs:  101
+ Average loss:  835.8185424804688  --- Iterations:  24  --- Epochs:  101
+Starting evaluation
+Average eval rmse: 36652.26527053556 in 1.7289986610412598 seconds
+test_data/pcl/epoch_0101.png
+ Average loss:  804.9501953125  --- Iterations:  8  --- Epochs:  102
+ Average loss:  844.873046875  --- Iterations:  16  --- Epochs:  102
+ Average loss:  819.0121459960938  --- Iterations:  24  --- Epochs:  102
+Starting evaluation
+Average eval rmse: 37502.43026511353 in 1.7851617336273193 seconds
+test_data/pcl/epoch_0102.png
+ Average loss:  1045.3480224609375  --- Iterations:  8  --- Epochs:  103
+ Average loss:  1049.5458984375  --- Iterations:  16  --- Epochs:  103
+ Average loss:  1040.0780029296875  --- Iterations:  24  --- Epochs:  103
+Starting evaluation
+Average eval rmse: 43464.8696920834 in 1.853966474533081 seconds
+test_data/pcl/epoch_0103.png
+ Average loss:  1143.0836181640625  --- Iterations:  8  --- Epochs:  104
+ Average loss:  980.388916015625  --- Iterations:  16  --- Epochs:  104
+ Average loss:  976.933837890625  --- Iterations:  24  --- Epochs:  104
+Starting evaluation
+Average eval rmse: 38920.4467188045 in 1.8171825408935547 seconds
+test_data/pcl/epoch_0104.png
+ Average loss:  885.4473266601562  --- Iterations:  8  --- Epochs:  105
+ Average loss:  878.2142333984375  --- Iterations:  16  --- Epochs:  105
+ Average loss:  901.5491943359375  --- Iterations:  24  --- Epochs:  105
+Starting evaluation
+Average eval rmse: 37107.61061444802 in 1.9339003562927246 seconds
+test_data/pcl/epoch_0105.png
+ Average loss:  834.5509643554688  --- Iterations:  8  --- Epochs:  106
+ Average loss:  871.4398193359375  --- Iterations:  16  --- Epochs:  106
+ Average loss:  928.4749755859375  --- Iterations:  24  --- Epochs:  106
+Starting evaluation
+Average eval rmse: 37025.41036980849 in 1.9128003120422363 seconds
+test_data/pcl/epoch_0106.png
+ Average loss:  838.3648681640625  --- Iterations:  8  --- Epochs:  107
+ Average loss:  1068.09130859375  --- Iterations:  16  --- Epochs:  107
+ Average loss:  1118.4140625  --- Iterations:  24  --- Epochs:  107
+Starting evaluation
+Average eval rmse: 43731.18845376823 in 1.7540688514709473 seconds
+test_data/pcl/epoch_0107.png
+ Average loss:  1278.0169677734375  --- Iterations:  8  --- Epochs:  108
+ Average loss:  1153.4456787109375  --- Iterations:  16  --- Epochs:  108
+ Average loss:  1063.7655029296875  --- Iterations:  24  --- Epochs:  108
+Starting evaluation
+Average eval rmse: 40354.470943082524 in 1.8189172744750977 seconds
+test_data/pcl/epoch_0108.png
+ Average loss:  1081.7154541015625  --- Iterations:  8  --- Epochs:  109
+ Average loss:  958.0225219726562  --- Iterations:  16  --- Epochs:  109
+ Average loss:  991.29052734375  --- Iterations:  24  --- Epochs:  109
+Starting evaluation
+Average eval rmse: 37136.870180489954 in 1.89298415184021 seconds
+test_data/pcl/epoch_0109.png
+ Average loss:  791.8413696289062  --- Iterations:  8  --- Epochs:  110
+ Average loss:  824.1529541015625  --- Iterations:  16  --- Epochs:  110
+ Average loss:  822.4027709960938  --- Iterations:  24  --- Epochs:  110
+Starting evaluation
+Average eval rmse: 37191.16472340986 in 1.871485948562622 seconds
+test_data/pcl/epoch_0110.png
+ Average loss:  787.0198974609375  --- Iterations:  8  --- Epochs:  111
+ Average loss:  754.9166259765625  --- Iterations:  16  --- Epochs:  111
+ Average loss:  761.94482421875  --- Iterations:  24  --- Epochs:  111
+Starting evaluation
+Average eval rmse: 36080.64973974086 in 1.840890645980835 seconds
+test_data/pcl/epoch_0111.png
+best_prev_rmse 36080.64973974086
+<class 'float'>
+ Average loss:  734.6423950195312  --- Iterations:  8  --- Epochs:  112
+ Average loss:  703.7481689453125  --- Iterations:  16  --- Epochs:  112
+ Average loss:  718.0543823242188  --- Iterations:  24  --- Epochs:  112
+Starting evaluation
+Average eval rmse: 34987.727272760945 in 1.891913652420044 seconds
+test_data/pcl/epoch_0112.png
+best_prev_rmse 34987.727272760945
+<class 'float'>
+ Average loss:  693.5969848632812  --- Iterations:  8  --- Epochs:  113
+ Average loss:  685.21337890625  --- Iterations:  16  --- Epochs:  113
+ Average loss:  685.9940795898438  --- Iterations:  24  --- Epochs:  113
+Starting evaluation
+Average eval rmse: 35158.651763949594 in 1.822293996810913 seconds
+test_data/pcl/epoch_0113.png
+ Average loss:  682.663330078125  --- Iterations:  8  --- Epochs:  114
+ Average loss:  652.3792724609375  --- Iterations:  16  --- Epochs:  114
+ Average loss:  645.6901245117188  --- Iterations:  24  --- Epochs:  114
+Starting evaluation
+Average eval rmse: 34204.95781698078 in 1.840644359588623 seconds
+test_data/pcl/epoch_0114.png
+best_prev_rmse 34204.95781698078
+<class 'float'>
+ Average loss:  641.5740966796875  --- Iterations:  8  --- Epochs:  115
+ Average loss:  620.3865966796875  --- Iterations:  16  --- Epochs:  115
+ Average loss:  618.8380126953125  --- Iterations:  24  --- Epochs:  115
+Starting evaluation
+Average eval rmse: 33952.79593702786 in 1.798914909362793 seconds
+test_data/pcl/epoch_0115.png
+best_prev_rmse 33952.79593702786
+<class 'float'>
+ Average loss:  591.2872314453125  --- Iterations:  8  --- Epochs:  116
+ Average loss:  599.29443359375  --- Iterations:  16  --- Epochs:  116
+ Average loss:  596.0213623046875  --- Iterations:  24  --- Epochs:  116
+Starting evaluation
+Average eval rmse: 32867.10192222444 in 1.7726337909698486 seconds
+test_data/pcl/epoch_0116.png
+best_prev_rmse 32867.10192222444
+<class 'float'>
+ Average loss:  577.3331298828125  --- Iterations:  8  --- Epochs:  117
+ Average loss:  583.603759765625  --- Iterations:  16  --- Epochs:  117
+ Average loss:  588.1881103515625  --- Iterations:  24  --- Epochs:  117
+Starting evaluation
+Average eval rmse: 33260.19148319806 in 1.8361451625823975 seconds
+test_data/pcl/epoch_0117.png
+ Average loss:  549.8368530273438  --- Iterations:  8  --- Epochs:  118
+ Average loss:  577.3784790039062  --- Iterations:  16  --- Epochs:  118
+ Average loss:  574.4779052734375  --- Iterations:  24  --- Epochs:  118
+Starting evaluation
+Average eval rmse: 33308.732989731885 in 1.7813055515289307 seconds
+test_data/pcl/epoch_0118.png
+ Average loss:  558.3829345703125  --- Iterations:  8  --- Epochs:  119
+ Average loss:  567.55712890625  --- Iterations:  16  --- Epochs:  119
+ Average loss:  567.58251953125  --- Iterations:  24  --- Epochs:  119
+Starting evaluation
+Average eval rmse: 32916.70430491999 in 1.8018226623535156 seconds
+test_data/pcl/epoch_0119.png
+ Average loss:  537.6358032226562  --- Iterations:  8  --- Epochs:  120
+ Average loss:  550.495361328125  --- Iterations:  16  --- Epochs:  120
+ Average loss:  535.7948608398438  --- Iterations:  24  --- Epochs:  120
+Starting evaluation
+Average eval rmse: 32739.257800084 in 1.8793613910675049 seconds
+test_data/pcl/epoch_0120.png
+best_prev_rmse 32739.257800084
+<class 'float'>
+ Average loss:  550.3578491210938  --- Iterations:  8  --- Epochs:  121
+ Average loss:  523.7068481445312  --- Iterations:  16  --- Epochs:  121
+ Average loss:  524.2747802734375  --- Iterations:  24  --- Epochs:  121
+Starting evaluation
+Average eval rmse: 32417.446835719176 in 1.7983214855194092 seconds
+test_data/pcl/epoch_0121.png
+best_prev_rmse 32417.446835719176
+<class 'float'>
+ Average loss:  514.1624755859375  --- Iterations:  8  --- Epochs:  122
+ Average loss:  500.3126220703125  --- Iterations:  16  --- Epochs:  122
+ Average loss:  503.45489501953125  --- Iterations:  24  --- Epochs:  122
+Starting evaluation
+Average eval rmse: 32521.022331645905 in 1.7715427875518799 seconds
+test_data/pcl/epoch_0122.png
+ Average loss:  494.97454833984375  --- Iterations:  8  --- Epochs:  123
+ Average loss:  488.77557373046875  --- Iterations:  16  --- Epochs:  123
+ Average loss:  487.8851318359375  --- Iterations:  24  --- Epochs:  123
+Starting evaluation
+Average eval rmse: 32389.48758121314 in 1.73887038230896 seconds
+test_data/pcl/epoch_0123.png
+best_prev_rmse 32389.48758121314
+<class 'float'>
+ Average loss:  489.19287109375  --- Iterations:  8  --- Epochs:  124
+ Average loss:  478.4064636230469  --- Iterations:  16  --- Epochs:  124
+ Average loss:  479.6161804199219  --- Iterations:  24  --- Epochs:  124
+Starting evaluation
+Average eval rmse: 32013.23630863281 in 1.832672357559204 seconds
+test_data/pcl/epoch_0124.png
+best_prev_rmse 32013.23630863281
+<class 'float'>
+ Average loss:  486.41412353515625  --- Iterations:  8  --- Epochs:  125
+ Average loss:  484.0748291015625  --- Iterations:  16  --- Epochs:  125
+ Average loss:  482.3921813964844  --- Iterations:  24  --- Epochs:  125
+Starting evaluation
+Average eval rmse: 32428.796581170885 in 1.7938244342803955 seconds
+test_data/pcl/epoch_0125.png
+ Average loss:  506.1163635253906  --- Iterations:  8  --- Epochs:  126
+ Average loss:  498.5887145996094  --- Iterations:  16  --- Epochs:  126
+ Average loss:  490.789306640625  --- Iterations:  24  --- Epochs:  126
+Starting evaluation
+Average eval rmse: 32377.04933595925 in 1.7873377799987793 seconds
+test_data/pcl/epoch_0126.png
+ Average loss:  530.0907592773438  --- Iterations:  8  --- Epochs:  127
+ Average loss:  488.862548828125  --- Iterations:  16  --- Epochs:  127
+ Average loss:  496.8726806640625  --- Iterations:  24  --- Epochs:  127
+Starting evaluation
+Average eval rmse: 32792.04459531961 in 1.871530532836914 seconds
+test_data/pcl/epoch_0127.png
+ Average loss:  488.6414489746094  --- Iterations:  8  --- Epochs:  128
+ Average loss:  486.05596923828125  --- Iterations:  16  --- Epochs:  128
+ Average loss:  495.9695739746094  --- Iterations:  24  --- Epochs:  128
+Starting evaluation
+Average eval rmse: 32051.630535101183 in 1.9996464252471924 seconds
+test_data/pcl/epoch_0128.png
+ Average loss:  494.1549072265625  --- Iterations:  8  --- Epochs:  129
+ Average loss:  502.002197265625  --- Iterations:  16  --- Epochs:  129
+ Average loss:  506.11566162109375  --- Iterations:  24  --- Epochs:  129
+Starting evaluation
+Average eval rmse: 33075.55015918431 in 1.8781664371490479 seconds
+test_data/pcl/epoch_0129.png
+ Average loss:  530.2955322265625  --- Iterations:  8  --- Epochs:  130
+ Average loss:  514.7542724609375  --- Iterations:  16  --- Epochs:  130
+ Average loss:  543.5506591796875  --- Iterations:  24  --- Epochs:  130
+Starting evaluation
+Average eval rmse: 31424.98355590181 in 1.7346432209014893 seconds
+test_data/pcl/epoch_0130.png
+best_prev_rmse 31424.98355590181
+<class 'float'>
+ Average loss:  483.8879089355469  --- Iterations:  8  --- Epochs:  131
+ Average loss:  568.1665649414062  --- Iterations:  16  --- Epochs:  131
+ Average loss:  582.0343017578125  --- Iterations:  24  --- Epochs:  131
+Starting evaluation
+Average eval rmse: 33835.519593079436 in 1.7473516464233398 seconds
+test_data/pcl/epoch_0131.png
+ Average loss:  623.353759765625  --- Iterations:  8  --- Epochs:  132
+ Average loss:  646.2384033203125  --- Iterations:  16  --- Epochs:  132
+ Average loss:  613.2908935546875  --- Iterations:  24  --- Epochs:  132
+Starting evaluation
+Average eval rmse: 32701.374463650955 in 1.7519335746765137 seconds
+test_data/pcl/epoch_0132.png
+ Average loss:  579.404052734375  --- Iterations:  8  --- Epochs:  133
+ Average loss:  561.8064575195312  --- Iterations:  16  --- Epochs:  133
+ Average loss:  537.701171875  --- Iterations:  24  --- Epochs:  133
+Starting evaluation
+Average eval rmse: 32337.449162771794 in 1.84299898147583 seconds
+test_data/pcl/epoch_0133.png
+ Average loss:  510.7799072265625  --- Iterations:  8  --- Epochs:  134
+ Average loss:  501.7372741699219  --- Iterations:  16  --- Epochs:  134
+ Average loss:  481.84332275390625  --- Iterations:  24  --- Epochs:  134
+Starting evaluation
+Average eval rmse: 32687.594223611424 in 1.782048225402832 seconds
+test_data/pcl/epoch_0134.png
+ Average loss:  536.9915161132812  --- Iterations:  8  --- Epochs:  135
+ Average loss:  474.071533203125  --- Iterations:  16  --- Epochs:  135
+ Average loss:  493.1343688964844  --- Iterations:  24  --- Epochs:  135
+Starting evaluation
+Average eval rmse: 31169.7938520789 in 1.8726210594177246 seconds
+test_data/pcl/epoch_0135.png
+best_prev_rmse 31169.7938520789
+<class 'float'>
+ Average loss:  480.493896484375  --- Iterations:  8  --- Epochs:  136
+ Average loss:  465.29364013671875  --- Iterations:  16  --- Epochs:  136
+ Average loss:  485.1217041015625  --- Iterations:  24  --- Epochs:  136
+Starting evaluation
+Average eval rmse: 31223.845433297323 in 1.809661626815796 seconds
+test_data/pcl/epoch_0136.png
+ Average loss:  439.7950744628906  --- Iterations:  8  --- Epochs:  137
+ Average loss:  455.26873779296875  --- Iterations:  16  --- Epochs:  137
+ Average loss:  453.002685546875  --- Iterations:  24  --- Epochs:  137
+Starting evaluation
+Average eval rmse: 30510.172360981913 in 1.8555936813354492 seconds
+test_data/pcl/epoch_0137.png
+best_prev_rmse 30510.172360981913
+<class 'float'>
+ Average loss:  408.9330139160156  --- Iterations:  8  --- Epochs:  138
+ Average loss:  434.5370788574219  --- Iterations:  16  --- Epochs:  138
+ Average loss:  419.3780517578125  --- Iterations:  24  --- Epochs:  138
+Starting evaluation
+Average eval rmse: 31227.347089394967 in 1.9096417427062988 seconds
+test_data/pcl/epoch_0138.png
+ Average loss:  506.8768615722656  --- Iterations:  8  --- Epochs:  139
+ Average loss:  535.7494506835938  --- Iterations:  16  --- Epochs:  139
+ Average loss:  516.7670288085938  --- Iterations:  24  --- Epochs:  139
+Starting evaluation
+Average eval rmse: 34776.70183761937 in 1.9487755298614502 seconds
+test_data/pcl/epoch_0139.png
+ Average loss:  664.2483520507812  --- Iterations:  8  --- Epochs:  140
+ Average loss:  604.704833984375  --- Iterations:  16  --- Epochs:  140
+ Average loss:  590.0450439453125  --- Iterations:  24  --- Epochs:  140
+Starting evaluation
+Average eval rmse: 32199.42621593704 in 1.793501615524292 seconds
+test_data/pcl/epoch_0140.png
+ Average loss:  520.5573120117188  --- Iterations:  8  --- Epochs:  141
+ Average loss:  458.371826171875  --- Iterations:  16  --- Epochs:  141
+ Average loss:  475.8704528808594  --- Iterations:  24  --- Epochs:  141
+Starting evaluation
+Average eval rmse: 30300.953258734662 in 1.7576239109039307 seconds
+test_data/pcl/epoch_0141.png
+best_prev_rmse 30300.953258734662
+<class 'float'>
+ Average loss:  418.3241271972656  --- Iterations:  8  --- Epochs:  142
+ Average loss:  489.8162841796875  --- Iterations:  16  --- Epochs:  142
+ Average loss:  527.20947265625  --- Iterations:  24  --- Epochs:  142
+Starting evaluation
+Average eval rmse: 31919.578914692484 in 1.9858689308166504 seconds
+test_data/pcl/epoch_0142.png
+ Average loss:  541.5120239257812  --- Iterations:  8  --- Epochs:  143
+ Average loss:  602.122314453125  --- Iterations:  16  --- Epochs:  143
+ Average loss:  552.8463134765625  --- Iterations:  24  --- Epochs:  143
+Starting evaluation
+Average eval rmse: 31909.77304802227 in 1.8202581405639648 seconds
+test_data/pcl/epoch_0143.png
+ Average loss:  536.646240234375  --- Iterations:  8  --- Epochs:  144
+ Average loss:  496.839111328125  --- Iterations:  16  --- Epochs:  144
+ Average loss:  468.432373046875  --- Iterations:  24  --- Epochs:  144
+Starting evaluation
+Average eval rmse: 32422.35754752927 in 1.7834498882293701 seconds
+test_data/pcl/epoch_0144.png
+ Average loss:  531.9302978515625  --- Iterations:  8  --- Epochs:  145
+ Average loss:  452.8416442871094  --- Iterations:  16  --- Epochs:  145
+ Average loss:  473.76751708984375  --- Iterations:  24  --- Epochs:  145
+Starting evaluation
+Average eval rmse: 30602.09157328255 in 1.7668218612670898 seconds
+test_data/pcl/epoch_0145.png
+ Average loss:  406.3961486816406  --- Iterations:  8  --- Epochs:  146
+ Average loss:  418.7580261230469  --- Iterations:  16  --- Epochs:  146
+ Average loss:  423.3025817871094  --- Iterations:  24  --- Epochs:  146
+Starting evaluation
+Average eval rmse: 29055.63683000197 in 1.7205348014831543 seconds
+test_data/pcl/epoch_0146.png
+best_prev_rmse 29055.63683000197
+<class 'float'>
+ Average loss:  363.26995849609375  --- Iterations:  8  --- Epochs:  147
+ Average loss:  397.209716796875  --- Iterations:  16  --- Epochs:  147
+ Average loss:  383.09222412109375  --- Iterations:  24  --- Epochs:  147
+Starting evaluation
+Average eval rmse: 30977.40188333858 in 1.7203669548034668 seconds
+test_data/pcl/epoch_0147.png
+ Average loss:  446.92413330078125  --- Iterations:  8  --- Epochs:  148
+ Average loss:  425.3835754394531  --- Iterations:  16  --- Epochs:  148
+ Average loss:  421.93475341796875  --- Iterations:  24  --- Epochs:  148
+Starting evaluation
+Average eval rmse: 30216.944209034453 in 1.7753198146820068 seconds
+test_data/pcl/epoch_0148.png
+ Average loss:  419.070556640625  --- Iterations:  8  --- Epochs:  149
+ Average loss:  372.93328857421875  --- Iterations:  16  --- Epochs:  149
+ Average loss:  383.0860290527344  --- Iterations:  24  --- Epochs:  149
+Starting evaluation
+Average eval rmse: 29185.09171821942 in 1.7975924015045166 seconds
+test_data/pcl/epoch_0149.png
+ Average loss:  348.6241455078125  --- Iterations:  8  --- Epochs:  150
+ Average loss:  367.3149108886719  --- Iterations:  16  --- Epochs:  150
+ Average loss:  370.41802978515625  --- Iterations:  24  --- Epochs:  150
+Starting evaluation
+Average eval rmse: 28912.83315093053 in 1.7292649745941162 seconds
+test_data/pcl/epoch_0150.png
+best_prev_rmse 28912.83315093053
+<class 'float'>
+ Average loss:  362.6205139160156  --- Iterations:  8  --- Epochs:  151
+ Average loss:  383.4104309082031  --- Iterations:  16  --- Epochs:  151
+ Average loss:  361.0175476074219  --- Iterations:  24  --- Epochs:  151
+Starting evaluation
+Average eval rmse: 29042.155945550723 in 1.7278766632080078 seconds
+test_data/pcl/epoch_0151.png
+ Average loss:  386.84210205078125  --- Iterations:  8  --- Epochs:  152
+ Average loss:  364.06585693359375  --- Iterations:  16  --- Epochs:  152
+ Average loss:  356.28668212890625  --- Iterations:  24  --- Epochs:  152
+Starting evaluation
+Average eval rmse: 28809.70532883087 in 1.7207207679748535 seconds
+test_data/pcl/epoch_0152.png
+best_prev_rmse 28809.70532883087
+<class 'float'>
+ Average loss:  338.2876281738281  --- Iterations:  8  --- Epochs:  153
+ Average loss:  344.1412353515625  --- Iterations:  16  --- Epochs:  153
+ Average loss:  337.12103271484375  --- Iterations:  24  --- Epochs:  153
+Starting evaluation
+Average eval rmse: 28674.035715964434 in 1.7347896099090576 seconds
+test_data/pcl/epoch_0153.png
+best_prev_rmse 28674.035715964434
+<class 'float'>
+ Average loss:  326.08612060546875  --- Iterations:  8  --- Epochs:  154
+ Average loss:  327.7685546875  --- Iterations:  16  --- Epochs:  154
+ Average loss:  326.84320068359375  --- Iterations:  24  --- Epochs:  154
+Starting evaluation
+Average eval rmse: 27870.61752585039 in 1.7559616565704346 seconds
+test_data/pcl/epoch_0154.png
+best_prev_rmse 27870.61752585039
+<class 'float'>
+ Average loss:  307.3656005859375  --- Iterations:  8  --- Epochs:  155
+ Average loss:  311.69769287109375  --- Iterations:  16  --- Epochs:  155
+ Average loss:  314.0212707519531  --- Iterations:  24  --- Epochs:  155
+Starting evaluation
+Average eval rmse: 28424.627867063053 in 1.729475975036621 seconds
+test_data/pcl/epoch_0155.png
+ Average loss:  313.32183837890625  --- Iterations:  8  --- Epochs:  156
+ Average loss:  311.4732971191406  --- Iterations:  16  --- Epochs:  156
+ Average loss:  309.16552734375  --- Iterations:  24  --- Epochs:  156
+Starting evaluation
+Average eval rmse: 27970.596516655296 in 1.7553870677947998 seconds
+test_data/pcl/epoch_0156.png
+ Average loss:  316.2093505859375  --- Iterations:  8  --- Epochs:  157
+ Average loss:  304.3854675292969  --- Iterations:  16  --- Epochs:  157
+ Average loss:  307.6585693359375  --- Iterations:  24  --- Epochs:  157
+Starting evaluation
+Average eval rmse: 28002.38436023837 in 1.7636451721191406 seconds
+test_data/pcl/epoch_0157.png
+ Average loss:  303.5569152832031  --- Iterations:  8  --- Epochs:  158
+ Average loss:  299.0303039550781  --- Iterations:  16  --- Epochs:  158
+ Average loss:  298.497314453125  --- Iterations:  24  --- Epochs:  158
+Starting evaluation
+Average eval rmse: 28049.17121330545 in 1.7741649150848389 seconds
+test_data/pcl/epoch_0158.png
+ Average loss:  299.7527770996094  --- Iterations:  8  --- Epochs:  159
+ Average loss:  296.10028076171875  --- Iterations:  16  --- Epochs:  159
+ Average loss:  294.6043395996094  --- Iterations:  24  --- Epochs:  159
+Starting evaluation
+Average eval rmse: 27782.48781099093 in 1.7291491031646729 seconds
+test_data/pcl/epoch_0159.png
+best_prev_rmse 27782.48781099093
+<class 'float'>
+ Average loss:  301.370361328125  --- Iterations:  8  --- Epochs:  160
+ Average loss:  290.37640380859375  --- Iterations:  16  --- Epochs:  160
+ Average loss:  294.3701171875  --- Iterations:  24  --- Epochs:  160
+Starting evaluation
+Average eval rmse: 27039.40858921548 in 1.7392845153808594 seconds
+test_data/pcl/epoch_0160.png
+best_prev_rmse 27039.40858921548
+<class 'float'>
+ Average loss:  271.0455017089844  --- Iterations:  8  --- Epochs:  161
+ Average loss:  289.7916259765625  --- Iterations:  16  --- Epochs:  161
+ Average loss:  282.7850036621094  --- Iterations:  24  --- Epochs:  161
+Starting evaluation
+Average eval rmse: 27641.780711365485 in 1.754122018814087 seconds
+test_data/pcl/epoch_0161.png
+ Average loss:  290.39898681640625  --- Iterations:  8  --- Epochs:  162
+ Average loss:  289.17364501953125  --- Iterations:  16  --- Epochs:  162
+ Average loss:  286.4857177734375  --- Iterations:  24  --- Epochs:  162
+Starting evaluation
+Average eval rmse: 27047.041931257812 in 1.73630952835083 seconds
+test_data/pcl/epoch_0162.png
+ Average loss:  275.9575500488281  --- Iterations:  8  --- Epochs:  163
+ Average loss:  290.62774658203125  --- Iterations:  16  --- Epochs:  163
+ Average loss:  283.29290771484375  --- Iterations:  24  --- Epochs:  163
+Starting evaluation
+Average eval rmse: 28002.924162009105 in 1.7234559059143066 seconds
+test_data/pcl/epoch_0163.png
+ Average loss:  299.15411376953125  --- Iterations:  8  --- Epochs:  164
+ Average loss:  299.3586120605469  --- Iterations:  16  --- Epochs:  164
+ Average loss:  286.82586669921875  --- Iterations:  24  --- Epochs:  164
+Starting evaluation
+Average eval rmse: 27286.208400925552 in 1.7351725101470947 seconds
+test_data/pcl/epoch_0164.png
+ Average loss:  318.9606018066406  --- Iterations:  8  --- Epochs:  165
+ Average loss:  289.38555908203125  --- Iterations:  16  --- Epochs:  165
+ Average loss:  290.4915771484375  --- Iterations:  24  --- Epochs:  165
+Starting evaluation
+Average eval rmse: 28112.015912402076 in 1.754601240158081 seconds
+test_data/pcl/epoch_0165.png
+ Average loss:  297.1659851074219  --- Iterations:  8  --- Epochs:  166
+ Average loss:  280.87457275390625  --- Iterations:  16  --- Epochs:  166
+ Average loss:  298.76068115234375  --- Iterations:  24  --- Epochs:  166
+Starting evaluation
+Average eval rmse: 26769.195352320236 in 1.8230137825012207 seconds
+test_data/pcl/epoch_0166.png
+best_prev_rmse 26769.195352320236
+<class 'float'>
+ Average loss:  273.7307434082031  --- Iterations:  8  --- Epochs:  167
+ Average loss:  295.12982177734375  --- Iterations:  16  --- Epochs:  167
+ Average loss:  303.87835693359375  --- Iterations:  24  --- Epochs:  167
+Starting evaluation
+Average eval rmse: 27068.60550899914 in 1.8220465183258057 seconds
+test_data/pcl/epoch_0167.png
+ Average loss:  299.1841125488281  --- Iterations:  8  --- Epochs:  168
+ Average loss:  330.4524841308594  --- Iterations:  16  --- Epochs:  168
+ Average loss:  317.49798583984375  --- Iterations:  24  --- Epochs:  168
+Starting evaluation
+Average eval rmse: 29060.953192826637 in 1.8258881568908691 seconds
+test_data/pcl/epoch_0168.png
+ Average loss:  373.6060485839844  --- Iterations:  8  --- Epochs:  169
+ Average loss:  335.85858154296875  --- Iterations:  16  --- Epochs:  169
+ Average loss:  343.57366943359375  --- Iterations:  24  --- Epochs:  169
+Starting evaluation
+Average eval rmse: 27656.458199957586 in 1.7834100723266602 seconds
+test_data/pcl/epoch_0169.png
+ Average loss:  328.66998291015625  --- Iterations:  8  --- Epochs:  170
+ Average loss:  348.67694091796875  --- Iterations:  16  --- Epochs:  170
+ Average loss:  345.82568359375  --- Iterations:  24  --- Epochs:  170
+Starting evaluation
+Average eval rmse: 29421.622490033933 in 1.8018202781677246 seconds
+test_data/pcl/epoch_0170.png
+ Average loss:  370.7850341796875  --- Iterations:  8  --- Epochs:  171
+ Average loss:  365.7779846191406  --- Iterations:  16  --- Epochs:  171
+ Average loss:  350.33154296875  --- Iterations:  24  --- Epochs:  171
+Starting evaluation
+Average eval rmse: 27993.443764709198 in 1.7828660011291504 seconds
+test_data/pcl/epoch_0171.png
+ Average loss:  345.7996826171875  --- Iterations:  8  --- Epochs:  172
+ Average loss:  325.70050048828125  --- Iterations:  16  --- Epochs:  172
+ Average loss:  318.87957763671875  --- Iterations:  24  --- Epochs:  172
+Starting evaluation
+Average eval rmse: 28291.6547811588 in 1.76383376121521 seconds
+test_data/pcl/epoch_0172.png
+ Average loss:  325.0854797363281  --- Iterations:  8  --- Epochs:  173
+ Average loss:  305.55670166015625  --- Iterations:  16  --- Epochs:  173
+ Average loss:  308.4478454589844  --- Iterations:  24  --- Epochs:  173
+Starting evaluation
+Average eval rmse: 28129.028616269472 in 1.8882145881652832 seconds
+test_data/pcl/epoch_0173.png
+ Average loss:  333.12896728515625  --- Iterations:  8  --- Epochs:  174
+ Average loss:  304.8309631347656  --- Iterations:  16  --- Epochs:  174
+ Average loss:  319.56439208984375  --- Iterations:  24  --- Epochs:  174
+Starting evaluation
+Average eval rmse: 26558.239915623228 in 1.8296394348144531 seconds
+test_data/pcl/epoch_0174.png
+best_prev_rmse 26558.239915623228
+<class 'float'>
+ Average loss:  264.1734313964844  --- Iterations:  8  --- Epochs:  175
+ Average loss:  293.38250732421875  --- Iterations:  16  --- Epochs:  175
+ Average loss:  300.07232666015625  --- Iterations:  24  --- Epochs:  175
+Starting evaluation
+Average eval rmse: 27219.38945994235 in 1.7864019870758057 seconds
+test_data/pcl/epoch_0175.png
+ Average loss:  282.5898742675781  --- Iterations:  8  --- Epochs:  176
+ Average loss:  334.35760498046875  --- Iterations:  16  --- Epochs:  176
+ Average loss:  343.584716796875  --- Iterations:  24  --- Epochs:  176
+Starting evaluation
+Average eval rmse: 27821.68785600689 in 1.7728209495544434 seconds
+test_data/pcl/epoch_0176.png
+ Average loss:  349.1891174316406  --- Iterations:  8  --- Epochs:  177
+ Average loss:  420.64697265625  --- Iterations:  16  --- Epochs:  177
+ Average loss:  409.55908203125  --- Iterations:  24  --- Epochs:  177
+Starting evaluation
+Average eval rmse: 29842.795609705707 in 1.7930967807769775 seconds
+test_data/pcl/epoch_0177.png
+ Average loss:  436.1474914550781  --- Iterations:  8  --- Epochs:  178
+ Average loss:  417.119873046875  --- Iterations:  16  --- Epochs:  178
+ Average loss:  372.978271484375  --- Iterations:  24  --- Epochs:  178
+Starting evaluation
+Average eval rmse: 28661.753021122564 in 1.780221939086914 seconds
+test_data/pcl/epoch_0178.png
+ Average loss:  408.9024658203125  --- Iterations:  8  --- Epochs:  179
+ Average loss:  365.6053161621094  --- Iterations:  16  --- Epochs:  179
+ Average loss:  380.72119140625  --- Iterations:  24  --- Epochs:  179
+Starting evaluation
+Average eval rmse: 31617.433951231167 in 1.767212152481079 seconds
+test_data/pcl/epoch_0179.png
+ Average loss:  501.1577453613281  --- Iterations:  8  --- Epochs:  180
+ Average loss:  431.8597412109375  --- Iterations:  16  --- Epochs:  180
+ Average loss:  506.2687683105469  --- Iterations:  24  --- Epochs:  180
+Starting evaluation
+Average eval rmse: 30119.5834834227 in 1.9305827617645264 seconds
+test_data/pcl/epoch_0180.png
+ Average loss:  452.1295471191406  --- Iterations:  8  --- Epochs:  181
+ Average loss:  485.56689453125  --- Iterations:  16  --- Epochs:  181
+ Average loss:  512.927490234375  --- Iterations:  24  --- Epochs:  181
+Starting evaluation
+Average eval rmse: 27869.551753300646 in 1.8166265487670898 seconds
+test_data/pcl/epoch_0181.png
+ Average loss:  318.5796203613281  --- Iterations:  8  --- Epochs:  182
+ Average loss:  387.42510986328125  --- Iterations:  16  --- Epochs:  182
+ Average loss:  391.98236083984375  --- Iterations:  24  --- Epochs:  182
+Starting evaluation
+Average eval rmse: 29191.292039128293 in 1.7668039798736572 seconds
+test_data/pcl/epoch_0182.png
+ Average loss:  418.1812744140625  --- Iterations:  8  --- Epochs:  183
+ Average loss:  408.2066650390625  --- Iterations:  16  --- Epochs:  183
+ Average loss:  408.11285400390625  --- Iterations:  24  --- Epochs:  183
+Starting evaluation
+Average eval rmse: 30638.030403037246 in 1.8157329559326172 seconds
+test_data/pcl/epoch_0183.png
+ Average loss:  530.4732055664062  --- Iterations:  8  --- Epochs:  184
+ Average loss:  426.391357421875  --- Iterations:  16  --- Epochs:  184
+ Average loss:  428.38385009765625  --- Iterations:  24  --- Epochs:  184
+Starting evaluation
+Average eval rmse: 30118.19323005466 in 1.7311549186706543 seconds
+test_data/pcl/epoch_0184.png
+ Average loss:  457.5008850097656  --- Iterations:  8  --- Epochs:  185
+ Average loss:  415.160888671875  --- Iterations:  16  --- Epochs:  185
+ Average loss:  405.67034912109375  --- Iterations:  24  --- Epochs:  185
+Starting evaluation
+Average eval rmse: 29341.908932305825 in 1.8553156852722168 seconds
+test_data/pcl/epoch_0185.png
+ Average loss:  425.024658203125  --- Iterations:  8  --- Epochs:  186
+ Average loss:  386.30487060546875  --- Iterations:  16  --- Epochs:  186
+ Average loss:  350.1332702636719  --- Iterations:  24  --- Epochs:  186
+Starting evaluation
+Average eval rmse: 27567.914607923154 in 1.8071620464324951 seconds
+test_data/pcl/epoch_0186.png
+ Average loss:  316.5675048828125  --- Iterations:  8  --- Epochs:  187
+ Average loss:  307.0390625  --- Iterations:  16  --- Epochs:  187
+ Average loss:  316.4301452636719  --- Iterations:  24  --- Epochs:  187
+Starting evaluation
+Average eval rmse: 26814.367966349306 in 1.770451307296753 seconds
+test_data/pcl/epoch_0187.png
+ Average loss:  286.0435485839844  --- Iterations:  8  --- Epochs:  188
+ Average loss:  310.9206848144531  --- Iterations:  16  --- Epochs:  188
+ Average loss:  313.79876708984375  --- Iterations:  24  --- Epochs:  188
+Starting evaluation
+Average eval rmse: 25890.34216795329 in 1.7574024200439453 seconds
+test_data/pcl/epoch_0188.png
+best_prev_rmse 25890.34216795329
+<class 'float'>
+ Average loss:  268.0741271972656  --- Iterations:  8  --- Epochs:  189
+ Average loss:  307.33258056640625  --- Iterations:  16  --- Epochs:  189
+ Average loss:  284.4787292480469  --- Iterations:  24  --- Epochs:  189
+Starting evaluation
+Average eval rmse: 28418.97690411787 in 1.7501730918884277 seconds
+test_data/pcl/epoch_0189.png
+ Average loss:  348.9716491699219  --- Iterations:  8  --- Epochs:  190
+ Average loss:  288.451904296875  --- Iterations:  16  --- Epochs:  190
+ Average loss:  301.6019287109375  --- Iterations:  24  --- Epochs:  190
+Starting evaluation
+Average eval rmse: 25532.129000081084 in 1.7855663299560547 seconds
+test_data/pcl/epoch_0190.png
+best_prev_rmse 25532.129000081084
+<class 'float'>
+ Average loss:  246.81268310546875  --- Iterations:  8  --- Epochs:  191
+ Average loss:  288.182861328125  --- Iterations:  16  --- Epochs:  191
+ Average loss:  288.6534423828125  --- Iterations:  24  --- Epochs:  191
+Starting evaluation
+Average eval rmse: 27705.196141086515 in 1.775047779083252 seconds
+test_data/pcl/epoch_0191.png
+ Average loss:  307.17388916015625  --- Iterations:  8  --- Epochs:  192
+ Average loss:  296.3187255859375  --- Iterations:  16  --- Epochs:  192
+ Average loss:  296.82489013671875  --- Iterations:  24  --- Epochs:  192
+Starting evaluation
+Average eval rmse: 26396.510364944228 in 1.7524290084838867 seconds
+test_data/pcl/epoch_0192.png
+ Average loss:  308.4184265136719  --- Iterations:  8  --- Epochs:  193
+ Average loss:  305.78436279296875  --- Iterations:  16  --- Epochs:  193
+ Average loss:  296.173095703125  --- Iterations:  24  --- Epochs:  193
+Starting evaluation
+Average eval rmse: 28083.008807792066 in 1.768000841140747 seconds
+test_data/pcl/epoch_0193.png
+ Average loss:  314.22784423828125  --- Iterations:  8  --- Epochs:  194
+ Average loss:  279.26959228515625  --- Iterations:  16  --- Epochs:  194
+ Average loss:  284.52203369140625  --- Iterations:  24  --- Epochs:  194
+Starting evaluation
+Average eval rmse: 24077.277400448627 in 1.7500972747802734 seconds
+test_data/pcl/epoch_0194.png
+best_prev_rmse 24077.277400448627
+<class 'float'>
+ Average loss:  230.92697143554688  --- Iterations:  8  --- Epochs:  195
+ Average loss:  266.56744384765625  --- Iterations:  16  --- Epochs:  195
+ Average loss:  255.6562957763672  --- Iterations:  24  --- Epochs:  195
+Starting evaluation
+Average eval rmse: 27483.02225448423 in 1.7666339874267578 seconds
+test_data/pcl/epoch_0195.png
+ Average loss:  279.8384094238281  --- Iterations:  8  --- Epochs:  196
+ Average loss:  264.3214416503906  --- Iterations:  16  --- Epochs:  196
+ Average loss:  254.10302734375  --- Iterations:  24  --- Epochs:  196
+Starting evaluation
+Average eval rmse: 24159.052087570297 in 1.7709534168243408 seconds
+test_data/pcl/epoch_0196.png
+ Average loss:  247.11521911621094  --- Iterations:  8  --- Epochs:  197
+ Average loss:  235.55950927734375  --- Iterations:  16  --- Epochs:  197
+ Average loss:  239.0825653076172  --- Iterations:  24  --- Epochs:  197
+Starting evaluation
+Average eval rmse: 27134.1618673913 in 1.7657606601715088 seconds
+test_data/pcl/epoch_0197.png
+ Average loss:  208.56777954101562  --- Iterations:  8  --- Epochs:  198
+ Average loss:  230.53387451171875  --- Iterations:  16  --- Epochs:  198
+ Average loss:  219.7795867919922  --- Iterations:  24  --- Epochs:  198
+Starting evaluation
+Average eval rmse: 22895.769962922088 in 1.7651467323303223 seconds
+test_data/pcl/epoch_0198.png
+best_prev_rmse 22895.769962922088
+<class 'float'>
+ Average loss:  230.63299560546875  --- Iterations:  8  --- Epochs:  199
+ Average loss:  221.86544799804688  --- Iterations:  16  --- Epochs:  199
+ Average loss:  215.4451904296875  --- Iterations:  24  --- Epochs:  199
+Starting evaluation
+Average eval rmse: 24956.040238617756 in 1.7319691181182861 seconds
+test_data/pcl/epoch_0199.png
+new lr
+ Average loss:  211.24685668945312  --- Iterations:  8  --- Epochs:  200
+ Average loss:  204.46682739257812  --- Iterations:  16  --- Epochs:  200
+ Average loss:  204.1866912841797  --- Iterations:  24  --- Epochs:  200
+Starting evaluation
+Average eval rmse: 24146.307479642725 in 1.740675687789917 seconds
+test_data/pcl/epoch_0200.png

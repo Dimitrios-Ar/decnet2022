@@ -1,0 +1,12 @@
+Starting evaluation
+Average eval rmse: 179616.3164080591 in 0.19583702087402344 seconds
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py:1051: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return forward_call(*input, **kwargs)
+Traceback (most recent call last):
+  File "enet_sanity.py", line 470, in <module>
+    vis_utils.save_depth_as_uint16png_upload(pcl, path_pcl)
+  File "/home/robotlabx/Desktop/DTAI/decnet2022/src/models/vis_utils.py", line 122, in save_depth_as_uint16png_upload
+    imgsave.save(filename)
+  File "/home/robotlabx/.local/lib/python3.7/site-packages/PIL/Image.py", line 2155, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'test_data/pcl/epoch_0001.png'

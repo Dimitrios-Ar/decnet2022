@@ -1,0 +1,1161 @@
+
+ Average loss:  265.8051452636719  --- Iterations:  8  --- Epochs:  1
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py:1051: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return forward_call(*input, **kwargs)
+Starting evaluation
+Average eval rmse: 1691936.8512436056 in 1.429948091506958 seconds
+test_data/pcl/epoch_0001.png
+best_prev_rmse 1691936.8512436056
+<class 'float'>
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py:730: UserWarning: The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is.
+  "The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is."
+ Average loss:  2822931.25  --- Iterations:  8  --- Epochs:  2
+Starting evaluation
+Average eval rmse: 411624.5993651473 in 0.5813710689544678 seconds
+test_data/pcl/epoch_0002.png
+best_prev_rmse 411624.5993651473
+<class 'float'>
+ Average loss:  164555.15625  --- Iterations:  8  --- Epochs:  3
+Starting evaluation
+Average eval rmse: 265211.6767682388 in 0.578082799911499 seconds
+test_data/pcl/epoch_0003.png
+best_prev_rmse 265211.6767682388
+<class 'float'>
+ Average loss:  70142.578125  --- Iterations:  8  --- Epochs:  4
+Starting evaluation
+Average eval rmse: 208292.64136621385 in 0.5884277820587158 seconds
+test_data/pcl/epoch_0004.png
+best_prev_rmse 208292.64136621385
+<class 'float'>
+ Average loss:  43353.6328125  --- Iterations:  8  --- Epochs:  5
+Starting evaluation
+Average eval rmse: 190827.01606550987 in 0.6050105094909668 seconds
+test_data/pcl/epoch_0005.png
+best_prev_rmse 190827.01606550987
+<class 'float'>
+ Average loss:  36215.2265625  --- Iterations:  8  --- Epochs:  6
+Starting evaluation
+Average eval rmse: 190055.34708863476 in 0.5803861618041992 seconds
+test_data/pcl/epoch_0006.png
+best_prev_rmse 190055.34708863476
+<class 'float'>
+ Average loss:  35805.76171875  --- Iterations:  8  --- Epochs:  7
+Starting evaluation
+Average eval rmse: 193701.924368815 in 0.5829224586486816 seconds
+test_data/pcl/epoch_0007.png
+ Average loss:  37122.00390625  --- Iterations:  8  --- Epochs:  8
+Starting evaluation
+Average eval rmse: 196368.40484228052 in 0.5859200954437256 seconds
+test_data/pcl/epoch_0008.png
+ Average loss:  38131.30859375  --- Iterations:  8  --- Epochs:  9
+Starting evaluation
+Average eval rmse: 196919.24838550136 in 0.6125473976135254 seconds
+test_data/pcl/epoch_0009.png
+ Average loss:  38324.77734375  --- Iterations:  8  --- Epochs:  10
+Starting evaluation
+Average eval rmse: 195739.9704272516 in 0.6354725360870361 seconds
+test_data/pcl/epoch_0010.png
+ Average loss:  37867.94140625  --- Iterations:  8  --- Epochs:  11
+Starting evaluation
+Average eval rmse: 193557.9300648924 in 0.6295003890991211 seconds
+test_data/pcl/epoch_0011.png
+ Average loss:  37030.23828125  --- Iterations:  8  --- Epochs:  12
+Starting evaluation
+Average eval rmse: 190854.4205913047 in 0.6187558174133301 seconds
+test_data/pcl/epoch_0012.png
+ Average loss:  36005.1484375  --- Iterations:  8  --- Epochs:  13
+Starting evaluation
+Average eval rmse: 187811.08017046988 in 0.6071107387542725 seconds
+test_data/pcl/epoch_0013.png
+best_prev_rmse 187811.08017046988
+<class 'float'>
+ Average loss:  34866.87890625  --- Iterations:  8  --- Epochs:  14
+Starting evaluation
+Average eval rmse: 184466.8444564135 in 0.6081984043121338 seconds
+test_data/pcl/epoch_0014.png
+best_prev_rmse 184466.8444564135
+<class 'float'>
+ Average loss:  33621.32421875  --- Iterations:  8  --- Epochs:  15
+Starting evaluation
+Average eval rmse: 180852.35980411904 in 0.6088857650756836 seconds
+test_data/pcl/epoch_0015.png
+best_prev_rmse 180852.35980411904
+<class 'float'>
+ Average loss:  32305.51171875  --- Iterations:  8  --- Epochs:  16
+Starting evaluation
+Average eval rmse: 177087.5901409756 in 0.6056439876556396 seconds
+test_data/pcl/epoch_0016.png
+best_prev_rmse 177087.5901409756
+<class 'float'>
+ Average loss:  30953.103515625  --- Iterations:  8  --- Epochs:  17
+Starting evaluation
+Average eval rmse: 173397.41911431518 in 0.6133618354797363 seconds
+test_data/pcl/epoch_0017.png
+ Average loss:  29648.61328125  --- Iterations:  8  --- Epochs:  18
+Starting evaluation
+Average eval rmse: 169994.89617684187 in 0.6121826171875 seconds
+test_data/pcl/epoch_0018.png
+best_prev_rmse 169994.89617684187
+<class 'float'>
+ Average loss:  28470.68359375  --- Iterations:  8  --- Epochs:  19
+Starting evaluation
+Average eval rmse: 167029.9718223406 in 0.6215543746948242 seconds
+test_data/pcl/epoch_0019.png
+best_prev_rmse 167029.9718223406
+<class 'float'>
+ Average loss:  27454.22265625  --- Iterations:  8  --- Epochs:  20
+Starting evaluation
+Average eval rmse: 164560.6452543868 in 0.6136395931243896 seconds
+test_data/pcl/epoch_0020.png
+best_prev_rmse 164560.6452543868
+<class 'float'>
+ Average loss:  26616.490234375  --- Iterations:  8  --- Epochs:  21
+Starting evaluation
+Average eval rmse: 162575.75508077003 in 0.5908365249633789 seconds
+test_data/pcl/epoch_0021.png
+best_prev_rmse 162575.75508077003
+<class 'float'>
+ Average loss:  25947.802734375  --- Iterations:  8  --- Epochs:  22
+Starting evaluation
+Average eval rmse: 160994.29421277987 in 0.6179020404815674 seconds
+test_data/pcl/epoch_0022.png
+best_prev_rmse 160994.29421277987
+<class 'float'>
+ Average loss:  25417.6171875  --- Iterations:  8  --- Epochs:  23
+Starting evaluation
+Average eval rmse: 159700.5266982958 in 0.6206018924713135 seconds
+test_data/pcl/epoch_0023.png
+best_prev_rmse 159700.5266982958
+<class 'float'>
+ Average loss:  24984.5703125  --- Iterations:  8  --- Epochs:  24
+Starting evaluation
+Average eval rmse: 158561.84792108106 in 0.5973799228668213 seconds
+test_data/pcl/epoch_0024.png
+best_prev_rmse 158561.84792108106
+<class 'float'>
+ Average loss:  24605.93359375  --- Iterations:  8  --- Epochs:  25
+Starting evaluation
+Average eval rmse: 157433.52722850777 in 0.6011130809783936 seconds
+test_data/pcl/epoch_0025.png
+best_prev_rmse 157433.52722850777
+<class 'float'>
+ Average loss:  24236.4375  --- Iterations:  8  --- Epochs:  26
+Starting evaluation
+Average eval rmse: 156159.14695332898 in 0.59456467628479 seconds
+test_data/pcl/epoch_0026.png
+best_prev_rmse 156159.14695332898
+<class 'float'>
+ Average loss:  23835.78515625  --- Iterations:  8  --- Epochs:  27
+Starting evaluation
+Average eval rmse: 154659.29197064176 in 0.6065928936004639 seconds
+test_data/pcl/epoch_0027.png
+best_prev_rmse 154659.29197064176
+<class 'float'>
+ Average loss:  23370.64453125  --- Iterations:  8  --- Epochs:  28
+Starting evaluation
+Average eval rmse: 152953.03923630272 in 0.6159660816192627 seconds
+test_data/pcl/epoch_0028.png
+best_prev_rmse 152953.03923630272
+<class 'float'>
+ Average loss:  22853.3125  --- Iterations:  8  --- Epochs:  29
+Starting evaluation
+Average eval rmse: 151142.6517049443 in 0.631535530090332 seconds
+test_data/pcl/epoch_0029.png
+best_prev_rmse 151142.6517049443
+<class 'float'>
+ Average loss:  22314.478515625  --- Iterations:  8  --- Epochs:  30
+Starting evaluation
+Average eval rmse: 149397.43871518754 in 0.5999538898468018 seconds
+test_data/pcl/epoch_0030.png
+best_prev_rmse 149397.43871518754
+<class 'float'>
+ Average loss:  21804.52734375  --- Iterations:  8  --- Epochs:  31
+Starting evaluation
+Average eval rmse: 147880.86592535506 in 0.6065337657928467 seconds
+test_data/pcl/epoch_0031.png
+best_prev_rmse 147880.86592535506
+<class 'float'>
+ Average loss:  21368.912109375  --- Iterations:  8  --- Epochs:  32
+Starting evaluation
+Average eval rmse: 146673.9544489992 in 0.5800366401672363 seconds
+test_data/pcl/epoch_0032.png
+best_prev_rmse 146673.9544489992
+<class 'float'>
+ Average loss:  21029.4375  --- Iterations:  8  --- Epochs:  33
+Starting evaluation
+Average eval rmse: 145740.58037110043 in 0.5861895084381104 seconds
+test_data/pcl/epoch_0033.png
+best_prev_rmse 145740.58037110043
+<class 'float'>
+ Average loss:  20771.49609375  --- Iterations:  8  --- Epochs:  34
+Starting evaluation
+Average eval rmse: 144920.3890251486 in 0.5832705497741699 seconds
+test_data/pcl/epoch_0034.png
+best_prev_rmse 144920.3890251486
+<class 'float'>
+ Average loss:  20546.66015625  --- Iterations:  8  --- Epochs:  35
+Starting evaluation
+Average eval rmse: 144022.90108203463 in 0.5894997119903564 seconds
+test_data/pcl/epoch_0035.png
+best_prev_rmse 144022.90108203463
+<class 'float'>
+ Average loss:  20299.59765625  --- Iterations:  8  --- Epochs:  36
+Starting evaluation
+Average eval rmse: 142916.7876267024 in 0.6290874481201172 seconds
+test_data/pcl/epoch_0036.png
+best_prev_rmse 142916.7876267024
+<class 'float'>
+ Average loss:  19992.310546875  --- Iterations:  8  --- Epochs:  37
+Starting evaluation
+Average eval rmse: 141579.31738577865 in 0.6031777858734131 seconds
+test_data/pcl/epoch_0037.png
+best_prev_rmse 141579.31738577865
+<class 'float'>
+ Average loss:  19617.220703125  --- Iterations:  8  --- Epochs:  38
+Starting evaluation
+Average eval rmse: 140083.04470464512 in 0.6012661457061768 seconds
+test_data/pcl/epoch_0038.png
+best_prev_rmse 140083.04470464512
+<class 'float'>
+ Average loss:  19202.421875  --- Iterations:  8  --- Epochs:  39
+Starting evaluation
+Average eval rmse: 138544.56318584568 in 0.5992846488952637 seconds
+test_data/pcl/epoch_0039.png
+best_prev_rmse 138544.56318584568
+<class 'float'>
+ Average loss:  18775.146484375  --- Iterations:  8  --- Epochs:  40
+Starting evaluation
+Average eval rmse: 137072.8733330048 in 0.5944538116455078 seconds
+test_data/pcl/epoch_0040.png
+best_prev_rmse 137072.8733330048
+<class 'float'>
+ Average loss:  18370.759765625  --- Iterations:  8  --- Epochs:  41
+Starting evaluation
+Average eval rmse: 135738.0003917361 in 0.5951590538024902 seconds
+test_data/pcl/epoch_0041.png
+best_prev_rmse 135738.0003917361
+<class 'float'>
+ Average loss:  18007.8203125  --- Iterations:  8  --- Epochs:  42
+Starting evaluation
+Average eval rmse: 134568.48183205308 in 0.5929727554321289 seconds
+test_data/pcl/epoch_0042.png
+best_prev_rmse 134568.48183205308
+<class 'float'>
+ Average loss:  17692.193359375  --- Iterations:  8  --- Epochs:  43
+Starting evaluation
+Average eval rmse: 133546.65962357202 in 0.593205451965332 seconds
+test_data/pcl/epoch_0043.png
+best_prev_rmse 133546.65962357202
+<class 'float'>
+ Average loss:  17417.189453125  --- Iterations:  8  --- Epochs:  44
+Starting evaluation
+Average eval rmse: 132630.18756666273 in 0.5804870128631592 seconds
+test_data/pcl/epoch_0044.png
+best_prev_rmse 132630.18756666273
+<class 'float'>
+ Average loss:  17172.3671875  --- Iterations:  8  --- Epochs:  45
+Starting evaluation
+Average eval rmse: 131758.15484065298 in 0.5841906070709229 seconds
+test_data/pcl/epoch_0045.png
+best_prev_rmse 131758.15484065298
+<class 'float'>
+ Average loss:  16942.51171875  --- Iterations:  8  --- Epochs:  46
+Starting evaluation
+Average eval rmse: 130888.37044874465 in 0.5807414054870605 seconds
+test_data/pcl/epoch_0046.png
+best_prev_rmse 130888.37044874465
+<class 'float'>
+ Average loss:  16715.822265625  --- Iterations:  8  --- Epochs:  47
+Starting evaluation
+Average eval rmse: 129993.7064665772 in 0.5796704292297363 seconds
+test_data/pcl/epoch_0047.png
+best_prev_rmse 129993.7064665772
+<class 'float'>
+ Average loss:  16485.109375  --- Iterations:  8  --- Epochs:  48
+Starting evaluation
+Average eval rmse: 129060.90935744924 in 0.5761950016021729 seconds
+test_data/pcl/epoch_0048.png
+best_prev_rmse 129060.90935744924
+<class 'float'>
+ Average loss:  16248.494140625  --- Iterations:  8  --- Epochs:  49
+Starting evaluation
+Average eval rmse: 128101.83473502338 in 0.5865333080291748 seconds
+test_data/pcl/epoch_0049.png
+best_prev_rmse 128101.83473502338
+<class 'float'>
+ Average loss:  16009.251953125  --- Iterations:  8  --- Epochs:  50
+Starting evaluation
+Average eval rmse: 127137.67454869332 in 0.5833470821380615 seconds
+test_data/pcl/epoch_0050.png
+best_prev_rmse 127137.67454869332
+<class 'float'>
+ Average loss:  15772.0390625  --- Iterations:  8  --- Epochs:  51
+Starting evaluation
+ Average loss:  15541.05078125  --- Iterations:  8  --- Epochs:  52
+Starting evaluation
+Average eval rmse: 125270.36051551125 in 0.59657883644104 seconds
+test_data/pcl/epoch_0052.png
+best_prev_rmse 125270.36051551125
+<class 'float'>
+ Average loss:  15320.888671875  --- Iterations:  8  --- Epochs:  53
+Starting evaluation
+Average eval rmse: 124386.29461388089 in 0.6136777400970459 seconds
+test_data/pcl/epoch_0053.png
+best_prev_rmse 124386.29461388089
+<class 'float'>
+ Average loss:  15110.6484375  --- Iterations:  8  --- Epochs:  54
+Starting evaluation
+Average eval rmse: 123536.04374871233 in 0.5892925262451172 seconds
+test_data/pcl/epoch_0054.png
+best_prev_rmse 123536.04374871233
+<class 'float'>
+ Average loss:  14910.5107421875  --- Iterations:  8  --- Epochs:  55
+Starting evaluation
+Average eval rmse: 122707.0539804336 in 0.5810544490814209 seconds
+test_data/pcl/epoch_0055.png
+best_prev_rmse 122707.0539804336
+<class 'float'>
+ Average loss:  14716.935546875  --- Iterations:  8  --- Epochs:  56
+Starting evaluation
+Average eval rmse: 121891.91765252152 in 0.5939335823059082 seconds
+test_data/pcl/epoch_0056.png
+best_prev_rmse 121891.91765252152
+<class 'float'>
+ Average loss:  14526.8095703125  --- Iterations:  8  --- Epochs:  57
+Starting evaluation
+Average eval rmse: 121078.34733826372 in 0.5921385288238525 seconds
+test_data/pcl/epoch_0057.png
+best_prev_rmse 121078.34733826372
+<class 'float'>
+ Average loss:  14337.9423828125  --- Iterations:  8  --- Epochs:  58
+Starting evaluation
+Average eval rmse: 120260.30678655616 in 0.6021482944488525 seconds
+test_data/pcl/epoch_0058.png
+best_prev_rmse 120260.30678655616
+<class 'float'>
+ Average loss:  14148.8193359375  --- Iterations:  8  --- Epochs:  59
+Starting evaluation
+Average eval rmse: 119437.03364799233 in 0.5881507396697998 seconds
+test_data/pcl/epoch_0059.png
+best_prev_rmse 119437.03364799233
+<class 'float'>
+ Average loss:  13959.333984375  --- Iterations:  8  --- Epochs:  60
+Starting evaluation
+Average eval rmse: 118615.54758091943 in 0.6231386661529541 seconds
+test_data/pcl/epoch_0060.png
+best_prev_rmse 118615.54758091943
+<class 'float'>
+ Average loss:  13770.9921875  --- Iterations:  8  --- Epochs:  61
+Starting evaluation
+Average eval rmse: 117803.10213392213 in 0.5912847518920898 seconds
+test_data/pcl/epoch_0061.png
+best_prev_rmse 117803.10213392213
+<class 'float'>
+ Average loss:  13585.1318359375  --- Iterations:  8  --- Epochs:  62
+Starting evaluation
+ Average loss:  13404.9033203125  --- Iterations:  8  --- Epochs:  63
+Starting evaluation
+Average eval rmse: 116236.97701667041 in 0.610734224319458 seconds
+test_data/pcl/epoch_0063.png
+best_prev_rmse 116236.97701667041
+<class 'float'>
+ Average loss:  13230.80078125  --- Iterations:  8  --- Epochs:  64
+Starting evaluation
+Average eval rmse: 115495.82423144729 in 0.5813333988189697 seconds
+test_data/pcl/epoch_0064.png
+best_prev_rmse 115495.82423144729
+<class 'float'>
+ Average loss:  13064.9873046875  --- Iterations:  8  --- Epochs:  65
+Starting evaluation
+Average eval rmse: 114782.07500778227 in 0.6508238315582275 seconds
+test_data/pcl/epoch_0065.png
+best_prev_rmse 114782.07500778227
+<class 'float'>
+ Average loss:  12906.125  --- Iterations:  8  --- Epochs:  66
+Starting evaluation
+Average eval rmse: 114090.03135581006 in 0.6215381622314453 seconds
+test_data/pcl/epoch_0066.png
+best_prev_rmse 114090.03135581006
+<class 'float'>
+ Average loss:  12753.06640625  --- Iterations:  8  --- Epochs:  67
+Starting evaluation
+Average eval rmse: 113415.30545500274 in 0.6057455539703369 seconds
+test_data/pcl/epoch_0067.png
+best_prev_rmse 113415.30545500274
+<class 'float'>
+ Average loss:  12605.2158203125  --- Iterations:  8  --- Epochs:  68
+Starting evaluation
+ Average loss:  12460.7998046875  --- Iterations:  8  --- Epochs:  69
+Starting evaluation
+Average eval rmse: 112098.86272883952 in 0.629925012588501 seconds
+test_data/pcl/epoch_0069.png
+best_prev_rmse 112098.86272883952
+<class 'float'>
+ Average loss:  12318.458984375  --- Iterations:  8  --- Epochs:  70
+Starting evaluation
+Average eval rmse: 111450.42572239568 in 0.5718326568603516 seconds
+test_data/pcl/epoch_0070.png
+best_prev_rmse 111450.42572239568
+<class 'float'>
+ Average loss:  12177.9267578125  --- Iterations:  8  --- Epochs:  71
+Starting evaluation
+Average eval rmse: 110804.67997884152 in 0.5905337333679199 seconds
+test_data/pcl/epoch_0071.png
+best_prev_rmse 110804.67997884152
+<class 'float'>
+ Average loss:  12038.67578125  --- Iterations:  8  --- Epochs:  72
+Starting evaluation
+Average eval rmse: 110167.26789149083 in 0.589848518371582 seconds
+test_data/pcl/epoch_0072.png
+best_prev_rmse 110167.26789149083
+<class 'float'>
+ Average loss:  11901.7998046875  --- Iterations:  8  --- Epochs:  73
+Starting evaluation
+Average eval rmse: 109547.92612885473 in 0.6095483303070068 seconds
+test_data/pcl/epoch_0073.png
+best_prev_rmse 109547.92612885473
+<class 'float'>
+ Average loss:  11768.9267578125  --- Iterations:  8  --- Epochs:  74
+Starting evaluation
+Average eval rmse: 108955.98268718328 in 0.6146655082702637 seconds
+test_data/pcl/epoch_0074.png
+best_prev_rmse 108955.98268718328
+<class 'float'>
+ Average loss:  11642.51171875  --- Iterations:  8  --- Epochs:  75
+Starting evaluation
+Average eval rmse: 108393.61754651164 in 0.615516185760498 seconds
+test_data/pcl/epoch_0075.png
+best_prev_rmse 108393.61754651164
+<class 'float'>
+ Average loss:  11522.76171875  --- Iterations:  8  --- Epochs:  76
+Starting evaluation
+Average eval rmse: 107856.28791357641 in 0.587167501449585 seconds
+test_data/pcl/epoch_0076.png
+best_prev_rmse 107856.28791357641
+<class 'float'>
+ Average loss:  11408.2763671875  --- Iterations:  8  --- Epochs:  77
+Starting evaluation
+Average eval rmse: 107334.68195931839 in 0.5781254768371582 seconds
+test_data/pcl/epoch_0077.png
+best_prev_rmse 107334.68195931839
+<class 'float'>
+ Average loss:  11297.904296875  --- Iterations:  8  --- Epochs:  78
+Starting evaluation
+Average eval rmse: 106823.15010874122 in 0.5964148044586182 seconds
+test_data/pcl/epoch_0078.png
+best_prev_rmse 106823.15010874122
+<class 'float'>
+ Average loss:  11189.4912109375  --- Iterations:  8  --- Epochs:  79
+Starting evaluation
+Average eval rmse: 106322.52585677555 in 0.5870778560638428 seconds
+test_data/pcl/epoch_0079.png
+best_prev_rmse 106322.52585677555
+<class 'float'>
+ Average loss:  11084.08984375  --- Iterations:  8  --- Epochs:  80
+Starting evaluation
+Average eval rmse: 105837.60844348228 in 0.5936992168426514 seconds
+test_data/pcl/epoch_0080.png
+best_prev_rmse 105837.60844348228
+<class 'float'>
+ Average loss:  10981.7861328125  --- Iterations:  8  --- Epochs:  81
+Starting evaluation
+Average eval rmse: 105370.49183288326 in 0.5809996128082275 seconds
+test_data/pcl/epoch_0081.png
+best_prev_rmse 105370.49183288326
+<class 'float'>
+ Average loss:  10883.212890625  --- Iterations:  8  --- Epochs:  82
+Starting evaluation
+Average eval rmse: 104922.66353692024 in 0.5778853893280029 seconds
+test_data/pcl/epoch_0082.png
+best_prev_rmse 104922.66353692024
+<class 'float'>
+ Average loss:  10789.2001953125  --- Iterations:  8  --- Epochs:  83
+Starting evaluation
+Average eval rmse: 104494.33711371577 in 0.5814337730407715 seconds
+test_data/pcl/epoch_0083.png
+best_prev_rmse 104494.33711371577
+<class 'float'>
+ Average loss:  10699.2939453125  --- Iterations:  8  --- Epochs:  84
+Starting evaluation
+Average eval rmse: 104082.30765866642 in 0.5793004035949707 seconds
+test_data/pcl/epoch_0084.png
+best_prev_rmse 104082.30765866642
+<class 'float'>
+ Average loss:  10613.1328125  --- Iterations:  8  --- Epochs:  85
+Starting evaluation
+Average eval rmse: 103686.41576152525 in 0.5821521282196045 seconds
+test_data/pcl/epoch_0085.png
+best_prev_rmse 103686.41576152525
+<class 'float'>
+ Average loss:  10530.8818359375  --- Iterations:  8  --- Epochs:  86
+Starting evaluation
+Average eval rmse: 103301.53047015409 in 0.5749521255493164 seconds
+test_data/pcl/epoch_0086.png
+best_prev_rmse 103301.53047015409
+<class 'float'>
+ Average loss:  10450.3291015625  --- Iterations:  8  --- Epochs:  87
+Starting evaluation
+Average eval rmse: 102925.6418895704 in 0.5776808261871338 seconds
+test_data/pcl/epoch_0087.png
+best_prev_rmse 102925.6418895704
+<class 'float'>
+ Average loss:  10372.2294921875  --- Iterations:  8  --- Epochs:  88
+Starting evaluation
+Average eval rmse: 102558.4734096036 in 0.5817079544067383 seconds
+test_data/pcl/epoch_0088.png
+best_prev_rmse 102558.4734096036
+<class 'float'>
+ Average loss:  10296.0771484375  --- Iterations:  8  --- Epochs:  89
+Starting evaluation
+Average eval rmse: 102201.76061657692 in 0.5747716426849365 seconds
+test_data/pcl/epoch_0089.png
+best_prev_rmse 102201.76061657692
+<class 'float'>
+ Average loss:  10222.197265625  --- Iterations:  8  --- Epochs:  90
+Starting evaluation
+Average eval rmse: 101857.7964478846 in 0.5867514610290527 seconds
+test_data/pcl/epoch_0090.png
+best_prev_rmse 101857.7964478846
+<class 'float'>
+ Average loss:  10150.1923828125  --- Iterations:  8  --- Epochs:  91
+Starting evaluation
+Average eval rmse: 101525.25198946014 in 0.6047701835632324 seconds
+test_data/pcl/epoch_0091.png
+best_prev_rmse 101525.25198946014
+<class 'float'>
+ Average loss:  10079.9833984375  --- Iterations:  8  --- Epochs:  92
+Starting evaluation
+Average eval rmse: 101201.74885869621 in 0.6104080677032471 seconds
+test_data/pcl/epoch_0092.png
+best_prev_rmse 101201.74885869621
+<class 'float'>
+ Average loss:  10011.2294921875  --- Iterations:  8  --- Epochs:  93
+Starting evaluation
+Average eval rmse: 100888.50061529875 in 0.6018774509429932 seconds
+test_data/pcl/epoch_0093.png
+best_prev_rmse 100888.50061529875
+<class 'float'>
+ Average loss:  9944.4091796875  --- Iterations:  8  --- Epochs:  94
+Starting evaluation
+Average eval rmse: 100582.87792879113 in 0.615699291229248 seconds
+test_data/pcl/epoch_0094.png
+best_prev_rmse 100582.87792879113
+<class 'float'>
+ Average loss:  9879.16015625  --- Iterations:  8  --- Epochs:  95
+Starting evaluation
+Average eval rmse: 100284.53676945905 in 0.6128790378570557 seconds
+test_data/pcl/epoch_0095.png
+best_prev_rmse 100284.53676945905
+<class 'float'>
+ Average loss:  9815.4775390625  --- Iterations:  8  --- Epochs:  96
+Starting evaluation
+Average eval rmse: 99992.79805767075 in 0.5848369598388672 seconds
+test_data/pcl/epoch_0096.png
+best_prev_rmse 99992.79805767075
+<class 'float'>
+ Average loss:  9753.6455078125  --- Iterations:  8  --- Epochs:  97
+Starting evaluation
+Average eval rmse: 99706.5692358953 in 0.5738184452056885 seconds
+test_data/pcl/epoch_0097.png
+best_prev_rmse 99706.5692358953
+<class 'float'>
+ Average loss:  9693.2685546875  --- Iterations:  8  --- Epochs:  98
+Starting evaluation
+Average eval rmse: 99425.63172720041 in 0.5788533687591553 seconds
+test_data/pcl/epoch_0098.png
+best_prev_rmse 99425.63172720041
+<class 'float'>
+ Average loss:  9634.0673828125  --- Iterations:  8  --- Epochs:  99
+Starting evaluation
+Average eval rmse: 99150.07389776286 in 0.5800657272338867 seconds
+test_data/pcl/epoch_0099.png
+best_prev_rmse 99150.07389776286
+<class 'float'>
+new lr
+ Average loss:  9575.8984375  --- Iterations:  8  --- Epochs:  100
+Starting evaluation
+Average eval rmse: 98880.01158934999 in 0.5772030353546143 seconds
+test_data/pcl/epoch_0100.png
+best_prev_rmse 98880.01158934999
+<class 'float'>
+ Average loss:  9518.521484375  --- Iterations:  8  --- Epochs:  101
+Starting evaluation
+Average eval rmse: 98616.2420706389 in 0.5782890319824219 seconds
+test_data/pcl/epoch_0101.png
+best_prev_rmse 98616.2420706389
+<class 'float'>
+ Average loss:  9462.6220703125  --- Iterations:  8  --- Epochs:  102
+Starting evaluation
+Average eval rmse: 98358.82224026762 in 0.6262767314910889 seconds
+test_data/pcl/epoch_0102.png
+best_prev_rmse 98358.82224026762
+<class 'float'>
+ Average loss:  9407.5087890625  --- Iterations:  8  --- Epochs:  103
+Starting evaluation
+Average eval rmse: 98106.61240428686 in 0.5849602222442627 seconds
+test_data/pcl/epoch_0103.png
+best_prev_rmse 98106.61240428686
+<class 'float'>
+ Average loss:  9353.6787109375  --- Iterations:  8  --- Epochs:  104
+Starting evaluation
+Average eval rmse: 97860.7707484134 in 0.5869467258453369 seconds
+test_data/pcl/epoch_0104.png
+best_prev_rmse 97860.7707484134
+<class 'float'>
+ Average loss:  9301.0849609375  --- Iterations:  8  --- Epochs:  105
+Starting evaluation
+Average eval rmse: 97619.61867710912 in 0.6043758392333984 seconds
+test_data/pcl/epoch_0105.png
+best_prev_rmse 97619.61867710912
+<class 'float'>
+ Average loss:  9249.5302734375  --- Iterations:  8  --- Epochs:  106
+Starting evaluation
+Average eval rmse: 97380.29016804605 in 0.6017816066741943 seconds
+test_data/pcl/epoch_0106.png
+best_prev_rmse 97380.29016804605
+<class 'float'>
+ Average loss:  9199.0205078125  --- Iterations:  8  --- Epochs:  107
+Starting evaluation
+Average eval rmse: 97143.72534538084 in 0.6030583381652832 seconds
+test_data/pcl/epoch_0107.png
+best_prev_rmse 97143.72534538084
+<class 'float'>
+ Average loss:  9149.5927734375  --- Iterations:  8  --- Epochs:  108
+Starting evaluation
+Average eval rmse: 96910.09696029044 in 0.5883965492248535 seconds
+test_data/pcl/epoch_0108.png
+best_prev_rmse 96910.09696029044
+<class 'float'>
+ Average loss:  9101.40625  --- Iterations:  8  --- Epochs:  109
+Starting evaluation
+Average eval rmse: 96680.38691733693 in 0.5916438102722168 seconds
+test_data/pcl/epoch_0109.png
+best_prev_rmse 96680.38691733693
+<class 'float'>
+ Average loss:  9053.9775390625  --- Iterations:  8  --- Epochs:  110
+Starting evaluation
+Average eval rmse: 96453.80176235895 in 0.599177360534668 seconds
+test_data/pcl/epoch_0110.png
+best_prev_rmse 96453.80176235895
+<class 'float'>
+ Average loss:  9007.658203125  --- Iterations:  8  --- Epochs:  111
+Starting evaluation
+Average eval rmse: 96229.87121243073 in 0.6154310703277588 seconds
+test_data/pcl/epoch_0111.png
+best_prev_rmse 96229.87121243073
+<class 'float'>
+ Average loss:  8962.1435546875  --- Iterations:  8  --- Epochs:  112
+Starting evaluation
+Average eval rmse: 96007.63641500202 in 0.60870361328125 seconds
+test_data/pcl/epoch_0112.png
+best_prev_rmse 96007.63641500202
+<class 'float'>
+ Average loss:  8917.5751953125  --- Iterations:  8  --- Epochs:  113
+Starting evaluation
+Average eval rmse: 95787.1899454532 in 0.5975353717803955 seconds
+test_data/pcl/epoch_0113.png
+best_prev_rmse 95787.1899454532
+<class 'float'>
+ Average loss:  8873.2822265625  --- Iterations:  8  --- Epochs:  114
+Starting evaluation
+Average eval rmse: 95568.44676444214 in 0.6164941787719727 seconds
+test_data/pcl/epoch_0114.png
+best_prev_rmse 95568.44676444214
+<class 'float'>
+ Average loss:  8829.58203125  --- Iterations:  8  --- Epochs:  115
+Starting evaluation
+Average eval rmse: 95353.4303908237 in 0.5852198600769043 seconds
+test_data/pcl/epoch_0115.png
+best_prev_rmse 95353.4303908237
+<class 'float'>
+ Average loss:  8786.23828125  --- Iterations:  8  --- Epochs:  116
+Starting evaluation
+Average eval rmse: 95142.24048352678 in 0.583503007888794 seconds
+test_data/pcl/epoch_0116.png
+best_prev_rmse 95142.24048352678
+<class 'float'>
+ Average loss:  8743.5068359375  --- Iterations:  8  --- Epochs:  117
+Starting evaluation
+Average eval rmse: 94935.69595486904 in 0.5948631763458252 seconds
+test_data/pcl/epoch_0117.png
+best_prev_rmse 94935.69595486904
+<class 'float'>
+ Average loss:  8701.2890625  --- Iterations:  8  --- Epochs:  118
+Starting evaluation
+Average eval rmse: 94733.09022617582 in 0.5830750465393066 seconds
+test_data/pcl/epoch_0118.png
+best_prev_rmse 94733.09022617582
+<class 'float'>
+ Average loss:  8659.6220703125  --- Iterations:  8  --- Epochs:  119
+Starting evaluation
+Average eval rmse: 94533.80732975402 in 0.5824191570281982 seconds
+test_data/pcl/epoch_0119.png
+best_prev_rmse 94533.80732975402
+<class 'float'>
+ Average loss:  8618.2216796875  --- Iterations:  8  --- Epochs:  120
+Starting evaluation
+Average eval rmse: 94337.22511113943 in 0.5812299251556396 seconds
+test_data/pcl/epoch_0120.png
+best_prev_rmse 94337.22511113943
+<class 'float'>
+ Average loss:  8577.755859375  --- Iterations:  8  --- Epochs:  121
+Starting evaluation
+Average eval rmse: 94142.5365340815 in 0.5924296379089355 seconds
+test_data/pcl/epoch_0121.png
+best_prev_rmse 94142.5365340815
+<class 'float'>
+ Average loss:  8537.6875  --- Iterations:  8  --- Epochs:  122
+Starting evaluation
+Average eval rmse: 93949.59996343711 in 0.5924072265625 seconds
+test_data/pcl/epoch_0122.png
+best_prev_rmse 93949.59996343711
+<class 'float'>
+ Average loss:  8498.048828125  --- Iterations:  8  --- Epochs:  123
+Starting evaluation
+Average eval rmse: 93757.68940823255 in 0.6176848411560059 seconds
+test_data/pcl/epoch_0123.png
+best_prev_rmse 93757.68940823255
+<class 'float'>
+ Average loss:  8459.1240234375  --- Iterations:  8  --- Epochs:  124
+Starting evaluation
+Average eval rmse: 93566.98628001488 in 0.610445499420166 seconds
+test_data/pcl/epoch_0124.png
+best_prev_rmse 93566.98628001488
+<class 'float'>
+ Average loss:  8420.1064453125  --- Iterations:  8  --- Epochs:  125
+Starting evaluation
+Average eval rmse: 93378.22031493676 in 0.6199750900268555 seconds
+test_data/pcl/epoch_0125.png
+best_prev_rmse 93378.22031493676
+<class 'float'>
+ Average loss:  8381.65625  --- Iterations:  8  --- Epochs:  126
+Starting evaluation
+Average eval rmse: 93191.3104327938 in 0.5985226631164551 seconds
+test_data/pcl/epoch_0126.png
+best_prev_rmse 93191.3104327938
+<class 'float'>
+ Average loss:  8343.63671875  --- Iterations:  8  --- Epochs:  127
+Starting evaluation
+Average eval rmse: 93005.50351095594 in 0.5951383113861084 seconds
+test_data/pcl/epoch_0127.png
+best_prev_rmse 93005.50351095594
+<class 'float'>
+ Average loss:  8305.59765625  --- Iterations:  8  --- Epochs:  128
+Starting evaluation
+Average eval rmse: 92819.33220384894 in 0.6200034618377686 seconds
+test_data/pcl/epoch_0128.png
+best_prev_rmse 92819.33220384894
+<class 'float'>
+ Average loss:  8268.09375  --- Iterations:  8  --- Epochs:  129
+Starting evaluation
+Average eval rmse: 92633.6404362014 in 0.5809292793273926 seconds
+test_data/pcl/epoch_0129.png
+best_prev_rmse 92633.6404362014
+<class 'float'>
+ Average loss:  8230.7626953125  --- Iterations:  8  --- Epochs:  130
+Starting evaluation
+Average eval rmse: 92447.42258579329 in 0.6123261451721191 seconds
+test_data/pcl/epoch_0130.png
+best_prev_rmse 92447.42258579329
+<class 'float'>
+ Average loss:  8193.658203125  --- Iterations:  8  --- Epochs:  131
+Starting evaluation
+Average eval rmse: 92261.74389293778 in 0.6621642112731934 seconds
+test_data/pcl/epoch_0131.png
+best_prev_rmse 92261.74389293778
+<class 'float'>
+ Average loss:  8157.01904296875  --- Iterations:  8  --- Epochs:  132
+Starting evaluation
+Average eval rmse: 92076.72965520289 in 0.5917541980743408 seconds
+test_data/pcl/epoch_0132.png
+best_prev_rmse 92076.72965520289
+<class 'float'>
+ Average loss:  8120.4580078125  --- Iterations:  8  --- Epochs:  133
+Starting evaluation
+Average eval rmse: 91891.60445157482 in 0.627636194229126 seconds
+test_data/pcl/epoch_0133.png
+best_prev_rmse 91891.60445157482
+<class 'float'>
+ Average loss:  8084.02880859375  --- Iterations:  8  --- Epochs:  134
+Starting evaluation
+Average eval rmse: 91706.68771394476 in 0.6269271373748779 seconds
+test_data/pcl/epoch_0134.png
+best_prev_rmse 91706.68771394476
+<class 'float'>
+ Average loss:  8047.71923828125  --- Iterations:  8  --- Epochs:  135
+Starting evaluation
+Average eval rmse: 91523.02389030633 in 0.5869641304016113 seconds
+test_data/pcl/epoch_0135.png
+best_prev_rmse 91523.02389030633
+<class 'float'>
+ Average loss:  8011.5576171875  --- Iterations:  8  --- Epochs:  136
+Starting evaluation
+Average eval rmse: 91340.90228393982 in 0.5851802825927734 seconds
+test_data/pcl/epoch_0136.png
+best_prev_rmse 91340.90228393982
+<class 'float'>
+ Average loss:  7975.5751953125  --- Iterations:  8  --- Epochs:  137
+Starting evaluation
+Average eval rmse: 91158.93325059148 in 0.5803213119506836 seconds
+test_data/pcl/epoch_0137.png
+best_prev_rmse 91158.93325059148
+<class 'float'>
+ Average loss:  7939.6640625  --- Iterations:  8  --- Epochs:  138
+Starting evaluation
+Average eval rmse: 90977.77168103366 in 0.6010072231292725 seconds
+test_data/pcl/epoch_0138.png
+best_prev_rmse 90977.77168103366
+<class 'float'>
+ Average loss:  7904.0615234375  --- Iterations:  8  --- Epochs:  139
+Starting evaluation
+ Average loss:  7868.27099609375  --- Iterations:  8  --- Epochs:  140
+Starting evaluation
+Average eval rmse: 90616.82409591354 in 0.5846564769744873 seconds
+test_data/pcl/epoch_0140.png
+best_prev_rmse 90616.82409591354
+<class 'float'>
+ Average loss:  7832.49560546875  --- Iterations:  8  --- Epochs:  141
+Starting evaluation
+Average eval rmse: 90438.48871059576 in 0.5937271118164062 seconds
+test_data/pcl/epoch_0141.png
+best_prev_rmse 90438.48871059576
+<class 'float'>
+ Average loss:  7796.98388671875  --- Iterations:  8  --- Epochs:  142
+Starting evaluation
+Average eval rmse: 90261.7026691666 in 0.59210205078125 seconds
+test_data/pcl/epoch_0142.png
+best_prev_rmse 90261.7026691666
+<class 'float'>
+ Average loss:  7761.4365234375  --- Iterations:  8  --- Epochs:  143
+Starting evaluation
+Average eval rmse: 90082.47652439904 in 0.5797896385192871 seconds
+test_data/pcl/epoch_0143.png
+best_prev_rmse 90082.47652439904
+<class 'float'>
+ Average loss:  7725.87158203125  --- Iterations:  8  --- Epochs:  144
+Starting evaluation
+Average eval rmse: 89899.59050090254 in 0.5875396728515625 seconds
+test_data/pcl/epoch_0144.png
+best_prev_rmse 89899.59050090254
+<class 'float'>
+ Average loss:  7690.05224609375  --- Iterations:  8  --- Epochs:  145
+Starting evaluation
+Average eval rmse: 89715.7948980297 in 0.5804717540740967 seconds
+test_data/pcl/epoch_0145.png
+best_prev_rmse 89715.7948980297
+<class 'float'>
+ Average loss:  7654.29638671875  --- Iterations:  8  --- Epochs:  146
+Starting evaluation
+Average eval rmse: 89533.00547469784 in 0.5819313526153564 seconds
+test_data/pcl/epoch_0146.png
+best_prev_rmse 89533.00547469784
+<class 'float'>
+ Average loss:  7618.560546875  --- Iterations:  8  --- Epochs:  147
+Starting evaluation
+Average eval rmse: 89349.56352019923 in 0.5865259170532227 seconds
+test_data/pcl/epoch_0147.png
+best_prev_rmse 89349.56352019923
+<class 'float'>
+ Average loss:  7582.828125  --- Iterations:  8  --- Epochs:  148
+Starting evaluation
+Average eval rmse: 89163.84930561735 in 0.5829205513000488 seconds
+test_data/pcl/epoch_0148.png
+best_prev_rmse 89163.84930561735
+<class 'float'>
+ Average loss:  7546.70361328125  --- Iterations:  8  --- Epochs:  149
+Starting evaluation
+Average eval rmse: 88977.41115246089 in 0.5839700698852539 seconds
+test_data/pcl/epoch_0149.png
+best_prev_rmse 88977.41115246089
+<class 'float'>
+ Average loss:  7510.41796875  --- Iterations:  8  --- Epochs:  150
+Starting evaluation
+Average eval rmse: 88791.76220176669 in 0.5771729946136475 seconds
+test_data/pcl/epoch_0150.png
+best_prev_rmse 88791.76220176669
+<class 'float'>
+ Average loss:  7474.2900390625  --- Iterations:  8  --- Epochs:  151
+Starting evaluation
+Average eval rmse: 88604.08531471713 in 0.6171174049377441 seconds
+test_data/pcl/epoch_0151.png
+best_prev_rmse 88604.08531471713
+<class 'float'>
+ Average loss:  7438.2431640625  --- Iterations:  8  --- Epochs:  152
+Starting evaluation
+Average eval rmse: 88417.87415408672 in 0.578326940536499 seconds
+test_data/pcl/epoch_0152.png
+best_prev_rmse 88417.87415408672
+<class 'float'>
+ Average loss:  7401.79296875  --- Iterations:  8  --- Epochs:  153
+Starting evaluation
+Average eval rmse: 88231.06842356492 in 0.584479808807373 seconds
+test_data/pcl/epoch_0153.png
+best_prev_rmse 88231.06842356492
+<class 'float'>
+ Average loss:  7365.07275390625  --- Iterations:  8  --- Epochs:  154
+Starting evaluation
+Average eval rmse: 88039.47179519238 in 0.5795266628265381 seconds
+test_data/pcl/epoch_0154.png
+best_prev_rmse 88039.47179519238
+<class 'float'>
+ Average loss:  7328.12060546875  --- Iterations:  8  --- Epochs:  155
+Starting evaluation
+Average eval rmse: 87846.9073430044 in 0.6130247116088867 seconds
+test_data/pcl/epoch_0155.png
+best_prev_rmse 87846.9073430044
+<class 'float'>
+ Average loss:  7291.1103515625  --- Iterations:  8  --- Epochs:  156
+Starting evaluation
+Average eval rmse: 87653.90137617532 in 0.5848631858825684 seconds
+test_data/pcl/epoch_0156.png
+best_prev_rmse 87653.90137617532
+<class 'float'>
+ Average loss:  7254.03955078125  --- Iterations:  8  --- Epochs:  157
+Starting evaluation
+Average eval rmse: 87462.69336141231 in 0.5768635272979736 seconds
+test_data/pcl/epoch_0157.png
+best_prev_rmse 87462.69336141231
+<class 'float'>
+ Average loss:  7216.73193359375  --- Iterations:  8  --- Epochs:  158
+Starting evaluation
+Average eval rmse: 87271.86310602224 in 0.578406572341919 seconds
+test_data/pcl/epoch_0158.png
+best_prev_rmse 87271.86310602224
+<class 'float'>
+ Average loss:  7179.1767578125  --- Iterations:  8  --- Epochs:  159
+Starting evaluation
+Average eval rmse: 87077.25805813626 in 0.5758810043334961 seconds
+test_data/pcl/epoch_0159.png
+best_prev_rmse 87077.25805813626
+<class 'float'>
+ Average loss:  7141.263671875  --- Iterations:  8  --- Epochs:  160
+Starting evaluation
+Average eval rmse: 86877.77652974872 in 0.5740790367126465 seconds
+test_data/pcl/epoch_0160.png
+best_prev_rmse 86877.77652974872
+<class 'float'>
+ Average loss:  7103.390625  --- Iterations:  8  --- Epochs:  161
+Starting evaluation
+ Average loss:  7064.8134765625  --- Iterations:  8  --- Epochs:  162
+Starting evaluation
+Average eval rmse: 86478.57933639671 in 0.5753252506256104 seconds
+test_data/pcl/epoch_0162.png
+best_prev_rmse 86478.57933639671
+<class 'float'>
+ Average loss:  7026.1982421875  --- Iterations:  8  --- Epochs:  163
+Starting evaluation
+Average eval rmse: 86279.76757107627 in 0.5791752338409424 seconds
+test_data/pcl/epoch_0163.png
+best_prev_rmse 86279.76757107627
+<class 'float'>
+ Average loss:  6987.13818359375  --- Iterations:  8  --- Epochs:  164
+Starting evaluation
+Average eval rmse: 86080.21752024716 in 0.58083176612854 seconds
+test_data/pcl/epoch_0164.png
+best_prev_rmse 86080.21752024716
+<class 'float'>
+ Average loss:  6947.69677734375  --- Iterations:  8  --- Epochs:  165
+Starting evaluation
+Average eval rmse: 85870.24253980968 in 0.5958187580108643 seconds
+test_data/pcl/epoch_0165.png
+best_prev_rmse 85870.24253980968
+<class 'float'>
+ Average loss:  6907.79345703125  --- Iterations:  8  --- Epochs:  166
+Starting evaluation
+Average eval rmse: 85653.9500986446 in 0.5989501476287842 seconds
+test_data/pcl/epoch_0166.png
+best_prev_rmse 85653.9500986446
+<class 'float'>
+ Average loss:  6867.42919921875  --- Iterations:  8  --- Epochs:  167
+Starting evaluation
+Average eval rmse: 85443.80153090775 in 0.57857346534729 seconds
+test_data/pcl/epoch_0167.png
+best_prev_rmse 85443.80153090775
+<class 'float'>
+ Average loss:  6826.77978515625  --- Iterations:  8  --- Epochs:  168
+Starting evaluation
+Average eval rmse: 85226.54789468311 in 0.604292631149292 seconds
+test_data/pcl/epoch_0168.png
+best_prev_rmse 85226.54789468311
+<class 'float'>
+ Average loss:  6785.70703125  --- Iterations:  8  --- Epochs:  169
+Starting evaluation
+Average eval rmse: 85005.89567002072 in 0.5797932147979736 seconds
+test_data/pcl/epoch_0169.png
+best_prev_rmse 85005.89567002072
+<class 'float'>
+ Average loss:  6744.1279296875  --- Iterations:  8  --- Epochs:  170
+Starting evaluation
+Average eval rmse: 84794.69674506935 in 0.5785911083221436 seconds
+test_data/pcl/epoch_0170.png
+best_prev_rmse 84794.69674506935
+<class 'float'>
+ Average loss:  6701.8662109375  --- Iterations:  8  --- Epochs:  171
+Starting evaluation
+Average eval rmse: 84554.96748146153 in 0.5815343856811523 seconds
+test_data/pcl/epoch_0171.png
+best_prev_rmse 84554.96748146153
+<class 'float'>
+ Average loss:  6659.185546875  --- Iterations:  8  --- Epochs:  172
+Starting evaluation
+Average eval rmse: 84336.75901290645 in 0.5868396759033203 seconds
+test_data/pcl/epoch_0172.png
+best_prev_rmse 84336.75901290645
+<class 'float'>
+ Average loss:  6615.6640625  --- Iterations:  8  --- Epochs:  173
+Starting evaluation
+Average eval rmse: 84097.11501802239 in 0.5788636207580566 seconds
+test_data/pcl/epoch_0173.png
+best_prev_rmse 84097.11501802239
+<class 'float'>
+ Average loss:  6571.748046875  --- Iterations:  8  --- Epochs:  174
+Starting evaluation
+Average eval rmse: 83856.98088599156 in 0.5772538185119629 seconds
+test_data/pcl/epoch_0174.png
+best_prev_rmse 83856.98088599156
+<class 'float'>
+ Average loss:  6527.1533203125  --- Iterations:  8  --- Epochs:  175
+Starting evaluation
+Average eval rmse: 83615.99099979429 in 0.5764975547790527 seconds
+test_data/pcl/epoch_0175.png
+best_prev_rmse 83615.99099979429
+<class 'float'>
+ Average loss:  6481.80029296875  --- Iterations:  8  --- Epochs:  176
+Starting evaluation
+Average eval rmse: 83360.48949728688 in 0.5785772800445557 seconds
+test_data/pcl/epoch_0176.png
+best_prev_rmse 83360.48949728688
+<class 'float'>
+ Average loss:  6435.7197265625  --- Iterations:  8  --- Epochs:  177
+Starting evaluation
+Average eval rmse: 83128.8300029953 in 0.5801327228546143 seconds
+test_data/pcl/epoch_0177.png
+best_prev_rmse 83128.8300029953
+<class 'float'>
+ Average loss:  6389.01806640625  --- Iterations:  8  --- Epochs:  178
+Starting evaluation
+Average eval rmse: 82837.32278809535 in 0.5817117691040039 seconds
+test_data/pcl/epoch_0178.png
+best_prev_rmse 82837.32278809535
+<class 'float'>
+ Average loss:  6342.0400390625  --- Iterations:  8  --- Epochs:  179
+Starting evaluation
+Average eval rmse: 82633.53935640436 in 0.5865328311920166 seconds
+test_data/pcl/epoch_0179.png
+best_prev_rmse 82633.53935640436
+<class 'float'>
+ Average loss:  6294.10107421875  --- Iterations:  8  --- Epochs:  180
+Starting evaluation
+Average eval rmse: 82295.42191676518 in 0.6038732528686523 seconds
+test_data/pcl/epoch_0180.png
+best_prev_rmse 82295.42191676518
+<class 'float'>
+ Average loss:  6245.5458984375  --- Iterations:  8  --- Epochs:  181
+Starting evaluation
+ Average loss:  6196.283203125  --- Iterations:  8  --- Epochs:  182
+Starting evaluation
+Average eval rmse: 81731.39819917595 in 0.6099982261657715 seconds
+test_data/pcl/epoch_0182.png
+best_prev_rmse 81731.39819917595
+<class 'float'>
+ Average loss:  6146.17919921875  --- Iterations:  8  --- Epochs:  183
+Starting evaluation
+Average eval rmse: 81581.73996951527 in 0.6130385398864746 seconds
+test_data/pcl/epoch_0183.png
+best_prev_rmse 81581.73996951527
+<class 'float'>
+ Average loss:  6095.4580078125  --- Iterations:  8  --- Epochs:  184
+Starting evaluation
+Average eval rmse: 81169.02565135533 in 0.6150796413421631 seconds
+test_data/pcl/epoch_0184.png
+best_prev_rmse 81169.02565135533
+<class 'float'>
+ Average loss:  6042.3271484375  --- Iterations:  8  --- Epochs:  185
+Starting evaluation
+Average eval rmse: 80966.97178659232 in 0.5920071601867676 seconds
+test_data/pcl/epoch_0185.png
+best_prev_rmse 80966.97178659232
+<class 'float'>
+ Average loss:  5990.26611328125  --- Iterations:  8  --- Epochs:  186
+Starting evaluation
+Average eval rmse: 80635.22416139502 in 0.5987906455993652 seconds
+test_data/pcl/epoch_0186.png
+best_prev_rmse 80635.22416139502
+<class 'float'>
+ Average loss:  5936.22216796875  --- Iterations:  8  --- Epochs:  187
+Starting evaluation
+Average eval rmse: 80343.67962702001 in 0.607525110244751 seconds
+test_data/pcl/epoch_0187.png
+best_prev_rmse 80343.67962702001
+<class 'float'>
+ Average loss:  5883.06396484375  --- Iterations:  8  --- Epochs:  188
+Starting evaluation
+Average eval rmse: 80070.82040789665 in 0.5958030223846436 seconds
+test_data/pcl/epoch_0188.png
+best_prev_rmse 80070.82040789665
+<class 'float'>
+ Average loss:  5830.16845703125  --- Iterations:  8  --- Epochs:  189
+Starting evaluation
+Average eval rmse: 79727.92728366438 in 0.59580397605896 seconds
+test_data/pcl/epoch_0189.png
+best_prev_rmse 79727.92728366438
+<class 'float'>
+ Average loss:  5776.57568359375  --- Iterations:  8  --- Epochs:  190
+Starting evaluation
+ Average loss:  5726.05615234375  --- Iterations:  8  --- Epochs:  191
+Starting evaluation
+Average eval rmse: 79083.66255300882 in 0.5889682769775391 seconds
+test_data/pcl/epoch_0191.png
+best_prev_rmse 79083.66255300882
+<class 'float'>
+ Average loss:  5678.71044921875  --- Iterations:  8  --- Epochs:  192
+Starting evaluation
+Average eval rmse: 79212.60347259298 in 0.6069366931915283 seconds
+test_data/pcl/epoch_0192.png
+ Average loss:  5632.51171875  --- Iterations:  8  --- Epochs:  193
+Starting evaluation
+Average eval rmse: 78610.23696576321 in 0.5878133773803711 seconds
+test_data/pcl/epoch_0193.png
+best_prev_rmse 78610.23696576321
+<class 'float'>
+ Average loss:  5598.2783203125  --- Iterations:  8  --- Epochs:  194
+Starting evaluation
+Average eval rmse: 78624.69272265579 in 0.6063761711120605 seconds
+test_data/pcl/epoch_0194.png
+ Average loss:  5546.39697265625  --- Iterations:  8  --- Epochs:  195
+Starting evaluation
+Average eval rmse: 78159.7342637339 in 0.5931589603424072 seconds
+test_data/pcl/epoch_0195.png
+best_prev_rmse 78159.7342637339
+<class 'float'>
+ Average loss:  5498.03515625  --- Iterations:  8  --- Epochs:  196
+Starting evaluation
+Average eval rmse: 77935.85290079069 in 0.6228837966918945 seconds
+test_data/pcl/epoch_0196.png
+best_prev_rmse 77935.85290079069
+<class 'float'>
+ Average loss:  5445.20849609375  --- Iterations:  8  --- Epochs:  197
+Starting evaluation
+Average eval rmse: 77615.13169366497 in 0.5939884185791016 seconds
+test_data/pcl/epoch_0197.png
+best_prev_rmse 77615.13169366497
+<class 'float'>
+ Average loss:  5400.38671875  --- Iterations:  8  --- Epochs:  198
+Starting evaluation
+Average eval rmse: 77416.60179623071 in 0.597783088684082 seconds
+test_data/pcl/epoch_0198.png
+best_prev_rmse 77416.60179623071
+<class 'float'>
+ Average loss:  5362.75927734375  --- Iterations:  8  --- Epochs:  199
+Starting evaluation
+Average eval rmse: 77392.42311295195 in 0.5833983421325684 seconds
+test_data/pcl/epoch_0199.png
+best_prev_rmse 77392.42311295195
+<class 'float'>
+new lr
+ Average loss:  5323.54248046875  --- Iterations:  8  --- Epochs:  200
+Starting evaluation
+Average eval rmse: 76919.29562150159 in 0.5921552181243896 seconds
+test_data/pcl/epoch_0200.png
+best_prev_rmse 76919.29562150159
+<class 'float'>

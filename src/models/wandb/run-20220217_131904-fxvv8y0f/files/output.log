@@ -1,0 +1,24 @@
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py:1051: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return forward_call(*input, **kwargs)
+Traceback (most recent call last):
+  File "enet_sanity.py", line 383, in <module>
+    st1_pred, st2_pred, pred = model(batch_data)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+RuntimeError: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/penet2021/penet2021_model/___torch_mangle_232975.py", line 139, in forward
+    _76 = (_35).forward4(_49, ch, _69, fh, _54, cw, fw, )
+    _77 = (_35).forward5(_50, ch, _71, fh, _55, cw, fw, )
+    input3 = torch.cat([rgb, d], 1)
+             ~~~~~~~~~ <--- HERE
+    _78 = (_34).forward(input3, )
+    _79 = (_32).forward((_33).forward(_78, _72, _73, ), _73, )
+Traceback of TorchScript, original code (most recent call last):
+/home/robotlabx/Desktop/DTAI/decnet2022/src/models/penet2021/penet2021_model.py(155): forward
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py(1039): _slow_forward
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py(1051): _call_impl
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py(959): trace_module
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py(744): trace
+enet_sanity.py(403): <module>
+RuntimeError: Sizes of tensors must match except in dimension 0. Got 8 and 1 (The offending index is 0)

@@ -1,0 +1,121 @@
+
+ Average loss:  189.89990234375  --- Iterations:  8  --- Epochs:  1
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py:1051: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return forward_call(*input, **kwargs)
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py:730: UserWarning: The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is.
+  "The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is."
+ Average loss:  60101.36328125  --- Iterations:  16  --- Epochs:  1
+ Average loss:  48584.484375  --- Iterations:  24  --- Epochs:  1
+Starting evaluation
+Average eval rmse: 147738.89396820223 in 2.481017827987671 seconds
+test_data/pcl/epoch_0001.png
+best_prev_rmse 147738.89396820223
+<class 'float'>
+ Average loss:  21346.13671875  --- Iterations:  8  --- Epochs:  2
+ Average loss:  29181.60546875  --- Iterations:  16  --- Epochs:  2
+ Average loss:  31291.01953125  --- Iterations:  24  --- Epochs:  2
+Starting evaluation
+Average eval rmse: 170939.79731544104 in 1.7517452239990234 seconds
+test_data/pcl/epoch_0002.png
+ Average loss:  29121.314453125  --- Iterations:  8  --- Epochs:  3
+ Average loss:  26788.6171875  --- Iterations:  16  --- Epochs:  3
+ Average loss:  24677.95703125  --- Iterations:  24  --- Epochs:  3
+Starting evaluation
+Average eval rmse: 128799.38228919293 in 1.7533760070800781 seconds
+test_data/pcl/epoch_0003.png
+best_prev_rmse 128799.38228919293
+<class 'float'>
+ Average loss:  16495.646484375  --- Iterations:  8  --- Epochs:  4
+ Average loss:  14834.3125  --- Iterations:  16  --- Epochs:  4
+ Average loss:  13876.1435546875  --- Iterations:  24  --- Epochs:  4
+Starting evaluation
+Average eval rmse: 112273.01390952886 in 1.7419581413269043 seconds
+test_data/pcl/epoch_0004.png
+best_prev_rmse 112273.01390952886
+<class 'float'>
+ Average loss:  12343.6015625  --- Iterations:  8  --- Epochs:  5
+ Average loss:  12937.8076171875  --- Iterations:  16  --- Epochs:  5
+ Average loss:  12872.552734375  --- Iterations:  24  --- Epochs:  5
+Starting evaluation
+Average eval rmse: 104360.14994012943 in 1.72932767868042 seconds
+test_data/pcl/epoch_0005.png
+best_prev_rmse 104360.14994012943
+<class 'float'>
+ Average loss:  10656.4951171875  --- Iterations:  8  --- Epochs:  6
+ Average loss:  9591.654296875  --- Iterations:  16  --- Epochs:  6
+ Average loss:  9095.8564453125  --- Iterations:  24  --- Epochs:  6
+Starting evaluation
+Average eval rmse: 88966.67987866719 in 1.8599112033843994 seconds
+test_data/pcl/epoch_0006.png
+best_prev_rmse 88966.67987866719
+<class 'float'>
+ Average loss:  7808.8505859375  --- Iterations:  8  --- Epochs:  7
+ Average loss:  7758.701171875  --- Iterations:  16  --- Epochs:  7
+ Average loss:  7811.28857421875  --- Iterations:  24  --- Epochs:  7
+Starting evaluation
+Average eval rmse: 88180.9404600199 in 1.823622465133667 seconds
+test_data/pcl/epoch_0007.png
+best_prev_rmse 88180.9404600199
+<class 'float'>
+ Average loss:  7652.5009765625  --- Iterations:  8  --- Epochs:  8
+ Average loss:  7257.220703125  --- Iterations:  16  --- Epochs:  8
+ Average loss:  7073.18701171875  --- Iterations:  24  --- Epochs:  8
+Starting evaluation
+Average eval rmse: 80538.48252585014 in 1.759737253189087 seconds
+test_data/pcl/epoch_0008.png
+best_prev_rmse 80538.48252585014
+<class 'float'>
+ Average loss:  6294.18994140625  --- Iterations:  8  --- Epochs:  9
+ Average loss:  5972.77001953125  --- Iterations:  16  --- Epochs:  9
+ Average loss:  5883.74169921875  --- Iterations:  24  --- Epochs:  9
+Starting evaluation
+Average eval rmse: 75980.77664308368 in 1.8213462829589844 seconds
+test_data/pcl/epoch_0009.png
+best_prev_rmse 75980.77664308368
+<class 'float'>
+ Average loss:  5567.48388671875  --- Iterations:  8  --- Epochs:  10
+ Average loss:  5350.0888671875  --- Iterations:  16  --- Epochs:  10
+ Average loss:  5296.06787109375  --- Iterations:  24  --- Epochs:  10
+Starting evaluation
+Average eval rmse: 71224.97686823267 in 1.7458488941192627 seconds
+test_data/pcl/epoch_0010.png
+best_prev_rmse 71224.97686823267
+<class 'float'>
+ Average loss:  4897.333984375  --- Iterations:  8  --- Epochs:  11
+ Average loss:  4687.97265625  --- Iterations:  16  --- Epochs:  11
+ Average loss:  4595.021484375  --- Iterations:  24  --- Epochs:  11
+Starting evaluation
+Average eval rmse: 67446.95374385877 in 1.7885456085205078 seconds
+test_data/pcl/epoch_0011.png
+best_prev_rmse 67446.95374385877
+<class 'float'>
+ Average loss:  4315.3984375  --- Iterations:  8  --- Epochs:  12
+ Average loss:  4132.3203125  --- Iterations:  16  --- Epochs:  12
+ Average loss:  4075.611328125  --- Iterations:  24  --- Epochs:  12
+Starting evaluation
+Average eval rmse: 64002.23589635395 in 1.7715001106262207 seconds
+test_data/pcl/epoch_0012.png
+best_prev_rmse 64002.23589635395
+<class 'float'>
+ Average loss:  3881.41357421875  --- Iterations:  8  --- Epochs:  13
+ Average loss:  3681.020263671875  --- Iterations:  16  --- Epochs:  13
+ Average loss:  3615.64892578125  --- Iterations:  24  --- Epochs:  13
+Starting evaluation
+Average eval rmse: 59931.07878044687 in 1.740813970565796 seconds
+test_data/pcl/epoch_0013.png
+best_prev_rmse 59931.07878044687
+<class 'float'>
+ Average loss:  3378.123779296875  --- Iterations:  8  --- Epochs:  14
+Traceback (most recent call last):
+  File "enet_sanity.py", line 396, in <module>
+    optimizer.step()
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/optim/optimizer.py", line 88, in wrapper
+    return func(*args, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/optim/adam.py", line 118, in step
+    eps=group['eps'])
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/optim/_functional.py", line 87, in adam
+    exp_avg_sq.mul_(beta2).addcmul_(grad, grad, value=1 - beta2)
+KeyboardInterrupt
+ Average loss:  3254.9150390625  --- Iterations:  16  --- Epochs:  14

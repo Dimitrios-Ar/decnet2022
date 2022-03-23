@@ -1,0 +1,44 @@
+2022-02-17 11:56:15,765 INFO    MainThread:2956 [wandb_setup.py:_flush():71] setting env: {}
+2022-02-17 11:56:15,765 INFO    MainThread:2956 [wandb_setup.py:_flush():71] setting login settings: {}
+2022-02-17 11:56:15,766 INFO    MainThread:2956 [wandb_init.py:_log_setup():371] Logging user logs to /home/robotlabx/Desktop/DTAI/decnet2022/src/models/wandb/run-20220217_115615-1dymh6ja/logs/debug.log
+2022-02-17 11:56:15,766 INFO    MainThread:2956 [wandb_init.py:_log_setup():372] Logging internal logs to /home/robotlabx/Desktop/DTAI/decnet2022/src/models/wandb/run-20220217_115615-1dymh6ja/logs/debug-internal.log
+2022-02-17 11:56:15,766 INFO    MainThread:2956 [wandb_init.py:init():404] calling init triggers
+2022-02-17 11:56:15,766 INFO    MainThread:2956 [wandb_init.py:init():411] wandb.init called with sweep_config: {}
+config: {}
+2022-02-17 11:56:15,766 INFO    MainThread:2956 [wandb_init.py:init():460] starting backend
+2022-02-17 11:56:15,766 INFO    MainThread:2956 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-02-17 11:56:15,820 INFO    MainThread:2956 [backend.py:ensure_launched():216] starting backend process...
+2022-02-17 11:56:15,836 INFO    MainThread:2956 [backend.py:ensure_launched():222] started backend process with pid: 3014
+2022-02-17 11:56:15,836 INFO    MainThread:2956 [wandb_init.py:init():469] backend started and connected
+2022-02-17 11:56:15,839 INFO    MainThread:2956 [wandb_init.py:init():533] updated telemetry
+2022-02-17 11:56:15,869 WARNING MainThread:2956 [wandb_init.py:init():952] interrupted
+Traceback (most recent call last):
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 931, in init
+    run = wi.init()
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 550, in init
+    run._populate_git_info()
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 548, in _populate_git_info
+    self._remote_url, self._last_commit = repo.remote_url, repo.last_commit
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/wandb/sdk/lib/git.py", line 71, in last_commit
+    if not self.repo.head or not self.repo.head.is_valid():
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/git/refs/symbolic.py", line 378, in is_valid
+    self.object
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/git/refs/symbolic.py", line 210, in _get_object
+    return Object.new_from_sha(self.repo, hex_to_bin(self.dereference_recursive(self.repo, self.path)))
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/git/objects/base.py", line 85, in new_from_sha
+    oinfo = repo.odb.info(sha1)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/git/db.py", line 43, in info
+    hexsha, typename, size = self._git.get_object_header(bin_to_hex(binsha))
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/git/cmd.py", line 1251, in get_object_header
+    cmd = self._get_persistent_cmd("cat_file_header", "cat_file", batch_check=True)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/git/cmd.py", line 1230, in _get_persistent_cmd
+    cmd = self._call_process(cmd_name, *args, **options)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/git/cmd.py", line 1183, in _call_process
+    return self.execute(call, **exec_kwargs)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/git/cmd.py", line 883, in execute
+    **subprocess_kwargs
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/subprocess.py", line 775, in __init__
+    restore_signals, start_new_session)
+  File "/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/subprocess.py", line 1476, in _execute_child
+    part = os.read(errpipe_read, 50000)
+KeyboardInterrupt

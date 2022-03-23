@@ -1,0 +1,10 @@
+2022-02-23 08:17:25,114 INFO    MainThread:2691 [internal.py:wandb_internal():90] W&B internal server running at pid: 2691, started at: 2022-02-23 08:17:25.114593
+2022-02-23 08:17:25,116 DEBUG   HandlerThread:2691 [handler.py:handle_request():130] handle_request: check_version
+2022-02-23 08:17:25,116 DEBUG   SenderThread:2691 [sender.py:send():234] send: header
+2022-02-23 08:17:25,117 DEBUG   SenderThread:2691 [sender.py:send_request():248] send_request: check_version
+2022-02-23 08:17:25,116 INFO    WriterThread:2691 [datastore.py:open_for_write():77] open: /home/robotlabx/Desktop/DTAI/decnet2022/src/models/wandb/run-20220223_081724-1afm40td/run-1afm40td.wandb
+2022-02-23 08:17:30,118 DEBUG   SenderThread:2691 [sender.py:send():234] send: run
+2022-02-23 08:17:30,604 WARNING MainThread:2691 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2022-02-23 08:17:31,107 WARNING MainThread:2691 [internal.py:wandb_internal():146] Internal process interrupt: 2
+2022-02-23 08:17:31,107 ERROR   MainThread:2691 [internal.py:wandb_internal():149] Internal process interrupted.
+2022-02-23 08:17:31,165 INFO    MainThread:2691 [internal.py:handle_exit():77] Internal process exited

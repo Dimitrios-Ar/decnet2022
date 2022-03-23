@@ -1,0 +1,10 @@
+2022-02-23 11:57:34,607 INFO    MainThread:5538 [internal.py:wandb_internal():90] W&B internal server running at pid: 5538, started at: 2022-02-23 11:57:34.607323
+2022-02-23 11:57:34,609 DEBUG   SenderThread:5538 [sender.py:send():234] send: header
+2022-02-23 11:57:34,609 DEBUG   HandlerThread:5538 [handler.py:handle_request():130] handle_request: check_version
+2022-02-23 11:57:34,609 INFO    WriterThread:5538 [datastore.py:open_for_write():77] open: /home/robotlabx/Desktop/DTAI/decnet2022/src/models/wandb/run-20220223_115734-3agrmzmx/run-3agrmzmx.wandb
+2022-02-23 11:57:34,609 DEBUG   SenderThread:5538 [sender.py:send_request():248] send_request: check_version
+2022-02-23 11:57:39,611 DEBUG   SenderThread:5538 [sender.py:send():234] send: run
+2022-02-23 11:57:53,133 WARNING MainThread:5538 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2022-02-23 11:57:53,314 WARNING MainThread:5538 [internal.py:wandb_internal():146] Internal process interrupt: 2
+2022-02-23 11:57:53,314 ERROR   MainThread:5538 [internal.py:wandb_internal():149] Internal process interrupted.
+2022-02-23 11:57:53,615 INFO    MainThread:5538 [internal.py:handle_exit():77] Internal process exited

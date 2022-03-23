@@ -1,0 +1,608 @@
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/nn/modules/module.py:1051: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return forward_call(*input, **kwargs)
+/home/robotlabx/anaconda3/envs/pytorchenv/lib/python3.7/site-packages/torch/jit/_trace.py:730: UserWarning: The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is.
+  "The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is."
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.17462992668151855 seconds
+test_data/pcl/epoch_0001.png
+best_prev_rmse 122026.35571055951
+<class 'float'>
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 1.3238134384155273 seconds
+test_data/pcl/epoch_0002.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08154678344726562 seconds
+test_data/pcl/epoch_0003.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07962298393249512 seconds
+test_data/pcl/epoch_0004.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07833600044250488 seconds
+test_data/pcl/epoch_0005.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.086395263671875 seconds
+test_data/pcl/epoch_0006.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08441758155822754 seconds
+test_data/pcl/epoch_0007.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08176732063293457 seconds
+test_data/pcl/epoch_0008.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08624482154846191 seconds
+test_data/pcl/epoch_0009.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0770726203918457 seconds
+test_data/pcl/epoch_0010.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08352971076965332 seconds
+test_data/pcl/epoch_0011.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07873654365539551 seconds
+test_data/pcl/epoch_0012.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08000397682189941 seconds
+test_data/pcl/epoch_0013.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08150076866149902 seconds
+test_data/pcl/epoch_0014.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07848954200744629 seconds
+test_data/pcl/epoch_0015.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07742667198181152 seconds
+test_data/pcl/epoch_0016.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08173894882202148 seconds
+test_data/pcl/epoch_0017.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07986307144165039 seconds
+test_data/pcl/epoch_0018.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08386969566345215 seconds
+test_data/pcl/epoch_0019.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08107447624206543 seconds
+test_data/pcl/epoch_0020.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0837705135345459 seconds
+test_data/pcl/epoch_0021.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07779145240783691 seconds
+test_data/pcl/epoch_0022.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08428025245666504 seconds
+test_data/pcl/epoch_0023.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08185648918151855 seconds
+test_data/pcl/epoch_0024.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07740068435668945 seconds
+test_data/pcl/epoch_0025.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08225178718566895 seconds
+test_data/pcl/epoch_0026.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08348631858825684 seconds
+test_data/pcl/epoch_0027.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07902169227600098 seconds
+test_data/pcl/epoch_0028.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08289670944213867 seconds
+test_data/pcl/epoch_0029.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07610273361206055 seconds
+test_data/pcl/epoch_0030.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08138895034790039 seconds
+test_data/pcl/epoch_0031.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0766761302947998 seconds
+test_data/pcl/epoch_0032.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07548975944519043 seconds
+test_data/pcl/epoch_0033.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07630729675292969 seconds
+test_data/pcl/epoch_0034.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07843852043151855 seconds
+test_data/pcl/epoch_0035.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07842183113098145 seconds
+test_data/pcl/epoch_0036.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08193206787109375 seconds
+test_data/pcl/epoch_0037.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07816696166992188 seconds
+test_data/pcl/epoch_0038.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07747316360473633 seconds
+test_data/pcl/epoch_0039.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0851442813873291 seconds
+test_data/pcl/epoch_0040.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07988882064819336 seconds
+test_data/pcl/epoch_0041.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08048129081726074 seconds
+test_data/pcl/epoch_0042.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08239197731018066 seconds
+test_data/pcl/epoch_0043.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08558797836303711 seconds
+test_data/pcl/epoch_0044.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0846714973449707 seconds
+test_data/pcl/epoch_0045.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07606983184814453 seconds
+test_data/pcl/epoch_0046.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07692241668701172 seconds
+test_data/pcl/epoch_0047.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07505941390991211 seconds
+test_data/pcl/epoch_0048.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08098769187927246 seconds
+test_data/pcl/epoch_0049.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07819795608520508 seconds
+test_data/pcl/epoch_0050.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0772104263305664 seconds
+test_data/pcl/epoch_0051.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07890081405639648 seconds
+test_data/pcl/epoch_0052.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07528901100158691 seconds
+test_data/pcl/epoch_0053.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.09019660949707031 seconds
+test_data/pcl/epoch_0054.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07926082611083984 seconds
+test_data/pcl/epoch_0055.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08399605751037598 seconds
+test_data/pcl/epoch_0056.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07378649711608887 seconds
+test_data/pcl/epoch_0057.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07561039924621582 seconds
+test_data/pcl/epoch_0058.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0780496597290039 seconds
+test_data/pcl/epoch_0059.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07656502723693848 seconds
+test_data/pcl/epoch_0060.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07737445831298828 seconds
+test_data/pcl/epoch_0061.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07689738273620605 seconds
+test_data/pcl/epoch_0062.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07773995399475098 seconds
+test_data/pcl/epoch_0063.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07622241973876953 seconds
+test_data/pcl/epoch_0064.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07572650909423828 seconds
+test_data/pcl/epoch_0065.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07633423805236816 seconds
+test_data/pcl/epoch_0066.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0805201530456543 seconds
+test_data/pcl/epoch_0067.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08117389678955078 seconds
+test_data/pcl/epoch_0068.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0787055492401123 seconds
+test_data/pcl/epoch_0069.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07781386375427246 seconds
+test_data/pcl/epoch_0070.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07856988906860352 seconds
+test_data/pcl/epoch_0071.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07645630836486816 seconds
+test_data/pcl/epoch_0072.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07683444023132324 seconds
+test_data/pcl/epoch_0073.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0781862735748291 seconds
+test_data/pcl/epoch_0074.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07561969757080078 seconds
+test_data/pcl/epoch_0075.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0782005786895752 seconds
+test_data/pcl/epoch_0076.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08982706069946289 seconds
+test_data/pcl/epoch_0077.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.09142017364501953 seconds
+test_data/pcl/epoch_0078.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08370232582092285 seconds
+test_data/pcl/epoch_0079.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07960057258605957 seconds
+test_data/pcl/epoch_0080.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0905296802520752 seconds
+test_data/pcl/epoch_0081.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08258056640625 seconds
+test_data/pcl/epoch_0082.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08029985427856445 seconds
+test_data/pcl/epoch_0083.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08521676063537598 seconds
+test_data/pcl/epoch_0084.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08359932899475098 seconds
+test_data/pcl/epoch_0085.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08735990524291992 seconds
+test_data/pcl/epoch_0086.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08035945892333984 seconds
+test_data/pcl/epoch_0087.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08023810386657715 seconds
+test_data/pcl/epoch_0088.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07683324813842773 seconds
+test_data/pcl/epoch_0089.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07591462135314941 seconds
+test_data/pcl/epoch_0090.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08260321617126465 seconds
+test_data/pcl/epoch_0091.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07873916625976562 seconds
+test_data/pcl/epoch_0092.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0809326171875 seconds
+test_data/pcl/epoch_0093.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0856478214263916 seconds
+test_data/pcl/epoch_0094.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08456540107727051 seconds
+test_data/pcl/epoch_0095.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08280014991760254 seconds
+test_data/pcl/epoch_0096.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0905766487121582 seconds
+test_data/pcl/epoch_0097.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08468365669250488 seconds
+test_data/pcl/epoch_0098.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08501553535461426 seconds
+test_data/pcl/epoch_0099.png
+new lr
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08135724067687988 seconds
+test_data/pcl/epoch_0100.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08531904220581055 seconds
+test_data/pcl/epoch_0101.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0841519832611084 seconds
+test_data/pcl/epoch_0102.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07848930358886719 seconds
+test_data/pcl/epoch_0103.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07832789421081543 seconds
+test_data/pcl/epoch_0104.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07973241806030273 seconds
+test_data/pcl/epoch_0105.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08136105537414551 seconds
+test_data/pcl/epoch_0106.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0864417552947998 seconds
+test_data/pcl/epoch_0107.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08104276657104492 seconds
+test_data/pcl/epoch_0108.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07965230941772461 seconds
+test_data/pcl/epoch_0109.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08134841918945312 seconds
+test_data/pcl/epoch_0110.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08196377754211426 seconds
+test_data/pcl/epoch_0111.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0806124210357666 seconds
+test_data/pcl/epoch_0112.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08231163024902344 seconds
+test_data/pcl/epoch_0113.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08005905151367188 seconds
+test_data/pcl/epoch_0114.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08270621299743652 seconds
+test_data/pcl/epoch_0115.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0805816650390625 seconds
+test_data/pcl/epoch_0116.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.09045791625976562 seconds
+test_data/pcl/epoch_0117.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0845949649810791 seconds
+test_data/pcl/epoch_0118.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07995319366455078 seconds
+test_data/pcl/epoch_0119.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08165645599365234 seconds
+test_data/pcl/epoch_0120.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08256363868713379 seconds
+test_data/pcl/epoch_0121.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08014202117919922 seconds
+test_data/pcl/epoch_0122.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08684539794921875 seconds
+test_data/pcl/epoch_0123.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07948493957519531 seconds
+test_data/pcl/epoch_0124.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08386349678039551 seconds
+test_data/pcl/epoch_0125.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0821065902709961 seconds
+test_data/pcl/epoch_0126.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08325433731079102 seconds
+test_data/pcl/epoch_0127.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08188581466674805 seconds
+test_data/pcl/epoch_0128.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08535194396972656 seconds
+test_data/pcl/epoch_0129.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08048272132873535 seconds
+test_data/pcl/epoch_0130.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08156323432922363 seconds
+test_data/pcl/epoch_0131.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08304882049560547 seconds
+test_data/pcl/epoch_0132.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08644270896911621 seconds
+test_data/pcl/epoch_0133.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08450126647949219 seconds
+test_data/pcl/epoch_0134.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08423781394958496 seconds
+test_data/pcl/epoch_0135.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08467483520507812 seconds
+test_data/pcl/epoch_0136.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08909344673156738 seconds
+test_data/pcl/epoch_0137.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08435559272766113 seconds
+test_data/pcl/epoch_0138.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08146095275878906 seconds
+test_data/pcl/epoch_0139.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07987785339355469 seconds
+test_data/pcl/epoch_0140.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08419489860534668 seconds
+test_data/pcl/epoch_0141.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07993841171264648 seconds
+test_data/pcl/epoch_0142.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08041167259216309 seconds
+test_data/pcl/epoch_0143.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0856785774230957 seconds
+test_data/pcl/epoch_0144.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07746529579162598 seconds
+test_data/pcl/epoch_0145.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.09255218505859375 seconds
+test_data/pcl/epoch_0146.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08065533638000488 seconds
+test_data/pcl/epoch_0147.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08444857597351074 seconds
+test_data/pcl/epoch_0148.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07969284057617188 seconds
+test_data/pcl/epoch_0149.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08480238914489746 seconds
+test_data/pcl/epoch_0150.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08006048202514648 seconds
+test_data/pcl/epoch_0151.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08352303504943848 seconds
+test_data/pcl/epoch_0152.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08744597434997559 seconds
+test_data/pcl/epoch_0153.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08984971046447754 seconds
+test_data/pcl/epoch_0154.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07734441757202148 seconds
+test_data/pcl/epoch_0155.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08396077156066895 seconds
+test_data/pcl/epoch_0156.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07921361923217773 seconds
+test_data/pcl/epoch_0157.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07815074920654297 seconds
+test_data/pcl/epoch_0158.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08540654182434082 seconds
+test_data/pcl/epoch_0159.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08442330360412598 seconds
+test_data/pcl/epoch_0160.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08394670486450195 seconds
+test_data/pcl/epoch_0161.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07910513877868652 seconds
+test_data/pcl/epoch_0162.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07875967025756836 seconds
+test_data/pcl/epoch_0163.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08182144165039062 seconds
+test_data/pcl/epoch_0164.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08370661735534668 seconds
+test_data/pcl/epoch_0165.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07921862602233887 seconds
+test_data/pcl/epoch_0166.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08472156524658203 seconds
+test_data/pcl/epoch_0167.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07908225059509277 seconds
+test_data/pcl/epoch_0168.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08061861991882324 seconds
+test_data/pcl/epoch_0169.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08344292640686035 seconds
+test_data/pcl/epoch_0170.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08621740341186523 seconds
+test_data/pcl/epoch_0171.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08499622344970703 seconds
+test_data/pcl/epoch_0172.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08954739570617676 seconds
+test_data/pcl/epoch_0173.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08135795593261719 seconds
+test_data/pcl/epoch_0174.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08103656768798828 seconds
+test_data/pcl/epoch_0175.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07736349105834961 seconds
+test_data/pcl/epoch_0176.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0816643238067627 seconds
+test_data/pcl/epoch_0177.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07982897758483887 seconds
+test_data/pcl/epoch_0178.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0779876708984375 seconds
+test_data/pcl/epoch_0179.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08722066879272461 seconds
+test_data/pcl/epoch_0180.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07370972633361816 seconds
+test_data/pcl/epoch_0181.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07878708839416504 seconds
+test_data/pcl/epoch_0182.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07764601707458496 seconds
+test_data/pcl/epoch_0183.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07891178131103516 seconds
+test_data/pcl/epoch_0184.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07614731788635254 seconds
+test_data/pcl/epoch_0185.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08031606674194336 seconds
+test_data/pcl/epoch_0186.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07740902900695801 seconds
+test_data/pcl/epoch_0187.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0776526927947998 seconds
+test_data/pcl/epoch_0188.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07561731338500977 seconds
+test_data/pcl/epoch_0189.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0762183666229248 seconds
+test_data/pcl/epoch_0190.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07614588737487793 seconds
+test_data/pcl/epoch_0191.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07724428176879883 seconds
+test_data/pcl/epoch_0192.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07703185081481934 seconds
+test_data/pcl/epoch_0193.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07984519004821777 seconds
+test_data/pcl/epoch_0194.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08010625839233398 seconds
+test_data/pcl/epoch_0195.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08015751838684082 seconds
+test_data/pcl/epoch_0196.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07969498634338379 seconds
+test_data/pcl/epoch_0197.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.0797739028930664 seconds
+test_data/pcl/epoch_0198.png
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.08152604103088379 seconds
+test_data/pcl/epoch_0199.png
+new lr
+Starting evaluation
+Average eval rmse: 122026.35571055951 in 0.07982015609741211 seconds
+test_data/pcl/epoch_0200.png

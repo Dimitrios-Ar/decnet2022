@@ -11,7 +11,7 @@ cmap = plt.cm.jet
 cmap2 = plt.cm.nipy_spectral
 
 def validcrop(img):
-    ratio = 256/1216
+    ratio = 352/608
     h = img.size()[2]
     w = img.size()[3]
     return img[:, :, h-int(ratio*w):, :]

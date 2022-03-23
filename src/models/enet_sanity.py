@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+from xmlrpc.client import FastUnmarshaller
 import torch
 from torch.utils.data import Dataset, DataLoader, sampler
 from decnet import decnet_model
@@ -209,7 +210,7 @@ training_width = 608
 training_height = 352
 args.val_h = training_height#352
 args.val_w = training_width#1216
-train_continue = False
+train_continue = True
 
 evaluation = False
 precalculated_mean_std = True
@@ -236,10 +237,12 @@ torch.backends.cudnn.benchmark = False
 np.random.seed(random_seed)
 
 batch_size = 8
-train_folder_loc = Path('../../../Desktop/data_sanity/24k_cropped_reduced')
+train_folder_loc = Path('../../../Desktop/data_sanity/24a_dataset_2021-12-07-13-36-46_FILTERED/train')
 #train_folder_loc = Path('../../../Desktop/data_sanity/testbatch')
+test_folder_loc = Path('../../../Desktop/data_sanity/24a_dataset_2021-12-07-13-36-46_FILTERED/test')
+#test_folder_loc = Path('../../../Desktop/data_sanity/test_batch_24k')
 
-test_folder_loc = Path('../../../Desktop/data_sanity/24a_cropped_reduced')
+#test_folder_loc = Path('../../../Desktop/data_sanity/24a_cropped_reduced')
 
 crop_transform = transforms.CenterCrop(352)
 
@@ -247,7 +250,7 @@ rgbPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'
 depthPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'depth_cm_cropped')))))
 pclPath = np.array(sorted(list(paths.list_images(os.path.join(train_folder_loc,'pcl_cm_cropped')))))
 
-train_mask = np.random.choice(len(rgbPath), 2000, replace=False)
+train_mask = np.random.choice(len(rgbPath), 500, replace=False)
 
 train_mask = train_mask.astype(int)
 #print(type(train_mask))
@@ -259,7 +262,7 @@ rgbPath = np.array(sorted(list(paths.list_images(os.path.join(test_folder_loc,'r
 depthPath = np.array(sorted(list(paths.list_images(os.path.join(test_folder_loc,'depth_cm_cropped')))))
 pclPath = np.array(sorted(list(paths.list_images(os.path.join(test_folder_loc,'pcl_cm_cropped')))))
 
-test_mask = np.random.choice(len(rgbPath), 500, replace=False)
+test_mask = np.random.choice(len(rgbPath), 100, replace=False)
 mini_test_set = SanityDatasetCheck(rgbPath[test_mask],depthPath[test_mask],pclPath[test_mask])
 
 #transformed_mini_test_set = crop_transform(mini_test_set)
@@ -298,22 +301,23 @@ epochs = 200
 lr = 3e-4
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
+torch.cuda.empty_cache()
 print('Using {} device'.format(device))
 
 submodel = 'ENETsanity'
 model = ENet(args).to(device)
-#model = torch.jit.load('ENETsanity_model_and_weights_EVAL.pth')
+model = torch.jit.load('ENETsanity_model_and_weights_T_test_batch.pth')
 
-if train_continue == True:
+#if train_continue == True:
+#
+#    model = torch.jit.load('ENETsanity_model_and_weights_T_test_batch.pth')
 
-    model = torch.jit.load('ENETsanity_model_and_weights_TRAIN.pth')
 
-
-model_save_name_eval = submodel+'_model_and_weights_EVAL_3090.pth'
-model_save_name_train = submodel+'_model_and_weights_TRAIN_3090.pth'
+model_save_name_eval = submodel+'_model_and_weights_E_test_batch.pth'
+model_save_name_train = submodel+'_model_and_weights_T_test_batch.pth'
 
 print(model_save_name_eval)
-wandblogger = True
+wandblogger = False
 if wandblogger == True:
         wandb.init(project="decnet-project", entity="wandbdimar")
         wandb.config = {
@@ -414,6 +418,7 @@ for epoch in range(1,epochs+1):#how many epochs to run
             path_pcl = os.path.join('test_data/pcl', path_i)
             path_depth = os.path.join('test_data/depth', path_i)
             path_pred = os.path.join('test_data/pred', path_i)
+            path_pred_colored = os.path.join('test_data/pred_colored', path_i)
             #print(path_pred)
             start = time.time()
             rgb, depth, pcl = data_eval[0], data_eval[1], data_eval[2]
@@ -466,12 +471,14 @@ for epoch in range(1,epochs+1):#how many epochs to run
             progress = 100*(i_eval/len(mini_test_set))
 
         print('Average eval rmse: ' + str(avg.rmse) + ' in ' + str(data_time) + ' seconds')
+        print(path_pcl)
         vis_utils.save_depth_as_uint16png_upload(pcl, path_pcl)
         vis_utils.save_depth_as_uint16png_upload(depth, path_depth)
         vis_utils.save_depth_as_uint16png_upload(pred, path_pred)
+        vis_utils.save_depth_as_uint8colored(pred, path_pred_colored)
         vis_utils.save_image_torch(rgb,path_rgb)
         
-        if avg.rmse < best_prev_rmse:
+        if avg.rmse <= best_prev_rmse:
             best_prev_rmse = avg.rmse
             print('best_prev_rmse', best_prev_rmse)
             print(type(best_prev_rmse))
